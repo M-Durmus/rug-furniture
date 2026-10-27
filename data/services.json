@@ -1,0 +1,146 @@
+[
+  {
+    "id": "svc-cleaning",
+    "slug": "rug-cleaning",
+    "name": "Rug cleaning",
+    "shortDescription": "Wash and dry for wool and flatweave rugs, priced after we see the piece.",
+    "includes": [
+      "Dusting and wash",
+      "Drying on racks",
+      "A note if the dyes are unstable"
+    ],
+    "process": [
+      {
+        "title": "Tell us the size",
+        "text": "Send the length and width in feet and inches, plus the city for pickup."
+      },
+      {
+        "title": "We quote",
+        "text": "Wool, silk, and a rug with unstable dyes are not the same job. The quote says which one you have."
+      },
+      {
+        "title": "Pickup",
+        "text": "A warehouse route picks the rug up. You do not drop it at a retail counter."
+      },
+      {
+        "title": "Wash and return",
+        "text": "We wash, dry fully, and bring it back. A damp rug does not go on the truck."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Can you price cleaning from a photo?",
+        "answer": "A photo starts the quote. The final price follows the measured size and what we find in the foundation."
+      }
+    ],
+    "image": ""
+  },
+  {
+    "id": "svc-repair",
+    "slug": "rug-repair",
+    "name": "Rug repair",
+    "shortDescription": "Fringe, edges, and reweaving, quoted from photos and the size of the damage.",
+    "includes": [
+      "Edge binding",
+      "Fringe repair",
+      "Reweaving of small losses"
+    ],
+    "process": [
+      {
+        "title": "Photograph the damage",
+        "text": "Show the whole rug and a close view of the fringe, edge, or hole."
+      },
+      {
+        "title": "We quote the repair",
+        "text": "A worn fringe and a hole in the field are different prices."
+      },
+      {
+        "title": "Pickup",
+        "text": "The same routes that deliver rugs can collect one for the workroom."
+      },
+      {
+        "title": "Return",
+        "text": "We send photos when the repair is done, then schedule the return."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Do you reweave a large loss?",
+        "answer": "Small losses, yes. A large missing section may not be worth the repair. We will say so before you approve the quote."
+      }
+    ],
+    "image": ""
+  },
+  {
+    "id": "svc-sizing",
+    "slug": "custom-sizing",
+    "name": "Custom sizing",
+    "shortDescription": "Binding or serging when a wool rug needs to fit a measured floor.",
+    "includes": [
+      "Cut and bind on suitable rugs",
+      "The finished size in feet and inches",
+      "A refusal if the rug should not be cut"
+    ],
+    "process": [
+      {
+        "title": "Measure the floor",
+        "text": "Give us the clear width and length in feet and inches, not a guess from a furniture plan."
+      },
+      {
+        "title": "We say if it can be cut",
+        "text": "Vintage pieces and some patterns should not be cut. We will decline those."
+      },
+      {
+        "title": "Quote",
+        "text": "The quote is for the cut and the binding, not for a new rug."
+      },
+      {
+        "title": "Finish",
+        "text": "The edge is bound so it does not unravel. We confirm the finished size before it ships back."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Can every rug be cut down?",
+        "answer": "No. We will not cut a vintage rug or a piece whose pattern would be ruined. The quote is the place we say no."
+      }
+    ],
+    "image": ""
+  },
+  {
+    "id": "svc-delivery",
+    "slug": "pickup-and-delivery",
+    "name": "Pickup and delivery",
+    "shortDescription": "Warehouse delivery and pickup for cleaning or repair, quoted by city and stairs.",
+    "includes": [
+      "Curb or threshold delivery",
+      "A quote for stairs",
+      "Pickup for cleaning and repair"
+    ],
+    "process": [
+      {
+        "title": "Share the address",
+        "text": "City, floor, and whether there is an elevator or a stair turn."
+      },
+      {
+        "title": "We quote the carry",
+        "text": "Street-level delivery and a walk-up are different jobs."
+      },
+      {
+        "title": "A weekday window",
+        "text": "The warehouse calls with a window. Someone needs to be there."
+      },
+      {
+        "title": "Placement",
+        "text": "We place the rug or furniture in the room. We do not move a household."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is freight free?",
+        "answer": "Standard freight is free on rugs over $1,500 inside the continental United States. Stairs, furniture, and white-glove placement are quoted."
+      }
+    ],
+    "image": ""
+  }
+]

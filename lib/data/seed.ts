@@ -1,0 +1,32 @@
+import type { ProductColor, ProductSize, WarehouseName } from "@/types";
+
+export type ProductSeed = {
+  id: string;
+  slug: string;
+  title: string;
+  type: "rug" | "furniture";
+  category: string;
+  brand: string;
+  description: string;
+  basePrice: number;
+  referenceWidthFt: number;
+  referenceLengthFt: number;
+  saleOff?: number;
+  images: string[];
+  colors: ProductColor[];
+  sizes: ProductSize[];
+  material: string;
+  origin: string;
+  pile: string;
+  style: string;
+  room: string[];
+  washable: boolean;
+  warehouse: WarehouseName;
+  stock: number;
+  deliveryDays: string;
+  rating: number;
+  reviewCount: number;
+  tags: string[];
+  seoTitle: string;
+  seoDescription: string;
+};

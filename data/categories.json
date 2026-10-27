@@ -1,0 +1,196 @@
+[
+  {
+    "id": "cat-rugs",
+    "slug": "rugs",
+    "name": "Rugs",
+    "type": "rug",
+    "intro": "Turkish rugs in stock at Wool & Loom warehouses in New Jersey, Georgia, Texas, and California.",
+    "seoText": "Every rug is priced from a reference size, then scaled by area. An 8 by 10 is not the same price as a 5 by 7 of the same design. Measure in feet and inches before you order.",
+    "faq": [
+      {
+        "question": "How is a larger size priced?",
+        "answer": "The price of each size is the reference price times the ratio of the areas. A 9 by 12 has more square feet than an 8 by 10, so it costs more."
+      },
+      {
+        "question": "Which warehouse ships to me?",
+        "answer": "The product page names the warehouse. New Jersey covers the Northeast, Georgia the Southeast, Texas the South Central states, and California the West."
+      }
+    ],
+    "heroImage": ""
+  },
+  {
+    "id": "cat-oushak",
+    "slug": "oushak",
+    "name": "Oushak",
+    "type": "rug",
+    "parentSlug": "rugs",
+    "intro": "Pale fields, soft florals, and open medallions woven in Turkey.",
+    "seoText": "Oushak rugs from Wool & Loom use ivory, apricot, and sage. They are stocked in U.S. warehouses and sold by the foot.",
+    "faq": [
+      {
+        "question": "Will an Oushak look pink in photos and orange in the room?",
+        "answer": "Apricot and rose on these pieces are muted. The photos are of the actual ground color, not a stylized filter."
+      }
+    ],
+    "heroImage": ""
+  },
+  {
+    "id": "cat-vintage",
+    "slug": "vintage",
+    "name": "Vintage",
+    "type": "rug",
+    "parentSlug": "rugs",
+    "intro": "Older wool pieces with softened color, still sound enough to put in a living room.",
+    "seoText": "Vintage rugs at Wool & Loom are hand-knotted wool with worn, sun-faded color. Each one is a single piece, not a reproduced print.",
+    "faq": [
+      {
+        "question": "Are vintage rugs one of a kind?",
+        "answer": "Yes. The size on the page is the size of that rug. We do not cut a vintage piece down to order."
+      }
+    ],
+    "heroImage": ""
+  },
+  {
+    "id": "cat-runner",
+    "slug": "runner",
+    "name": "Runners",
+    "type": "rug",
+    "parentSlug": "rugs",
+    "intro": "Hall and entry runners from 2 by 8 to 3 by 12 feet.",
+    "seoText": "Wool & Loom runners are sized for hallways. Leave about two inches of floor along each long edge so the runner does not touch the baseboard.",
+    "faq": [
+      {
+        "question": "How wide should a hall runner be?",
+        "answer": "Most halls want a 2-foot or 3-foot width. Measure the clear width in inches and subtract about four inches so the runner is not wall to wall."
+      }
+    ],
+    "heroImage": ""
+  },
+  {
+    "id": "cat-washable",
+    "slug": "washable",
+    "name": "Washable",
+    "type": "rug",
+    "parentSlug": "rugs",
+    "intro": "Low-pile rugs you can wash at home on cold.",
+    "seoText": "Washable rugs are for kitchens, nurseries, and family rooms. They are not a substitute for a hand-knotted wool rug, and the page says so.",
+    "faq": [
+      {
+        "question": "Can I wash a wool rug the same way?",
+        "answer": "No. Only rugs marked washable go in a home washer. Wool pieces are cleaned by quote."
+      }
+    ],
+    "heroImage": ""
+  },
+  {
+    "id": "cat-turkish",
+    "slug": "turkish",
+    "name": "Turkish",
+    "type": "rug",
+    "parentSlug": "rugs",
+    "intro": "Sivas, Hereke, Milas, Konya, and Dosemealti patterns in wool.",
+    "seoText": "Turkish rugs at Wool & Loom are hand-knotted or flatwoven in Turkey and held in U.S. stock.",
+    "faq": [
+      {
+        "question": "Are these new or vintage?",
+        "answer": "The Turkish collection is newly woven. Older pieces are in Vintage."
+      }
+    ],
+    "heroImage": ""
+  },
+  {
+    "id": "cat-persian-style",
+    "slug": "persian-style",
+    "name": "Persian-style",
+    "type": "rug",
+    "parentSlug": "rugs",
+    "intro": "Medallion and garden layouts woven in Turkey in a Persian-style drawing.",
+    "seoText": "These are Persian-style rugs woven in Turkey, not antiques from Iran. The drawing is a medallion, garden, or Heriz-style corner.",
+    "faq": [
+      {
+        "question": "Are these imported from Iran?",
+        "answer": "No. They are woven in Turkey for Wool & Loom and stocked in the United States."
+      }
+    ],
+    "heroImage": ""
+  },
+  {
+    "id": "cat-furniture",
+    "slug": "furniture",
+    "name": "Furniture",
+    "type": "furniture",
+    "intro": "Sofas, tables, and chairs chosen to sit on a rug, with sizes in feet.",
+    "seoText": "Wool & Loom furniture is scaled for the rugs we sell. A coffee table should sit fully on the rug. The front legs of a sofa or chair should rest on it.",
+    "faq": [
+      {
+        "question": "Do you deliver furniture upstairs?",
+        "answer": "Stairs and long carries are quoted with pickup and delivery. The product price does not include a walk-up."
+      }
+    ],
+    "heroImage": ""
+  },
+  {
+    "id": "cat-sofas",
+    "slug": "sofas",
+    "name": "Sofas",
+    "type": "furniture",
+    "parentSlug": "furniture",
+    "intro": "Sofas from six to eight feet wide, in linen, boucle, and performance cloth.",
+    "seoText": "Place a sofa so the front legs land on the rug. An 8 by 10 usually fits a seven-foot sofa with a coffee table.",
+    "faq": [
+      {
+        "question": "What rug size fits a sofa?",
+        "answer": "A seven-foot sofa usually wants an 8 by 10 or a 9 by 12 so the front legs and the coffee table share the rug."
+      }
+    ],
+    "heroImage": ""
+  },
+  {
+    "id": "cat-coffee-tables",
+    "slug": "coffee-tables",
+    "name": "Coffee Tables",
+    "type": "furniture",
+    "parentSlug": "furniture",
+    "intro": "Oak, walnut, travertine, and steel tables sized to sit fully on a rug.",
+    "seoText": "Coffee tables at Wool & Loom are about four to five feet long. They should sit entirely on the rug, not half on the floor.",
+    "faq": [
+      {
+        "question": "Should the table match the rug?",
+        "answer": "No. A plain wood or stone top lets the rug be the pattern in the room."
+      }
+    ],
+    "heroImage": ""
+  },
+  {
+    "id": "cat-accent-chairs",
+    "slug": "accent-chairs",
+    "name": "Accent Chairs",
+    "type": "furniture",
+    "parentSlug": "furniture",
+    "intro": "Chairs meant to share the rug with the sofa, not sit off on bare floor.",
+    "seoText": "Front legs of an accent chair should rest on the same rug as the sofa so the seating reads as one group.",
+    "faq": [
+      {
+        "question": "Can a chair sit half off the rug?",
+        "answer": "Put the front legs on the rug. Leaving only the back legs on makes the chair look like it slipped off."
+      }
+    ],
+    "heroImage": ""
+  },
+  {
+    "id": "cat-side-tables",
+    "slug": "side-tables",
+    "name": "Side Tables",
+    "type": "furniture",
+    "parentSlug": "furniture",
+    "intro": "Small tables that can sit on a rug beside a sofa or chair.",
+    "seoText": "Side tables from Wool & Loom are small enough to place on the rug next to a seat without covering the medallion.",
+    "faq": [
+      {
+        "question": "Do side tables have to match the coffee table?",
+        "answer": "They should share a material or a finish, not necessarily the same design."
+      }
+    ],
+    "heroImage": ""
+  }
+]

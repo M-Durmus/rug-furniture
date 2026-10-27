@@ -1,0 +1,39 @@
+{
+  "name": "rug-furniture",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "generate:images": "node scripts/generate-images.mjs",
+    "verify": "tsx scripts/verify-seo.ts",
+    "seed:catalog": "tsx scripts/seed-catalog.ts",
+    "catalog:counts": "tsx scripts/print-catalog.ts",
+    "test": "tsx --test lib/data/price.test.ts lib/data/catalog.test.ts lib/cart/store.test.ts",
+    "lhci": "lhci autorun"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.15.1",
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.3",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.10",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}

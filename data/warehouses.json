@@ -1,0 +1,26 @@
+[
+  {
+    "name": "New Jersey",
+    "state": "New Jersey",
+    "rugCount": 11,
+    "deliveryDays": "1-3"
+  },
+  {
+    "name": "Georgia",
+    "state": "Georgia",
+    "rugCount": 11,
+    "deliveryDays": "2-4"
+  },
+  {
+    "name": "Texas",
+    "state": "Texas",
+    "rugCount": 9,
+    "deliveryDays": "2-5"
+  },
+  {
+    "name": "California",
+    "state": "California",
+    "rugCount": 9,
+    "deliveryDays": "3-5"
+  }
+]

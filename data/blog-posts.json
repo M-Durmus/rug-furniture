@@ -1,0 +1,191 @@
+[
+  {
+    "id": "post-001",
+    "slug": "measure-a-room-in-feet-and-inches",
+    "title": "Measure a room for a rug in feet and inches",
+    "excerpt": "A tape in feet and inches, the clear floor, and why the rug should not touch the baseboard.",
+    "author": "Wool & Loom Studio",
+    "readMinutes": 6,
+    "publishedAt": "2026-02-11",
+    "category": "Sizing",
+    "sections": [
+      {
+        "heading": "Measure the clear floor",
+        "paragraphs": [
+          "Measure the floor you can actually use, not the room from wall to wall if a hearth, a door swing, or a built-in takes a piece of it. Write the width and the length in feet and inches.",
+          "A rug that touches the baseboard on all sides looks wall-to-wall and wears at the edges. Leave a border of bare floor. In a living room that is often 8 to 18 inches, depending on the room."
+        ]
+      },
+      {
+        "heading": "Put the furniture on the rug",
+        "paragraphs": [
+          "Front legs of the sofa and chairs should sit on the rug. The coffee table should sit fully on it. If only the table fits, the rug is too small for that seating group.",
+          "An 8 by 10 often fits a seven-foot sofa with a four-foot coffee table. A 9 by 12 is the next step when the chairs also need to land on the rug."
+        ]
+      },
+      {
+        "heading": "Price follows area",
+        "paragraphs": [
+          "Wool & Loom prices each size from a reference size times the area ratio. The 5 by 7 of a design is not the same price as the 8 by 10. The product page is the price for the size you select."
+        ]
+      }
+    ],
+    "relatedProductSlugs": [
+      "pale-oushak-field",
+      "sivas-medallion"
+    ],
+    "relatedServiceSlug": "custom-sizing"
+  },
+  {
+    "id": "post-002",
+    "slug": "wool-pile-in-a-busy-room",
+    "title": "Wool pile in a room that actually gets used",
+    "excerpt": "What medium pile does under a dining table, a sofa, and a dog that sleeps on the rug.",
+    "author": "Wool & Loom Studio",
+    "readMinutes": 7,
+    "publishedAt": "2026-03-04",
+    "category": "Care",
+    "sections": [
+      {
+        "heading": "Low pile is not a lesser rug",
+        "paragraphs": [
+          "A vintage wool rug is often low because it has been walked on. That is useful in a dining room, where chairs need to slide, and in a hall, where a thick pile catches.",
+          "Medium pile is the everyday living-room height on our new Turkish pieces. It is not the high, floppy pile that looks soft in a photo and mats under a table."
+        ]
+      },
+      {
+        "heading": "Traffic shows first at the turn",
+        "paragraphs": [
+          "The wear line appears where people turn into the room, not in the center under the table. A darker field or a vintage abrash hides that longer than a plain ivory ground.",
+          "Rotate the rug once or twice a year if the room has one path. Wool does not need a weekly shampoo. It needs dust out of it and a real wash when it is dirty."
+        ]
+      }
+    ],
+    "relatedProductSlugs": [
+      "bergama-vintage",
+      "smoke-vintage"
+    ],
+    "relatedServiceSlug": "rug-cleaning"
+  },
+  {
+    "id": "post-003",
+    "slug": "what-washable-means",
+    "title": "What washable means on a rug label",
+    "excerpt": "A washable rug can go in a home washer. A wool rug cannot, even if both look soft in the photo.",
+    "author": "Wool & Loom Studio",
+    "readMinutes": 5,
+    "publishedAt": "2026-04-16",
+    "category": "Care",
+    "sections": [
+      {
+        "heading": "The fiber is the rule",
+        "paragraphs": [
+          "Rugs we mark washable are a low recycled-polyester pile made for a cold wash. Wool, even a flatweave kilim, is not in that group. Washing wool at home felts it or releases unstable dyes.",
+          "If a wool rug is dirty, ask for a cleaning quote. Send the size in feet and inches and the city. We price the wash after that, not from a flat 'any rug' fee."
+        ]
+      },
+      {
+        "heading": "Where a washable rug earns its place",
+        "paragraphs": [
+          "A nursery, a kitchen sitting area, and a room where shoes come off at the door are the right rooms. A formal living room that wants a medallion still wants wool."
+        ]
+      }
+    ],
+    "relatedProductSlugs": [
+      "cloud-washable",
+      "stone-stripe-washable"
+    ],
+    "relatedServiceSlug": "rug-cleaning"
+  },
+  {
+    "id": "post-004",
+    "slug": "furniture-that-sits-with-a-rug",
+    "title": "Furniture that sits with a rug",
+    "excerpt": "Front legs on the rug, the coffee table fully on it, and a side table that does not cover the border.",
+    "author": "Wool & Loom Studio",
+    "readMinutes": 6,
+    "publishedAt": "2026-05-20",
+    "category": "Rooms",
+    "sections": [
+      {
+        "heading": "One rug for the seating group",
+        "paragraphs": [
+          "The sofa, the chairs, and the coffee table should share a rug. Splitting them onto bare floor makes the room look unfinished even when the furniture is good.",
+          "A seven-foot sofa with a four-foot table usually wants an 8 by 10. Add two chairs and you are often at a 9 by 12."
+        ]
+      },
+      {
+        "heading": "Let the rug be the pattern",
+        "paragraphs": [
+          "A plain oak or travertine table shows more of the rug than a skirted one. Ivory boucle needs the rug to carry the color. A charcoal sofa can take a pale Oushak without a fight."
+        ]
+      }
+    ],
+    "relatedProductSlugs": [
+      "linen-lounge-sofa",
+      "oak-coffee-table",
+      "linen-lounge-chair"
+    ],
+    "relatedServiceSlug": "pickup-and-delivery"
+  },
+  {
+    "id": "post-005",
+    "slug": "which-warehouse-ships",
+    "title": "Which warehouse ships your rug",
+    "excerpt": "New Jersey, Georgia, Texas, and California each hold stock. The product page names the one that has the piece.",
+    "author": "Wool & Loom Studio",
+    "readMinutes": 5,
+    "publishedAt": "2026-06-09",
+    "category": "Shipping",
+    "sections": [
+      {
+        "heading": "Stock is in a building, not a promise",
+        "paragraphs": [
+          "If the page says New Jersey, the rug is in Elizabeth. Georgia is Fairburn, Texas is Grand Prairie, California is Ontario. We do not list a rug as in stock when it is still on the water.",
+          "Delivery days on the page are the warehouse window, such as 1–3 days from New Jersey. A city farther from that warehouse can add a transit day. The city pages say so."
+        ]
+      },
+      {
+        "heading": "Freight and stairs are different",
+        "paragraphs": [
+          "Standard freight is free on rugs over $1,500 in the continental United States. Stairs, a long carry, and furniture placement are quoted with pickup and delivery."
+        ]
+      }
+    ],
+    "relatedProductSlugs": [
+      "hereke-border",
+      "kars-hallway-runner"
+    ],
+    "relatedServiceSlug": "pickup-and-delivery"
+  },
+  {
+    "id": "post-006",
+    "slug": "when-not-to-cut-a-rug",
+    "title": "When not to cut a rug down",
+    "excerpt": "Custom sizing is for a wool rug that can lose an edge. It is not for a vintage piece or a medallion you would slice in half.",
+    "author": "Wool & Loom Studio",
+    "readMinutes": 6,
+    "publishedAt": "2026-07-22",
+    "category": "Sizing",
+    "sections": [
+      {
+        "heading": "Measure before you ask for a cut",
+        "paragraphs": [
+          "Send the clear floor in feet and inches. A cut is permanent. We would rather you buy the next stocked size than take an inch off a rug that did not need it."
+        ]
+      },
+      {
+        "heading": "What we will refuse",
+        "paragraphs": [
+          "We do not cut vintage rugs. We do not cut through a central medallion. If the pattern only works whole, the quote says no.",
+          "When a newer wool rug can be bound down, the quote is for the cut and the binding. The finished size is confirmed before it comes back."
+        ]
+      }
+    ],
+    "relatedProductSlugs": [
+      "konya-kilim",
+      "dosemealti-field"
+    ],
+    "relatedServiceSlug": "custom-sizing"
+  }
+]

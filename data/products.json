@@ -1,0 +1,3597 @@
+[
+  {
+    "id": "rug-001",
+    "slug": "pale-oushak-field",
+    "title": "Pale Oushak Field",
+    "type": "rug",
+    "category": "oushak",
+    "brand": "Wool & Loom",
+    "description": "Pale Oushak Field is a medium pile hand-knotted wool rug from Turkey. The ivory field is large enough that a linen sofa can sit anywhere on it. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 2480,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Ivory",
+        "hex": "#e7dccb"
+      },
+      {
+        "name": "Apricot",
+        "hex": "#c4896a"
+      },
+      {
+        "name": "Sage",
+        "hex": "#8a9178"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "9x12",
+        "widthFt": 9,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Open medallion",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "New Jersey",
+    "stock": 1,
+    "deliveryDays": "1-3",
+    "rating": 4.4,
+    "reviewCount": 6,
+    "tags": [
+      "oushak",
+      "open medallion",
+      "wool"
+    ],
+    "seoTitle": "Pale Oushak Field Turkish Rug",
+    "seoDescription": "Pale Oushak Field in wool, stocked at the Wool & Loom New Jersey warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-002",
+    "slug": "salon-oushak",
+    "title": "Salon Oushak",
+    "type": "rug",
+    "category": "oushak",
+    "brand": "Wool & Loom",
+    "description": "Salon Oushak is a medium pile hand-knotted wool rug from Turkey. A soft apricot medallion keeps a formal room from looking stiff. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 3120,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Ivory",
+        "hex": "#e7dccb"
+      },
+      {
+        "name": "Apricot",
+        "hex": "#c4896a"
+      },
+      {
+        "name": "Sage",
+        "hex": "#8a9178"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "6x9",
+        "widthFt": 6,
+        "lengthFt": 9
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "10x14",
+        "widthFt": 10,
+        "lengthFt": 14
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Floral medallion",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "Georgia",
+    "stock": 2,
+    "deliveryDays": "2-4",
+    "rating": 4.5,
+    "reviewCount": 7,
+    "tags": [
+      "oushak",
+      "floral medallion",
+      "wool"
+    ],
+    "seoTitle": "Salon Oushak Turkish Rug",
+    "seoDescription": "Salon Oushak in wool, stocked at the Wool & Loom Georgia warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-003",
+    "slug": "apricot-oushak",
+    "title": "Apricot Oushak",
+    "type": "rug",
+    "category": "oushak",
+    "brand": "Wool & Loom",
+    "description": "Apricot Oushak is a medium pile hand-knotted wool rug from Turkey. The apricot ground warms oak floors without turning the room orange. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 2760,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Ivory",
+        "hex": "#e7dccb"
+      },
+      {
+        "name": "Apricot",
+        "hex": "#c4896a"
+      },
+      {
+        "name": "Sage",
+        "hex": "#8a9178"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "4x6",
+        "widthFt": 4,
+        "lengthFt": 6
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "9x12",
+        "widthFt": 9,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "All-over floral",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "Texas",
+    "stock": 3,
+    "deliveryDays": "2-5",
+    "rating": 4.6,
+    "reviewCount": 8,
+    "tags": [
+      "oushak",
+      "all-over floral",
+      "wool"
+    ],
+    "seoTitle": "Apricot Oushak Turkish Rug",
+    "seoDescription": "Apricot Oushak in wool, stocked at the Wool & Loom Texas warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-004",
+    "slug": "ivory-oushak-medallion",
+    "title": "Ivory Oushak Medallion",
+    "type": "rug",
+    "category": "oushak",
+    "brand": "Wool & Loom",
+    "description": "Ivory Oushak Medallion is a medium pile hand-knotted wool rug from Turkey. The medallion is centered for a sofa that faces the long side of the room. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 3340,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "saleOff": 0.12,
+    "images": [],
+    "colors": [
+      {
+        "name": "Ivory",
+        "hex": "#e7dccb"
+      },
+      {
+        "name": "Apricot",
+        "hex": "#c4896a"
+      },
+      {
+        "name": "Sage",
+        "hex": "#8a9178"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "3x5",
+        "widthFt": 3,
+        "lengthFt": 5
+      },
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Central medallion",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "California",
+    "stock": 4,
+    "deliveryDays": "3-5",
+    "rating": 4.7,
+    "reviewCount": 9,
+    "tags": [
+      "oushak",
+      "central medallion",
+      "wool"
+    ],
+    "seoTitle": "Ivory Oushak Medallion Turkish Rug",
+    "seoDescription": "Ivory Oushak Medallion in wool, stocked at the Wool & Loom California warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-005",
+    "slug": "faded-rose-oushak",
+    "title": "Faded Rose Oushak",
+    "type": "rug",
+    "category": "oushak",
+    "brand": "Wool & Loom",
+    "description": "Faded Rose Oushak is a medium pile hand-knotted wool rug from Turkey. Rose shows up as a blush, not a print, so it works with mixed wood tones. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 2890,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Ivory",
+        "hex": "#e7dccb"
+      },
+      {
+        "name": "Apricot",
+        "hex": "#c4896a"
+      },
+      {
+        "name": "Sage",
+        "hex": "#8a9178"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "9x12",
+        "widthFt": 9,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Faded floral",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "New Jersey",
+    "stock": 1,
+    "deliveryDays": "1-3",
+    "rating": 4.8,
+    "reviewCount": 10,
+    "tags": [
+      "oushak",
+      "faded floral",
+      "wool"
+    ],
+    "seoTitle": "Faded Rose Oushak Turkish Rug",
+    "seoDescription": "Faded Rose Oushak in wool, stocked at the Wool & Loom New Jersey warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-006",
+    "slug": "sand-oushak-border",
+    "title": "Sand Oushak Border",
+    "type": "rug",
+    "category": "oushak",
+    "brand": "Wool & Loom",
+    "description": "Sand Oushak Border is a medium pile hand-knotted wool rug from Turkey. The sand border frames a dining table without a busy center. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 2210,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Ivory",
+        "hex": "#e7dccb"
+      },
+      {
+        "name": "Apricot",
+        "hex": "#c4896a"
+      },
+      {
+        "name": "Sage",
+        "hex": "#8a9178"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "6x9",
+        "widthFt": 6,
+        "lengthFt": 9
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "10x14",
+        "widthFt": 10,
+        "lengthFt": 14
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Bordered field",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "Georgia",
+    "stock": 2,
+    "deliveryDays": "2-4",
+    "rating": 4.9,
+    "reviewCount": 11,
+    "tags": [
+      "oushak",
+      "bordered field",
+      "wool"
+    ],
+    "seoTitle": "Sand Oushak Border Turkish Rug",
+    "seoDescription": "Sand Oushak Border in wool, stocked at the Wool & Loom Georgia warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-007",
+    "slug": "blue-corner-oushak",
+    "title": "Blue Corner Oushak",
+    "type": "rug",
+    "category": "oushak",
+    "brand": "Wool & Loom",
+    "description": "Blue Corner Oushak is a medium pile hand-knotted wool rug from Turkey. Indigo corners hold a pale room together when the furniture is simple. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 3580,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Ivory",
+        "hex": "#e7dccb"
+      },
+      {
+        "name": "Apricot",
+        "hex": "#c4896a"
+      },
+      {
+        "name": "Sage",
+        "hex": "#8a9178"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "4x6",
+        "widthFt": 4,
+        "lengthFt": 6
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "9x12",
+        "widthFt": 9,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Corner motifs",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "Texas",
+    "stock": 3,
+    "deliveryDays": "2-5",
+    "rating": 4.4,
+    "reviewCount": 12,
+    "tags": [
+      "oushak",
+      "corner motifs",
+      "wool"
+    ],
+    "seoTitle": "Blue Corner Oushak Turkish Rug",
+    "seoDescription": "Blue Corner Oushak in wool, stocked at the Wool & Loom Texas warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-008",
+    "slug": "honey-oushak",
+    "title": "Honey Oushak",
+    "type": "rug",
+    "category": "oushak",
+    "brand": "Wool & Loom",
+    "description": "Honey Oushak is a medium pile hand-knotted wool rug from Turkey. Honey and cream read as one tone from across a living room. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 2640,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Ivory",
+        "hex": "#e7dccb"
+      },
+      {
+        "name": "Apricot",
+        "hex": "#c4896a"
+      },
+      {
+        "name": "Sage",
+        "hex": "#8a9178"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "3x5",
+        "widthFt": 3,
+        "lengthFt": 5
+      },
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Warm field",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "California",
+    "stock": 4,
+    "deliveryDays": "3-5",
+    "rating": 4.5,
+    "reviewCount": 13,
+    "tags": [
+      "oushak",
+      "warm field",
+      "wool"
+    ],
+    "seoTitle": "Honey Oushak Turkish Rug",
+    "seoDescription": "Honey Oushak in wool, stocked at the Wool & Loom California warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-009",
+    "slug": "bergama-vintage",
+    "title": "Bergama Vintage",
+    "type": "rug",
+    "category": "vintage",
+    "brand": "Wool & Loom",
+    "description": "Bergama Vintage is a low pile hand-knotted wool rug from Turkey. The rust and indigo have already softened, which is the point of a vintage piece. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 4120,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Clay",
+        "hex": "#a15b45"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#3e4c66"
+      },
+      {
+        "name": "Sand",
+        "hex": "#cbbba4"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "9x12",
+        "widthFt": 9,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Low",
+    "style": "Worn geometric",
+    "room": [
+      "Living Room",
+      "Dining Room"
+    ],
+    "washable": false,
+    "warehouse": "New Jersey",
+    "stock": 1,
+    "deliveryDays": "1-3",
+    "rating": 4.6,
+    "reviewCount": 14,
+    "tags": [
+      "vintage",
+      "worn geometric",
+      "wool"
+    ],
+    "seoTitle": "Bergama Vintage Turkish Rug",
+    "seoDescription": "Bergama Vintage in wool, stocked at the Wool & Loom New Jersey warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-010",
+    "slug": "usak-worn-medallion",
+    "title": "Usak Worn Medallion",
+    "type": "rug",
+    "category": "vintage",
+    "brand": "Wool & Loom",
+    "description": "Usak Worn Medallion is a low pile hand-knotted wool rug from Turkey. The center medallion is low-contrast, so it does not compete with a dark sofa. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 4680,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Clay",
+        "hex": "#a15b45"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#3e4c66"
+      },
+      {
+        "name": "Sand",
+        "hex": "#cbbba4"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "6x9",
+        "widthFt": 6,
+        "lengthFt": 9
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "10x14",
+        "widthFt": 10,
+        "lengthFt": 14
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Low",
+    "style": "Worn medallion",
+    "room": [
+      "Living Room",
+      "Dining Room"
+    ],
+    "washable": false,
+    "warehouse": "Georgia",
+    "stock": 2,
+    "deliveryDays": "2-4",
+    "rating": 4.7,
+    "reviewCount": 15,
+    "tags": [
+      "vintage",
+      "worn medallion",
+      "wool"
+    ],
+    "seoTitle": "Usak Worn Medallion Turkish Rug",
+    "seoDescription": "Usak Worn Medallion in wool, stocked at the Wool & Loom Georgia warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-011",
+    "slug": "muted-heriz-vintage",
+    "title": "Muted Heriz Vintage",
+    "type": "rug",
+    "category": "vintage",
+    "brand": "Wool & Loom",
+    "description": "Muted Heriz Vintage is a low pile hand-knotted wool rug from Turkey. The corners are angular and the palette has been sun-faded to brick and sand. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 3920,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "saleOff": 0.1,
+    "images": [],
+    "colors": [
+      {
+        "name": "Clay",
+        "hex": "#a15b45"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#3e4c66"
+      },
+      {
+        "name": "Sand",
+        "hex": "#cbbba4"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "4x6",
+        "widthFt": 4,
+        "lengthFt": 6
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "9x12",
+        "widthFt": 9,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Low",
+    "style": "Heriz geometric",
+    "room": [
+      "Living Room",
+      "Dining Room"
+    ],
+    "washable": false,
+    "warehouse": "Texas",
+    "stock": 3,
+    "deliveryDays": "2-5",
+    "rating": 4.8,
+    "reviewCount": 16,
+    "tags": [
+      "vintage",
+      "heriz geometric",
+      "wool"
+    ],
+    "seoTitle": "Muted Heriz Vintage Turkish Rug",
+    "seoDescription": "Muted Heriz Vintage in wool, stocked at the Wool & Loom Texas warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-012",
+    "slug": "clay-vintage-field",
+    "title": "Clay Vintage Field",
+    "type": "rug",
+    "category": "vintage",
+    "brand": "Wool & Loom",
+    "description": "Clay Vintage Field is a low pile hand-knotted wool rug from Turkey. Clay and ivory do the work. There is no loud border to line up with the walls. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 3560,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Clay",
+        "hex": "#a15b45"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#3e4c66"
+      },
+      {
+        "name": "Sand",
+        "hex": "#cbbba4"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "3x5",
+        "widthFt": 3,
+        "lengthFt": 5
+      },
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Low",
+    "style": "Open field",
+    "room": [
+      "Living Room",
+      "Dining Room"
+    ],
+    "washable": false,
+    "warehouse": "California",
+    "stock": 4,
+    "deliveryDays": "3-5",
+    "rating": 4.9,
+    "reviewCount": 17,
+    "tags": [
+      "vintage",
+      "open field",
+      "wool"
+    ],
+    "seoTitle": "Clay Vintage Field Turkish Rug",
+    "seoDescription": "Clay Vintage Field in wool, stocked at the Wool & Loom California warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-013",
+    "slug": "smoke-vintage",
+    "title": "Smoke Vintage",
+    "type": "rug",
+    "category": "vintage",
+    "brand": "Wool & Loom",
+    "description": "Smoke Vintage is a low pile hand-knotted wool rug from Turkey. The pile shifts from charcoal to greige, which hides everyday traffic. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 4290,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Clay",
+        "hex": "#a15b45"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#3e4c66"
+      },
+      {
+        "name": "Sand",
+        "hex": "#cbbba4"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "9x12",
+        "widthFt": 9,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Low",
+    "style": "Abrashed field",
+    "room": [
+      "Living Room",
+      "Dining Room"
+    ],
+    "washable": false,
+    "warehouse": "New Jersey",
+    "stock": 1,
+    "deliveryDays": "1-3",
+    "rating": 4.4,
+    "reviewCount": 18,
+    "tags": [
+      "vintage",
+      "abrashed field",
+      "wool"
+    ],
+    "seoTitle": "Smoke Vintage Turkish Rug",
+    "seoDescription": "Smoke Vintage in wool, stocked at the Wool & Loom New Jersey warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-014",
+    "slug": "terracotta-vintage",
+    "title": "Terracotta Vintage",
+    "type": "rug",
+    "category": "vintage",
+    "brand": "Wool & Loom",
+    "description": "Terracotta Vintage is a low pile hand-knotted wool rug from Turkey. Terracotta stays earthy rather than bright, even in a south-facing room. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 3840,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Clay",
+        "hex": "#a15b45"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#3e4c66"
+      },
+      {
+        "name": "Sand",
+        "hex": "#cbbba4"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "6x9",
+        "widthFt": 6,
+        "lengthFt": 9
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "10x14",
+        "widthFt": 10,
+        "lengthFt": 14
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Low",
+    "style": "Tribal field",
+    "room": [
+      "Living Room",
+      "Dining Room"
+    ],
+    "washable": false,
+    "warehouse": "Georgia",
+    "stock": 2,
+    "deliveryDays": "2-4",
+    "rating": 4.5,
+    "reviewCount": 19,
+    "tags": [
+      "vintage",
+      "tribal field",
+      "wool"
+    ],
+    "seoTitle": "Terracotta Vintage Turkish Rug",
+    "seoDescription": "Terracotta Vintage in wool, stocked at the Wool & Loom Georgia warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-015",
+    "slug": "pearl-vintage",
+    "title": "Pearl Vintage",
+    "type": "rug",
+    "category": "vintage",
+    "brand": "Wool & Loom",
+    "description": "Pearl Vintage is a low pile hand-knotted wool rug from Turkey. Pearl and taupe let a marble or oak coffee table stay visible. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 4450,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Clay",
+        "hex": "#a15b45"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#3e4c66"
+      },
+      {
+        "name": "Sand",
+        "hex": "#cbbba4"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "4x6",
+        "widthFt": 4,
+        "lengthFt": 6
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "9x12",
+        "widthFt": 9,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Low",
+    "style": "Pale vintage",
+    "room": [
+      "Living Room",
+      "Dining Room"
+    ],
+    "washable": false,
+    "warehouse": "Texas",
+    "stock": 3,
+    "deliveryDays": "2-5",
+    "rating": 4.6,
+    "reviewCount": 20,
+    "tags": [
+      "vintage",
+      "pale vintage",
+      "wool"
+    ],
+    "seoTitle": "Pearl Vintage Turkish Rug",
+    "seoDescription": "Pearl Vintage in wool, stocked at the Wool & Loom Texas warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-016",
+    "slug": "olive-vintage",
+    "title": "Olive Vintage",
+    "type": "rug",
+    "category": "vintage",
+    "brand": "Wool & Loom",
+    "description": "Olive Vintage is a low pile hand-knotted wool rug from Turkey. Olive and brown sit quietly under a walnut table. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 3710,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Clay",
+        "hex": "#a15b45"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#3e4c66"
+      },
+      {
+        "name": "Sand",
+        "hex": "#cbbba4"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "3x5",
+        "widthFt": 3,
+        "lengthFt": 5
+      },
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Low",
+    "style": "Muted geometric",
+    "room": [
+      "Living Room",
+      "Dining Room"
+    ],
+    "washable": false,
+    "warehouse": "California",
+    "stock": 4,
+    "deliveryDays": "3-5",
+    "rating": 4.7,
+    "reviewCount": 21,
+    "tags": [
+      "vintage",
+      "muted geometric",
+      "wool"
+    ],
+    "seoTitle": "Olive Vintage Turkish Rug",
+    "seoDescription": "Olive Vintage in wool, stocked at the Wool & Loom California warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-017",
+    "slug": "kars-hallway-runner",
+    "title": "Kars Hallway Runner",
+    "type": "rug",
+    "category": "runner",
+    "brand": "Wool & Loom",
+    "description": "Kars Hallway Runner is a flatweave pile flatweave wool rug from Turkey. Cut for a hall. Keep at least two inches of floor on each long side. The listed price is for the 2 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 780,
+    "referenceWidthFt": 2,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Navy",
+        "hex": "#243044"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#efe6d6"
+      },
+      {
+        "name": "Brick",
+        "hex": "#8d4b3a"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x8",
+        "widthFt": 2,
+        "lengthFt": 8
+      },
+      {
+        "label": "2x10",
+        "widthFt": 2,
+        "lengthFt": 10
+      },
+      {
+        "label": "3x12",
+        "widthFt": 3,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Flatweave wool",
+    "origin": "Turkey",
+    "pile": "Flatweave",
+    "style": "Narrow geometric",
+    "room": [
+      "Hallway",
+      "Entry"
+    ],
+    "washable": false,
+    "warehouse": "New Jersey",
+    "stock": 1,
+    "deliveryDays": "1-3",
+    "rating": 4.8,
+    "reviewCount": 22,
+    "tags": [
+      "runner",
+      "narrow geometric",
+      "wool"
+    ],
+    "seoTitle": "Kars Hallway Runner Turkish Rug",
+    "seoDescription": "Kars Hallway Runner in wool, stocked at the Wool & Loom New Jersey warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-018",
+    "slug": "anatolian-stripe-runner",
+    "title": "Anatolian Stripe Runner",
+    "type": "rug",
+    "category": "runner",
+    "brand": "Wool & Loom",
+    "description": "Anatolian Stripe Runner is a flatweave pile flatweave wool rug from Turkey. The stripes run the length of the hall so the corridor feels longer, not busier. The listed price is for the 2 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 860,
+    "referenceWidthFt": 2,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Navy",
+        "hex": "#243044"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#efe6d6"
+      },
+      {
+        "name": "Brick",
+        "hex": "#8d4b3a"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x8",
+        "widthFt": 2,
+        "lengthFt": 8
+      },
+      {
+        "label": "2x10",
+        "widthFt": 2,
+        "lengthFt": 10
+      },
+      {
+        "label": "3x12",
+        "widthFt": 3,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Flatweave wool",
+    "origin": "Turkey",
+    "pile": "Flatweave",
+    "style": "Stripe",
+    "room": [
+      "Hallway",
+      "Entry"
+    ],
+    "washable": false,
+    "warehouse": "Georgia",
+    "stock": 2,
+    "deliveryDays": "2-4",
+    "rating": 4.9,
+    "reviewCount": 23,
+    "tags": [
+      "runner",
+      "stripe",
+      "wool"
+    ],
+    "seoTitle": "Anatolian Stripe Runner Turkish Rug",
+    "seoDescription": "Anatolian Stripe Runner in wool, stocked at the Wool & Loom Georgia warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-019",
+    "slug": "narrow-kilim-runner",
+    "title": "Narrow Kilim Runner",
+    "type": "rug",
+    "category": "runner",
+    "brand": "Wool & Loom",
+    "description": "Narrow Kilim Runner is a flatweave pile flatweave wool rug from Turkey. A flatweave runner is the practical choice where a door swings across the end. The listed price is for the 2 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 640,
+    "referenceWidthFt": 2,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Navy",
+        "hex": "#243044"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#efe6d6"
+      },
+      {
+        "name": "Brick",
+        "hex": "#8d4b3a"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x8",
+        "widthFt": 2,
+        "lengthFt": 8
+      },
+      {
+        "label": "2x10",
+        "widthFt": 2,
+        "lengthFt": 10
+      },
+      {
+        "label": "3x12",
+        "widthFt": 3,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Flatweave wool",
+    "origin": "Turkey",
+    "pile": "Flatweave",
+    "style": "Flatweave kilim",
+    "room": [
+      "Hallway",
+      "Entry"
+    ],
+    "washable": false,
+    "warehouse": "Texas",
+    "stock": 3,
+    "deliveryDays": "2-5",
+    "rating": 4.4,
+    "reviewCount": 6,
+    "tags": [
+      "runner",
+      "flatweave kilim",
+      "wool"
+    ],
+    "seoTitle": "Narrow Kilim Runner Turkish Rug",
+    "seoDescription": "Narrow Kilim Runner in wool, stocked at the Wool & Loom Texas warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-020",
+    "slug": "border-runner",
+    "title": "Border Runner",
+    "type": "rug",
+    "category": "runner",
+    "brand": "Wool & Loom",
+    "description": "Border Runner is a flatweave pile flatweave wool rug from Turkey. The border gives a plain hallway a finished edge without a center motif to center. The listed price is for the 2 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 920,
+    "referenceWidthFt": 2,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Navy",
+        "hex": "#243044"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#efe6d6"
+      },
+      {
+        "name": "Brick",
+        "hex": "#8d4b3a"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x8",
+        "widthFt": 2,
+        "lengthFt": 8
+      },
+      {
+        "label": "2x10",
+        "widthFt": 2,
+        "lengthFt": 10
+      },
+      {
+        "label": "3x12",
+        "widthFt": 3,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Flatweave wool",
+    "origin": "Turkey",
+    "pile": "Flatweave",
+    "style": "Bordered runner",
+    "room": [
+      "Hallway",
+      "Entry"
+    ],
+    "washable": false,
+    "warehouse": "California",
+    "stock": 4,
+    "deliveryDays": "3-5",
+    "rating": 4.5,
+    "reviewCount": 7,
+    "tags": [
+      "runner",
+      "bordered runner",
+      "wool"
+    ],
+    "seoTitle": "Border Runner Turkish Rug",
+    "seoDescription": "Border Runner in wool, stocked at the Wool & Loom California warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-021",
+    "slug": "faded-hall-runner",
+    "title": "Faded Hall Runner",
+    "type": "rug",
+    "category": "runner",
+    "brand": "Wool & Loom",
+    "description": "Faded Hall Runner is a flatweave pile flatweave wool rug from Turkey. The fade hides the scuff line that appears along a busy hall. The listed price is for the 2 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 740,
+    "referenceWidthFt": 2,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Navy",
+        "hex": "#243044"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#efe6d6"
+      },
+      {
+        "name": "Brick",
+        "hex": "#8d4b3a"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x8",
+        "widthFt": 2,
+        "lengthFt": 8
+      },
+      {
+        "label": "2x10",
+        "widthFt": 2,
+        "lengthFt": 10
+      },
+      {
+        "label": "3x12",
+        "widthFt": 3,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Flatweave wool",
+    "origin": "Turkey",
+    "pile": "Flatweave",
+    "style": "Faded runner",
+    "room": [
+      "Hallway",
+      "Entry"
+    ],
+    "washable": false,
+    "warehouse": "New Jersey",
+    "stock": 1,
+    "deliveryDays": "1-3",
+    "rating": 4.6,
+    "reviewCount": 8,
+    "tags": [
+      "runner",
+      "faded runner",
+      "wool"
+    ],
+    "seoTitle": "Faded Hall Runner Turkish Rug",
+    "seoDescription": "Faded Hall Runner in wool, stocked at the Wool & Loom New Jersey warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-022",
+    "slug": "navy-runner",
+    "title": "Navy Runner",
+    "type": "rug",
+    "category": "runner",
+    "brand": "Wool & Loom",
+    "description": "Navy Runner is a flatweave pile flatweave wool rug from Turkey. Navy grounds a light stair hall and does not show every footprint. The listed price is for the 2 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 810,
+    "referenceWidthFt": 2,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Navy",
+        "hex": "#243044"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#efe6d6"
+      },
+      {
+        "name": "Brick",
+        "hex": "#8d4b3a"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x8",
+        "widthFt": 2,
+        "lengthFt": 8
+      },
+      {
+        "label": "2x10",
+        "widthFt": 2,
+        "lengthFt": 10
+      },
+      {
+        "label": "3x12",
+        "widthFt": 3,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Flatweave wool",
+    "origin": "Turkey",
+    "pile": "Flatweave",
+    "style": "Navy field",
+    "room": [
+      "Hallway",
+      "Entry"
+    ],
+    "washable": false,
+    "warehouse": "Georgia",
+    "stock": 2,
+    "deliveryDays": "2-4",
+    "rating": 4.7,
+    "reviewCount": 9,
+    "tags": [
+      "runner",
+      "navy field",
+      "wool"
+    ],
+    "seoTitle": "Navy Runner Turkish Rug",
+    "seoDescription": "Navy Runner in wool, stocked at the Wool & Loom Georgia warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-023",
+    "slug": "cloud-washable",
+    "title": "Cloud Washable",
+    "type": "rug",
+    "category": "washable",
+    "brand": "Wool & Loom",
+    "description": "Cloud Washable is a low pile washable recycled polyester rug from Turkey. The pile is low and the backing is made to go in a home washer on cold. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 690,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "saleOff": 0.15,
+    "images": [],
+    "colors": [
+      {
+        "name": "Stone",
+        "hex": "#d7d1c7"
+      },
+      {
+        "name": "Clay",
+        "hex": "#c4a08a"
+      },
+      {
+        "name": "Cloud",
+        "hex": "#f3efe8"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x3",
+        "widthFt": 2,
+        "lengthFt": 3
+      },
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      }
+    ],
+    "material": "Washable recycled polyester",
+    "origin": "Turkey",
+    "pile": "Low",
+    "style": "Soft solid",
+    "room": [
+      "Bedroom",
+      "Dining Room"
+    ],
+    "washable": true,
+    "warehouse": "New Jersey",
+    "stock": 10,
+    "deliveryDays": "1-3",
+    "rating": 4.8,
+    "reviewCount": 10,
+    "tags": [
+      "washable",
+      "soft solid",
+      "washable"
+    ],
+    "seoTitle": "Cloud Washable Turkish Rug",
+    "seoDescription": "Cloud Washable in wool, stocked at the Wool & Loom New Jersey warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-024",
+    "slug": "stone-stripe-washable",
+    "title": "Stone Stripe Washable",
+    "type": "rug",
+    "category": "washable",
+    "brand": "Wool & Loom",
+    "description": "Stone Stripe Washable is a low pile washable recycled polyester rug from Turkey. Stone stripes hide crumbs under a dining table between washes. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 740,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Stone",
+        "hex": "#d7d1c7"
+      },
+      {
+        "name": "Clay",
+        "hex": "#c4a08a"
+      },
+      {
+        "name": "Cloud",
+        "hex": "#f3efe8"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x3",
+        "widthFt": 2,
+        "lengthFt": 3
+      },
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      }
+    ],
+    "material": "Washable recycled polyester",
+    "origin": "Turkey",
+    "pile": "Low",
+    "style": "Stripe",
+    "room": [
+      "Bedroom",
+      "Dining Room"
+    ],
+    "washable": true,
+    "warehouse": "Georgia",
+    "stock": 11,
+    "deliveryDays": "2-4",
+    "rating": 4.9,
+    "reviewCount": 11,
+    "tags": [
+      "washable",
+      "stripe",
+      "washable"
+    ],
+    "seoTitle": "Stone Stripe Washable Turkish Rug",
+    "seoDescription": "Stone Stripe Washable in wool, stocked at the Wool & Loom Georgia warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-025",
+    "slug": "nursery-washable",
+    "title": "Nursery Washable",
+    "type": "rug",
+    "category": "washable",
+    "brand": "Wool & Loom",
+    "description": "Nursery Washable is a low pile washable recycled polyester rug from Turkey. Sized for a nursery or a play corner, and made to be washed when it needs it. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 620,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Stone",
+        "hex": "#d7d1c7"
+      },
+      {
+        "name": "Clay",
+        "hex": "#c4a08a"
+      },
+      {
+        "name": "Cloud",
+        "hex": "#f3efe8"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x3",
+        "widthFt": 2,
+        "lengthFt": 3
+      },
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      }
+    ],
+    "material": "Washable recycled polyester",
+    "origin": "Turkey",
+    "pile": "Low",
+    "style": "Small-scale check",
+    "room": [
+      "Bedroom",
+      "Dining Room"
+    ],
+    "washable": true,
+    "warehouse": "Texas",
+    "stock": 12,
+    "deliveryDays": "2-5",
+    "rating": 4.4,
+    "reviewCount": 12,
+    "tags": [
+      "washable",
+      "small-scale check",
+      "washable"
+    ],
+    "seoTitle": "Nursery Washable Turkish Rug",
+    "seoDescription": "Nursery Washable in wool, stocked at the Wool & Loom Texas warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-026",
+    "slug": "checked-washable",
+    "title": "Checked Washable",
+    "type": "rug",
+    "category": "washable",
+    "brand": "Wool & Loom",
+    "description": "Checked Washable is a low pile washable recycled polyester rug from Turkey. The check is quiet enough for a kitchen sitting area. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 710,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Stone",
+        "hex": "#d7d1c7"
+      },
+      {
+        "name": "Clay",
+        "hex": "#c4a08a"
+      },
+      {
+        "name": "Cloud",
+        "hex": "#f3efe8"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x3",
+        "widthFt": 2,
+        "lengthFt": 3
+      },
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      }
+    ],
+    "material": "Washable recycled polyester",
+    "origin": "Turkey",
+    "pile": "Low",
+    "style": "Check",
+    "room": [
+      "Bedroom",
+      "Dining Room"
+    ],
+    "washable": true,
+    "warehouse": "California",
+    "stock": 8,
+    "deliveryDays": "3-5",
+    "rating": 4.5,
+    "reviewCount": 13,
+    "tags": [
+      "washable",
+      "check",
+      "washable"
+    ],
+    "seoTitle": "Checked Washable Turkish Rug",
+    "seoDescription": "Checked Washable in wool, stocked at the Wool & Loom California warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-027",
+    "slug": "soft-grid-washable",
+    "title": "Soft Grid Washable",
+    "type": "rug",
+    "category": "washable",
+    "brand": "Wool & Loom",
+    "description": "Soft Grid Washable is a low pile washable recycled polyester rug from Turkey. A grid reads as texture from the doorway and as a pattern up close. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 680,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Stone",
+        "hex": "#d7d1c7"
+      },
+      {
+        "name": "Clay",
+        "hex": "#c4a08a"
+      },
+      {
+        "name": "Cloud",
+        "hex": "#f3efe8"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x3",
+        "widthFt": 2,
+        "lengthFt": 3
+      },
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      }
+    ],
+    "material": "Washable recycled polyester",
+    "origin": "Turkey",
+    "pile": "Low",
+    "style": "Grid",
+    "room": [
+      "Bedroom",
+      "Dining Room"
+    ],
+    "washable": true,
+    "warehouse": "New Jersey",
+    "stock": 9,
+    "deliveryDays": "1-3",
+    "rating": 4.6,
+    "reviewCount": 14,
+    "tags": [
+      "washable",
+      "grid",
+      "washable"
+    ],
+    "seoTitle": "Soft Grid Washable Turkish Rug",
+    "seoDescription": "Soft Grid Washable in wool, stocked at the Wool & Loom New Jersey warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-028",
+    "slug": "clay-washable",
+    "title": "Clay Washable",
+    "type": "rug",
+    "category": "washable",
+    "brand": "Wool & Loom",
+    "description": "Clay Washable is a low pile washable recycled polyester rug from Turkey. Clay is practical in a family room where shoes come off at the door. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 760,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Stone",
+        "hex": "#d7d1c7"
+      },
+      {
+        "name": "Clay",
+        "hex": "#c4a08a"
+      },
+      {
+        "name": "Cloud",
+        "hex": "#f3efe8"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x3",
+        "widthFt": 2,
+        "lengthFt": 3
+      },
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      }
+    ],
+    "material": "Washable recycled polyester",
+    "origin": "Turkey",
+    "pile": "Low",
+    "style": "Tonal field",
+    "room": [
+      "Bedroom",
+      "Dining Room"
+    ],
+    "washable": true,
+    "warehouse": "Georgia",
+    "stock": 10,
+    "deliveryDays": "2-4",
+    "rating": 4.7,
+    "reviewCount": 15,
+    "tags": [
+      "washable",
+      "tonal field",
+      "washable"
+    ],
+    "seoTitle": "Clay Washable Turkish Rug",
+    "seoDescription": "Clay Washable in wool, stocked at the Wool & Loom Georgia warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-029",
+    "slug": "sivas-medallion",
+    "title": "Sivas Medallion",
+    "type": "rug",
+    "category": "turkish",
+    "brand": "Wool & Loom",
+    "description": "Sivas Medallion is a medium pile hand-knotted wool rug from Turkey. A classic Sivas medallion, with the border kept narrow so the field stays open. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 2980,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Brick",
+        "hex": "#8e3d32"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#f0e6d4"
+      },
+      {
+        "name": "Navy",
+        "hex": "#1e2a44"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "9x12",
+        "widthFt": 9,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Medallion",
+    "room": [
+      "Living Room",
+      "Office"
+    ],
+    "washable": false,
+    "warehouse": "New Jersey",
+    "stock": 1,
+    "deliveryDays": "1-3",
+    "rating": 4.8,
+    "reviewCount": 16,
+    "tags": [
+      "turkish",
+      "medallion",
+      "wool"
+    ],
+    "seoTitle": "Sivas Medallion Turkish Rug",
+    "seoDescription": "Sivas Medallion in wool, stocked at the Wool & Loom New Jersey warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-030",
+    "slug": "hereke-border",
+    "title": "Hereke Border",
+    "type": "rug",
+    "category": "turkish",
+    "brand": "Wool & Loom",
+    "description": "Hereke Border is a medium pile hand-knotted wool rug from Turkey. The border is detailed and the field is calm, which is how a Hereke-style rug earns a formal room. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 3640,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Brick",
+        "hex": "#8e3d32"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#f0e6d4"
+      },
+      {
+        "name": "Navy",
+        "hex": "#1e2a44"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "6x9",
+        "widthFt": 6,
+        "lengthFt": 9
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "10x14",
+        "widthFt": 10,
+        "lengthFt": 14
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Fine border",
+    "room": [
+      "Living Room",
+      "Office"
+    ],
+    "washable": false,
+    "warehouse": "Georgia",
+    "stock": 2,
+    "deliveryDays": "2-4",
+    "rating": 4.9,
+    "reviewCount": 17,
+    "tags": [
+      "turkish",
+      "fine border",
+      "wool"
+    ],
+    "seoTitle": "Hereke Border Turkish Rug",
+    "seoDescription": "Hereke Border in wool, stocked at the Wool & Loom Georgia warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-031",
+    "slug": "konya-kilim",
+    "title": "Konya Kilim",
+    "type": "rug",
+    "category": "turkish",
+    "brand": "Wool & Loom",
+    "description": "Konya Kilim is a medium pile hand-knotted wool rug from Turkey. Flatwoven wool from the Konya tradition. It lies flat where a thick pile would fight a door. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 2140,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Brick",
+        "hex": "#8e3d32"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#f0e6d4"
+      },
+      {
+        "name": "Navy",
+        "hex": "#1e2a44"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "4x6",
+        "widthFt": 4,
+        "lengthFt": 6
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "9x12",
+        "widthFt": 9,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Kilim",
+    "room": [
+      "Living Room",
+      "Office"
+    ],
+    "washable": false,
+    "warehouse": "Texas",
+    "stock": 3,
+    "deliveryDays": "2-5",
+    "rating": 4.4,
+    "reviewCount": 18,
+    "tags": [
+      "turkish",
+      "kilim",
+      "wool"
+    ],
+    "seoTitle": "Konya Kilim Turkish Rug",
+    "seoDescription": "Konya Kilim in wool, stocked at the Wool & Loom Texas warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-032",
+    "slug": "milas-geometric",
+    "title": "Milas Geometric",
+    "type": "rug",
+    "category": "turkish",
+    "brand": "Wool & Loom",
+    "description": "Milas Geometric is a medium pile hand-knotted wool rug from Turkey. Milas geometry is bold in the sample book and measured once it is on the floor. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 2460,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Brick",
+        "hex": "#8e3d32"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#f0e6d4"
+      },
+      {
+        "name": "Navy",
+        "hex": "#1e2a44"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "3x5",
+        "widthFt": 3,
+        "lengthFt": 5
+      },
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Geometric",
+    "room": [
+      "Living Room",
+      "Office"
+    ],
+    "washable": false,
+    "warehouse": "California",
+    "stock": 4,
+    "deliveryDays": "3-5",
+    "rating": 4.5,
+    "reviewCount": 19,
+    "tags": [
+      "turkish",
+      "geometric",
+      "wool"
+    ],
+    "seoTitle": "Milas Geometric Turkish Rug",
+    "seoDescription": "Milas Geometric in wool, stocked at the Wool & Loom California warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-033",
+    "slug": "dosemealti-field",
+    "title": "Dosemealti Field",
+    "type": "rug",
+    "category": "turkish",
+    "brand": "Wool & Loom",
+    "description": "Dosemealti Field is a medium pile hand-knotted wool rug from Turkey. The field is the point. Use it when the furniture already has pattern. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 2720,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Brick",
+        "hex": "#8e3d32"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#f0e6d4"
+      },
+      {
+        "name": "Navy",
+        "hex": "#1e2a44"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "9x12",
+        "widthFt": 9,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Open field",
+    "room": [
+      "Living Room",
+      "Office"
+    ],
+    "washable": false,
+    "warehouse": "New Jersey",
+    "stock": 1,
+    "deliveryDays": "1-3",
+    "rating": 4.6,
+    "reviewCount": 20,
+    "tags": [
+      "turkish",
+      "open field",
+      "wool"
+    ],
+    "seoTitle": "Dosemealti Field Turkish Rug",
+    "seoDescription": "Dosemealti Field in wool, stocked at the Wool & Loom New Jersey warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-034",
+    "slug": "yahyali-medallion",
+    "title": "Yahyali Medallion",
+    "type": "rug",
+    "category": "turkish",
+    "brand": "Wool & Loom",
+    "description": "Yahyali Medallion is a medium pile hand-knotted wool rug from Turkey. A Yahyali medallion with a brick-red ground that still feels lived-in. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 3180,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Brick",
+        "hex": "#8e3d32"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#f0e6d4"
+      },
+      {
+        "name": "Navy",
+        "hex": "#1e2a44"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "6x9",
+        "widthFt": 6,
+        "lengthFt": 9
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "10x14",
+        "widthFt": 10,
+        "lengthFt": 14
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Medallion",
+    "room": [
+      "Living Room",
+      "Office"
+    ],
+    "washable": false,
+    "warehouse": "Georgia",
+    "stock": 2,
+    "deliveryDays": "2-4",
+    "rating": 4.7,
+    "reviewCount": 21,
+    "tags": [
+      "turkish",
+      "medallion",
+      "wool"
+    ],
+    "seoTitle": "Yahyali Medallion Turkish Rug",
+    "seoDescription": "Yahyali Medallion in wool, stocked at the Wool & Loom Georgia warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-035",
+    "slug": "library-medallion",
+    "title": "Library Medallion",
+    "type": "rug",
+    "category": "persian-style",
+    "brand": "Wool & Loom",
+    "description": "Library Medallion is a medium pile hand-knotted wool rug from Turkey. Persian-style drawing, woven in Turkey, with a medallion scaled for a library or study. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 3520,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "saleOff": 0.08,
+    "images": [],
+    "colors": [
+      {
+        "name": "Indigo",
+        "hex": "#2c3e5a"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#f4ecdf"
+      },
+      {
+        "name": "Ruby",
+        "hex": "#7a2f38"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "4x6",
+        "widthFt": 4,
+        "lengthFt": 6
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "9x12",
+        "widthFt": 9,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Persian-style medallion",
+    "room": [
+      "Living Room",
+      "Office"
+    ],
+    "washable": false,
+    "warehouse": "Texas",
+    "stock": 3,
+    "deliveryDays": "2-5",
+    "rating": 4.8,
+    "reviewCount": 22,
+    "tags": [
+      "persian-style",
+      "persian-style medallion",
+      "wool"
+    ],
+    "seoTitle": "Library Medallion Turkish Rug",
+    "seoDescription": "Library Medallion in wool, stocked at the Wool & Loom Texas warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-036",
+    "slug": "garden-persian-style",
+    "title": "Garden Persian-Style",
+    "type": "rug",
+    "category": "persian-style",
+    "brand": "Wool & Loom",
+    "description": "Garden Persian-Style is a medium pile hand-knotted wool rug from Turkey. A garden layout in wool, not a print, with ivory paths between the motifs. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 3890,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Indigo",
+        "hex": "#2c3e5a"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#f4ecdf"
+      },
+      {
+        "name": "Ruby",
+        "hex": "#7a2f38"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "3x5",
+        "widthFt": 3,
+        "lengthFt": 5
+      },
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Garden",
+    "room": [
+      "Living Room",
+      "Office"
+    ],
+    "washable": false,
+    "warehouse": "California",
+    "stock": 4,
+    "deliveryDays": "3-5",
+    "rating": 4.9,
+    "reviewCount": 23,
+    "tags": [
+      "persian-style",
+      "garden",
+      "wool"
+    ],
+    "seoTitle": "Garden Persian-Style Turkish Rug",
+    "seoDescription": "Garden Persian-Style in wool, stocked at the Wool & Loom California warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-037",
+    "slug": "indigo-persian-style",
+    "title": "Indigo Persian-Style",
+    "type": "rug",
+    "category": "persian-style",
+    "brand": "Wool & Loom",
+    "description": "Indigo Persian-Style is a medium pile hand-knotted wool rug from Turkey. Indigo is the ground. The medallion is ivory, so it stays readable at night. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 3360,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Indigo",
+        "hex": "#2c3e5a"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#f4ecdf"
+      },
+      {
+        "name": "Ruby",
+        "hex": "#7a2f38"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "9x12",
+        "widthFt": 9,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Indigo medallion",
+    "room": [
+      "Living Room",
+      "Office"
+    ],
+    "washable": false,
+    "warehouse": "New Jersey",
+    "stock": 1,
+    "deliveryDays": "1-3",
+    "rating": 4.4,
+    "reviewCount": 6,
+    "tags": [
+      "persian-style",
+      "indigo medallion",
+      "wool"
+    ],
+    "seoTitle": "Indigo Persian-Style Turkish Rug",
+    "seoDescription": "Indigo Persian-Style in wool, stocked at the Wool & Loom New Jersey warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-038",
+    "slug": "cream-heriz-style",
+    "title": "Cream Heriz-Style",
+    "type": "rug",
+    "category": "persian-style",
+    "brand": "Wool & Loom",
+    "description": "Cream Heriz-Style is a medium pile hand-knotted wool rug from Turkey. Heriz-style corners on a cream field. The geometry is structural, not fussy. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 3010,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Indigo",
+        "hex": "#2c3e5a"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#f4ecdf"
+      },
+      {
+        "name": "Ruby",
+        "hex": "#7a2f38"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "6x9",
+        "widthFt": 6,
+        "lengthFt": 9
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "10x14",
+        "widthFt": 10,
+        "lengthFt": 14
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Heriz-style",
+    "room": [
+      "Living Room",
+      "Office"
+    ],
+    "washable": false,
+    "warehouse": "Georgia",
+    "stock": 2,
+    "deliveryDays": "2-4",
+    "rating": 4.5,
+    "reviewCount": 7,
+    "tags": [
+      "persian-style",
+      "heriz-style",
+      "wool"
+    ],
+    "seoTitle": "Cream Heriz-Style Turkish Rug",
+    "seoDescription": "Cream Heriz-Style in wool, stocked at the Wool & Loom Georgia warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-039",
+    "slug": "ruby-medallion",
+    "title": "Ruby Medallion",
+    "type": "rug",
+    "category": "persian-style",
+    "brand": "Wool & Loom",
+    "description": "Ruby Medallion is a medium pile hand-knotted wool rug from Turkey. Ruby is deep rather than scarlet, which is why it sits with walnut and blackened steel. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 4280,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Indigo",
+        "hex": "#2c3e5a"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#f4ecdf"
+      },
+      {
+        "name": "Ruby",
+        "hex": "#7a2f38"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "4x6",
+        "widthFt": 4,
+        "lengthFt": 6
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      },
+      {
+        "label": "9x12",
+        "widthFt": 9,
+        "lengthFt": 12
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "Medallion",
+    "room": [
+      "Living Room",
+      "Office"
+    ],
+    "washable": false,
+    "warehouse": "Texas",
+    "stock": 3,
+    "deliveryDays": "2-5",
+    "rating": 4.6,
+    "reviewCount": 8,
+    "tags": [
+      "persian-style",
+      "medallion",
+      "wool"
+    ],
+    "seoTitle": "Ruby Medallion Turkish Rug",
+    "seoDescription": "Ruby Medallion in wool, stocked at the Wool & Loom Texas warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "rug-040",
+    "slug": "sage-persian-style",
+    "title": "Sage Persian-Style",
+    "type": "rug",
+    "category": "persian-style",
+    "brand": "Wool & Loom",
+    "description": "Sage Persian-Style is a medium pile hand-knotted wool rug from Turkey. Sage and ivory all-over pattern for a bedroom that does not want a single medallion. The listed price is for the 8 by 10 foot size. Larger sizes are priced by area, so an 8 by 10 costs more than a 5 by 7 of the same design. Measure the clear floor in feet and inches, and leave a border of bare floor at the walls.",
+    "basePrice": 2940,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 10,
+    "images": [],
+    "colors": [
+      {
+        "name": "Indigo",
+        "hex": "#2c3e5a"
+      },
+      {
+        "name": "Ivory",
+        "hex": "#f4ecdf"
+      },
+      {
+        "name": "Ruby",
+        "hex": "#7a2f38"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "3x5",
+        "widthFt": 3,
+        "lengthFt": 5
+      },
+      {
+        "label": "5x7",
+        "widthFt": 5,
+        "lengthFt": 7
+      },
+      {
+        "label": "8x10",
+        "widthFt": 8,
+        "lengthFt": 10
+      }
+    ],
+    "material": "Hand-knotted wool",
+    "origin": "Turkey",
+    "pile": "Medium",
+    "style": "All-over",
+    "room": [
+      "Living Room",
+      "Office"
+    ],
+    "washable": false,
+    "warehouse": "California",
+    "stock": 4,
+    "deliveryDays": "3-5",
+    "rating": 4.7,
+    "reviewCount": 9,
+    "tags": [
+      "persian-style",
+      "all-over",
+      "wool"
+    ],
+    "seoTitle": "Sage Persian-Style Turkish Rug",
+    "seoDescription": "Sage Persian-Style in wool, stocked at the Wool & Loom California warehouse. Sizes in feet, priced by area."
+  },
+  {
+    "id": "furn-001",
+    "slug": "linen-lounge-sofa",
+    "title": "Linen Lounge Sofa",
+    "type": "furniture",
+    "category": "sofas",
+    "brand": "Wool & Loom",
+    "description": "Linen Lounge Sofa is made to sit with a rug, not on bare floor alone. Seven feet wide, which leaves a path on either side of an 8 by 10 rug. Dimensions are about 7 by 3 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 3480,
+    "referenceWidthFt": 7,
+    "referenceLengthFt": 3,
+    "images": [],
+    "colors": [
+      {
+        "name": "Ivory",
+        "hex": "#f3efe6"
+      },
+      {
+        "name": "Camel",
+        "hex": "#c4a574"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "7x3",
+        "widthFt": 7,
+        "lengthFt": 3
+      }
+    ],
+    "material": "Performance linen",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Loose back",
+    "room": [
+      "Living Room"
+    ],
+    "washable": false,
+    "warehouse": "New Jersey",
+    "stock": 2,
+    "deliveryDays": "1-3",
+    "rating": 4.5,
+    "reviewCount": 4,
+    "tags": [
+      "sofas",
+      "performance linen"
+    ],
+    "seoTitle": "Linen Lounge Sofa",
+    "seoDescription": "Linen Lounge Sofa in performance linen, stocked at the Wool & Loom New Jersey warehouse."
+  },
+  {
+    "id": "furn-002",
+    "slug": "oak-track-sofa",
+    "title": "Oak Track Sofa",
+    "type": "furniture",
+    "category": "sofas",
+    "brand": "Wool & Loom",
+    "description": "Oak Track Sofa is made to sit with a rug, not on bare floor alone. The track arm is low so it does not hide a medallion rug behind it. Dimensions are about 6 by 3 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 2890,
+    "referenceWidthFt": 6,
+    "referenceLengthFt": 3,
+    "images": [],
+    "colors": [
+      {
+        "name": "Ivory",
+        "hex": "#f3efe6"
+      },
+      {
+        "name": "Camel",
+        "hex": "#c4a574"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "6x3",
+        "widthFt": 6,
+        "lengthFt": 3
+      }
+    ],
+    "material": "Oak frame and linen",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Track arm",
+    "room": [
+      "Living Room"
+    ],
+    "washable": false,
+    "warehouse": "Georgia",
+    "stock": 3,
+    "deliveryDays": "2-4",
+    "rating": 4.6,
+    "reviewCount": 5,
+    "tags": [
+      "sofas",
+      "oak frame and linen"
+    ],
+    "seoTitle": "Oak Track Sofa",
+    "seoDescription": "Oak Track Sofa in oak frame and linen, stocked at the Wool & Loom Georgia warehouse."
+  },
+  {
+    "id": "furn-003",
+    "slug": "ivory-boucle-sofa",
+    "title": "Ivory Boucle Sofa",
+    "type": "furniture",
+    "category": "sofas",
+    "brand": "Wool & Loom",
+    "description": "Ivory Boucle Sofa is made to sit with a rug, not on bare floor alone. Ivory boucle wants a rug with some color, or the room goes blank. Dimensions are about 8 by 3 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 4120,
+    "referenceWidthFt": 8,
+    "referenceLengthFt": 3,
+    "saleOff": 0.1,
+    "images": [],
+    "colors": [
+      {
+        "name": "Ivory",
+        "hex": "#f3efe6"
+      },
+      {
+        "name": "Camel",
+        "hex": "#c4a574"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "8x3",
+        "widthFt": 8,
+        "lengthFt": 3
+      }
+    ],
+    "material": "Boucle upholstery",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Boucle",
+    "room": [
+      "Living Room"
+    ],
+    "washable": false,
+    "warehouse": "Texas",
+    "stock": 4,
+    "deliveryDays": "2-5",
+    "rating": 4.7,
+    "reviewCount": 6,
+    "tags": [
+      "sofas",
+      "boucle upholstery"
+    ],
+    "seoTitle": "Ivory Boucle Sofa",
+    "seoDescription": "Ivory Boucle Sofa in boucle upholstery, stocked at the Wool & Loom Texas warehouse."
+  },
+  {
+    "id": "furn-004",
+    "slug": "walnut-shelter-sofa",
+    "title": "Walnut Shelter Sofa",
+    "type": "furniture",
+    "category": "sofas",
+    "brand": "Wool & Loom",
+    "description": "Walnut Shelter Sofa is made to sit with a rug, not on bare floor alone. Shelter arms frame two people and still fit on a 9 by 12. Dimensions are about 7 by 3 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 3760,
+    "referenceWidthFt": 7,
+    "referenceLengthFt": 3,
+    "images": [],
+    "colors": [
+      {
+        "name": "Ivory",
+        "hex": "#f3efe6"
+      },
+      {
+        "name": "Camel",
+        "hex": "#c4a574"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "7x3",
+        "widthFt": 7,
+        "lengthFt": 3
+      }
+    ],
+    "material": "Walnut legs and wool blend",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Shelter arm",
+    "room": [
+      "Living Room"
+    ],
+    "washable": false,
+    "warehouse": "California",
+    "stock": 5,
+    "deliveryDays": "3-5",
+    "rating": 4.8,
+    "reviewCount": 7,
+    "tags": [
+      "sofas",
+      "walnut legs and wool blend"
+    ],
+    "seoTitle": "Walnut Shelter Sofa",
+    "seoDescription": "Walnut Shelter Sofa in walnut legs and wool blend, stocked at the Wool & Loom California warehouse."
+  },
+  {
+    "id": "furn-005",
+    "slug": "camel-slipcover-sofa",
+    "title": "Camel Slipcover Sofa",
+    "type": "furniture",
+    "category": "sofas",
+    "brand": "Wool & Loom",
+    "description": "Camel Slipcover Sofa is made to sit with a rug, not on bare floor alone. The slipcover comes off. The camel tone sits with apricot and sand rugs. Dimensions are about 7 by 3 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 2640,
+    "referenceWidthFt": 7,
+    "referenceLengthFt": 3,
+    "images": [],
+    "colors": [
+      {
+        "name": "Ivory",
+        "hex": "#f3efe6"
+      },
+      {
+        "name": "Camel",
+        "hex": "#c4a574"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "7x3",
+        "widthFt": 7,
+        "lengthFt": 3
+      }
+    ],
+    "material": "Washable slipcover",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Slipcover",
+    "room": [
+      "Living Room"
+    ],
+    "washable": false,
+    "warehouse": "New Jersey",
+    "stock": 2,
+    "deliveryDays": "1-3",
+    "rating": 4.9,
+    "reviewCount": 8,
+    "tags": [
+      "sofas",
+      "washable slipcover"
+    ],
+    "seoTitle": "Camel Slipcover Sofa",
+    "seoDescription": "Camel Slipcover Sofa in washable slipcover, stocked at the Wool & Loom New Jersey warehouse."
+  },
+  {
+    "id": "furn-006",
+    "slug": "charcoal-apartment-sofa",
+    "title": "Charcoal Apartment Sofa",
+    "type": "furniture",
+    "category": "sofas",
+    "brand": "Wool & Loom",
+    "description": "Charcoal Apartment Sofa is made to sit with a rug, not on bare floor alone. Scaled for a smaller living room and a 6 by 9 or 8 by 10 rug. Dimensions are about 6 by 3 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 2380,
+    "referenceWidthFt": 6,
+    "referenceLengthFt": 3,
+    "images": [],
+    "colors": [
+      {
+        "name": "Ivory",
+        "hex": "#f3efe6"
+      },
+      {
+        "name": "Camel",
+        "hex": "#c4a574"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "6x3",
+        "widthFt": 6,
+        "lengthFt": 3
+      }
+    ],
+    "material": "Performance weave",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Apartment scale",
+    "room": [
+      "Living Room"
+    ],
+    "washable": false,
+    "warehouse": "Georgia",
+    "stock": 3,
+    "deliveryDays": "2-4",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "tags": [
+      "sofas",
+      "performance weave"
+    ],
+    "seoTitle": "Charcoal Apartment Sofa",
+    "seoDescription": "Charcoal Apartment Sofa in performance weave, stocked at the Wool & Loom Georgia warehouse."
+  },
+  {
+    "id": "furn-007",
+    "slug": "oak-coffee-table",
+    "title": "Oak Coffee Table",
+    "type": "furniture",
+    "category": "coffee-tables",
+    "brand": "Wool & Loom",
+    "description": "Oak Coffee Table is made to sit with a rug, not on bare floor alone. Forty-eight inches long, meant to sit fully on the rug in front of a sofa. Dimensions are about 4 by 2 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 980,
+    "referenceWidthFt": 4,
+    "referenceLengthFt": 2,
+    "images": [],
+    "colors": [
+      {
+        "name": "Oak",
+        "hex": "#c4a574"
+      },
+      {
+        "name": "Walnut",
+        "hex": "#6b4a32"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "4x2",
+        "widthFt": 4,
+        "lengthFt": 2
+      }
+    ],
+    "material": "White oak",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Plank top",
+    "room": [
+      "Living Room"
+    ],
+    "washable": false,
+    "warehouse": "Texas",
+    "stock": 4,
+    "deliveryDays": "2-5",
+    "rating": 4.6,
+    "reviewCount": 10,
+    "tags": [
+      "coffee-tables",
+      "white oak"
+    ],
+    "seoTitle": "Oak Coffee Table",
+    "seoDescription": "Oak Coffee Table in white oak, stocked at the Wool & Loom Texas warehouse."
+  },
+  {
+    "id": "furn-008",
+    "slug": "travertine-coffee-table",
+    "title": "Travertine Coffee Table",
+    "type": "furniture",
+    "category": "coffee-tables",
+    "brand": "Wool & Loom",
+    "description": "Travertine Coffee Table is made to sit with a rug, not on bare floor alone. The stone top is honed, not polished, so it does not glare on a pale rug. Dimensions are about 4 by 2 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 1480,
+    "referenceWidthFt": 4,
+    "referenceLengthFt": 2,
+    "images": [],
+    "colors": [
+      {
+        "name": "Oak",
+        "hex": "#c4a574"
+      },
+      {
+        "name": "Walnut",
+        "hex": "#6b4a32"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "4x2",
+        "widthFt": 4,
+        "lengthFt": 2
+      }
+    ],
+    "material": "Travertine and oak",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Stone top",
+    "room": [
+      "Living Room"
+    ],
+    "washable": false,
+    "warehouse": "California",
+    "stock": 5,
+    "deliveryDays": "3-5",
+    "rating": 4.7,
+    "reviewCount": 11,
+    "tags": [
+      "coffee-tables",
+      "travertine and oak"
+    ],
+    "seoTitle": "Travertine Coffee Table",
+    "seoDescription": "Travertine Coffee Table in travertine and oak, stocked at the Wool & Loom California warehouse."
+  },
+  {
+    "id": "furn-009",
+    "slug": "walnut-oval-coffee-table",
+    "title": "Walnut Oval Coffee Table",
+    "type": "furniture",
+    "category": "coffee-tables",
+    "brand": "Wool & Loom",
+    "description": "Walnut Oval Coffee Table is made to sit with a rug, not on bare floor alone. An oval keeps knees off sharp corners when the sofa and chairs share one rug. Dimensions are about 4 by 2 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 1240,
+    "referenceWidthFt": 4,
+    "referenceLengthFt": 2,
+    "saleOff": 0.12,
+    "images": [],
+    "colors": [
+      {
+        "name": "Oak",
+        "hex": "#c4a574"
+      },
+      {
+        "name": "Walnut",
+        "hex": "#6b4a32"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "4x2",
+        "widthFt": 4,
+        "lengthFt": 2
+      }
+    ],
+    "material": "Walnut",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Oval",
+    "room": [
+      "Living Room"
+    ],
+    "washable": false,
+    "warehouse": "New Jersey",
+    "stock": 2,
+    "deliveryDays": "1-3",
+    "rating": 4.8,
+    "reviewCount": 12,
+    "tags": [
+      "coffee-tables",
+      "walnut"
+    ],
+    "seoTitle": "Walnut Oval Coffee Table",
+    "seoDescription": "Walnut Oval Coffee Table in walnut, stocked at the Wool & Loom New Jersey warehouse."
+  },
+  {
+    "id": "furn-010",
+    "slug": "blackened-steel-coffee-table",
+    "title": "Blackened Steel Coffee Table",
+    "type": "furniture",
+    "category": "coffee-tables",
+    "brand": "Wool & Loom",
+    "description": "Blackened Steel Coffee Table is made to sit with a rug, not on bare floor alone. The thin frame lets more of the rug show than a skirted table would. Dimensions are about 5 by 2 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 860,
+    "referenceWidthFt": 5,
+    "referenceLengthFt": 2,
+    "images": [],
+    "colors": [
+      {
+        "name": "Oak",
+        "hex": "#c4a574"
+      },
+      {
+        "name": "Walnut",
+        "hex": "#6b4a32"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "5x2",
+        "widthFt": 5,
+        "lengthFt": 2
+      }
+    ],
+    "material": "Blackened steel and oak",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Metal frame",
+    "room": [
+      "Living Room"
+    ],
+    "washable": false,
+    "warehouse": "Georgia",
+    "stock": 3,
+    "deliveryDays": "2-4",
+    "rating": 4.9,
+    "reviewCount": 13,
+    "tags": [
+      "coffee-tables",
+      "blackened steel and oak"
+    ],
+    "seoTitle": "Blackened Steel Coffee Table",
+    "seoDescription": "Blackened Steel Coffee Table in blackened steel and oak, stocked at the Wool & Loom Georgia warehouse."
+  },
+  {
+    "id": "furn-011",
+    "slug": "reeded-oak-coffee-table",
+    "title": "Reeded Oak Coffee Table",
+    "type": "furniture",
+    "category": "coffee-tables",
+    "brand": "Wool & Loom",
+    "description": "Reeded Oak Coffee Table is made to sit with a rug, not on bare floor alone. Reeding adds texture when the rug pattern is already quiet. Dimensions are about 4 by 2 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 1120,
+    "referenceWidthFt": 4,
+    "referenceLengthFt": 2,
+    "images": [],
+    "colors": [
+      {
+        "name": "Oak",
+        "hex": "#c4a574"
+      },
+      {
+        "name": "Walnut",
+        "hex": "#6b4a32"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "4x2",
+        "widthFt": 4,
+        "lengthFt": 2
+      }
+    ],
+    "material": "Reeded oak",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Reeded",
+    "room": [
+      "Living Room"
+    ],
+    "washable": false,
+    "warehouse": "Texas",
+    "stock": 4,
+    "deliveryDays": "2-5",
+    "rating": 4.5,
+    "reviewCount": 14,
+    "tags": [
+      "coffee-tables",
+      "reeded oak"
+    ],
+    "seoTitle": "Reeded Oak Coffee Table",
+    "seoDescription": "Reeded Oak Coffee Table in reeded oak, stocked at the Wool & Loom Texas warehouse."
+  },
+  {
+    "id": "furn-012",
+    "slug": "linen-lounge-chair",
+    "title": "Linen Lounge Chair",
+    "type": "furniture",
+    "category": "accent-chairs",
+    "brand": "Wool & Loom",
+    "description": "Linen Lounge Chair is made to sit with a rug, not on bare floor alone. A chair this deep should have its front legs on the rug, not off the edge. Dimensions are about 3 by 3 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 1280,
+    "referenceWidthFt": 3,
+    "referenceLengthFt": 3,
+    "images": [],
+    "colors": [
+      {
+        "name": "Linen",
+        "hex": "#e6dfd2"
+      },
+      {
+        "name": "Oak",
+        "hex": "#b08968"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "3x3",
+        "widthFt": 3,
+        "lengthFt": 3
+      }
+    ],
+    "material": "Linen",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Lounge",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "California",
+    "stock": 5,
+    "deliveryDays": "3-5",
+    "rating": 4.6,
+    "reviewCount": 15,
+    "tags": [
+      "accent-chairs",
+      "linen"
+    ],
+    "seoTitle": "Linen Lounge Chair",
+    "seoDescription": "Linen Lounge Chair in linen, stocked at the Wool & Loom California warehouse."
+  },
+  {
+    "id": "furn-013",
+    "slug": "oak-spindle-chair",
+    "title": "Oak Spindle Chair",
+    "type": "furniture",
+    "category": "accent-chairs",
+    "brand": "Wool & Loom",
+    "description": "Oak Spindle Chair is made to sit with a rug, not on bare floor alone. Light enough to pull up to a coffee table without dragging the rug. Dimensions are about 2 by 2 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 740,
+    "referenceWidthFt": 2,
+    "referenceLengthFt": 2,
+    "images": [],
+    "colors": [
+      {
+        "name": "Linen",
+        "hex": "#e6dfd2"
+      },
+      {
+        "name": "Oak",
+        "hex": "#b08968"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x2",
+        "widthFt": 2,
+        "lengthFt": 2
+      }
+    ],
+    "material": "Oak",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Spindle",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "New Jersey",
+    "stock": 2,
+    "deliveryDays": "1-3",
+    "rating": 4.7,
+    "reviewCount": 4,
+    "tags": [
+      "accent-chairs",
+      "oak"
+    ],
+    "seoTitle": "Oak Spindle Chair",
+    "seoDescription": "Oak Spindle Chair in oak, stocked at the Wool & Loom New Jersey warehouse."
+  },
+  {
+    "id": "furn-014",
+    "slug": "boucle-slipper-chair",
+    "title": "Boucle Slipper Chair",
+    "type": "furniture",
+    "category": "accent-chairs",
+    "brand": "Wool & Loom",
+    "description": "Boucle Slipper Chair is made to sit with a rug, not on bare floor alone. A slipper chair for the end of a sofa, on the same rug as the sofa. Dimensions are about 2 by 2 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 890,
+    "referenceWidthFt": 2,
+    "referenceLengthFt": 2,
+    "images": [],
+    "colors": [
+      {
+        "name": "Linen",
+        "hex": "#e6dfd2"
+      },
+      {
+        "name": "Oak",
+        "hex": "#b08968"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x2",
+        "widthFt": 2,
+        "lengthFt": 2
+      }
+    ],
+    "material": "Boucle",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Slipper",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "Georgia",
+    "stock": 3,
+    "deliveryDays": "2-4",
+    "rating": 4.8,
+    "reviewCount": 5,
+    "tags": [
+      "accent-chairs",
+      "boucle"
+    ],
+    "seoTitle": "Boucle Slipper Chair",
+    "seoDescription": "Boucle Slipper Chair in boucle, stocked at the Wool & Loom Georgia warehouse."
+  },
+  {
+    "id": "furn-015",
+    "slug": "leather-sling-chair",
+    "title": "Leather Sling Chair",
+    "type": "furniture",
+    "category": "accent-chairs",
+    "brand": "Wool & Loom",
+    "description": "Leather Sling Chair is made to sit with a rug, not on bare floor alone. The sling sits low. Pair it with a low-pile or vintage rug. Dimensions are about 3 by 3 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 1540,
+    "referenceWidthFt": 3,
+    "referenceLengthFt": 3,
+    "images": [],
+    "colors": [
+      {
+        "name": "Linen",
+        "hex": "#e6dfd2"
+      },
+      {
+        "name": "Oak",
+        "hex": "#b08968"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "3x3",
+        "widthFt": 3,
+        "lengthFt": 3
+      }
+    ],
+    "material": "Leather and steel",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Sling",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "Texas",
+    "stock": 4,
+    "deliveryDays": "2-5",
+    "rating": 4.9,
+    "reviewCount": 6,
+    "tags": [
+      "accent-chairs",
+      "leather and steel"
+    ],
+    "seoTitle": "Leather Sling Chair",
+    "seoDescription": "Leather Sling Chair in leather and steel, stocked at the Wool & Loom Texas warehouse."
+  },
+  {
+    "id": "furn-016",
+    "slug": "cane-armchair",
+    "title": "Cane Armchair",
+    "type": "furniture",
+    "category": "accent-chairs",
+    "brand": "Wool & Loom",
+    "description": "Cane Armchair is made to sit with a rug, not on bare floor alone. Cane keeps the chair visually light over a detailed medallion. Dimensions are about 2 by 2 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 820,
+    "referenceWidthFt": 2,
+    "referenceLengthFt": 2,
+    "images": [],
+    "colors": [
+      {
+        "name": "Linen",
+        "hex": "#e6dfd2"
+      },
+      {
+        "name": "Oak",
+        "hex": "#b08968"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x2",
+        "widthFt": 2,
+        "lengthFt": 2
+      }
+    ],
+    "material": "Cane and oak",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Cane",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "California",
+    "stock": 5,
+    "deliveryDays": "3-5",
+    "rating": 4.5,
+    "reviewCount": 7,
+    "tags": [
+      "accent-chairs",
+      "cane and oak"
+    ],
+    "seoTitle": "Cane Armchair",
+    "seoDescription": "Cane Armchair in cane and oak, stocked at the Wool & Loom California warehouse."
+  },
+  {
+    "id": "furn-017",
+    "slug": "travertine-side-table",
+    "title": "Travertine Side Table",
+    "type": "furniture",
+    "category": "side-tables",
+    "brand": "Wool & Loom",
+    "description": "Travertine Side Table is made to sit with a rug, not on bare floor alone. A side table that can sit on the rug or just off it, beside a sofa arm. Dimensions are about 2 by 2 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 540,
+    "referenceWidthFt": 2,
+    "referenceLengthFt": 2,
+    "images": [],
+    "colors": [
+      {
+        "name": "Stone",
+        "hex": "#d9d3c7"
+      },
+      {
+        "name": "Walnut",
+        "hex": "#5c4030"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x2",
+        "widthFt": 2,
+        "lengthFt": 2
+      }
+    ],
+    "material": "Travertine",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Stone",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "New Jersey",
+    "stock": 2,
+    "deliveryDays": "1-3",
+    "rating": 4.6,
+    "reviewCount": 8,
+    "tags": [
+      "side-tables",
+      "travertine"
+    ],
+    "seoTitle": "Travertine Side Table",
+    "seoDescription": "Travertine Side Table in travertine, stocked at the Wool & Loom New Jersey warehouse."
+  },
+  {
+    "id": "furn-018",
+    "slug": "oak-nesting-tables",
+    "title": "Oak Nesting Tables",
+    "type": "furniture",
+    "category": "side-tables",
+    "brand": "Wool & Loom",
+    "description": "Oak Nesting Tables is made to sit with a rug, not on bare floor alone. The pair tucks under a console when you need the rug clear. Dimensions are about 2 by 2 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 620,
+    "referenceWidthFt": 2,
+    "referenceLengthFt": 2,
+    "images": [],
+    "colors": [
+      {
+        "name": "Stone",
+        "hex": "#d9d3c7"
+      },
+      {
+        "name": "Walnut",
+        "hex": "#5c4030"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x2",
+        "widthFt": 2,
+        "lengthFt": 2
+      }
+    ],
+    "material": "Oak",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Nesting",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "Georgia",
+    "stock": 3,
+    "deliveryDays": "2-4",
+    "rating": 4.7,
+    "reviewCount": 9,
+    "tags": [
+      "side-tables",
+      "oak"
+    ],
+    "seoTitle": "Oak Nesting Tables",
+    "seoDescription": "Oak Nesting Tables in oak, stocked at the Wool & Loom Georgia warehouse."
+  },
+  {
+    "id": "furn-019",
+    "slug": "walnut-drink-table",
+    "title": "Walnut Drink Table",
+    "type": "furniture",
+    "category": "side-tables",
+    "brand": "Wool & Loom",
+    "description": "Walnut Drink Table is made to sit with a rug, not on bare floor alone. Small enough to place on the rug next to a lounge chair. Dimensions are about 1 by 1 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 380,
+    "referenceWidthFt": 1,
+    "referenceLengthFt": 1,
+    "images": [],
+    "colors": [
+      {
+        "name": "Stone",
+        "hex": "#d9d3c7"
+      },
+      {
+        "name": "Walnut",
+        "hex": "#5c4030"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "1x1",
+        "widthFt": 1,
+        "lengthFt": 1
+      }
+    ],
+    "material": "Walnut",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Pedestal",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "Texas",
+    "stock": 4,
+    "deliveryDays": "2-5",
+    "rating": 4.8,
+    "reviewCount": 10,
+    "tags": [
+      "side-tables",
+      "walnut"
+    ],
+    "seoTitle": "Walnut Drink Table",
+    "seoDescription": "Walnut Drink Table in walnut, stocked at the Wool & Loom Texas warehouse."
+  },
+  {
+    "id": "furn-020",
+    "slug": "black-metal-side-table",
+    "title": "Black Metal Side Table",
+    "type": "furniture",
+    "category": "side-tables",
+    "brand": "Wool & Loom",
+    "description": "Black Metal Side Table is made to sit with a rug, not on bare floor alone. A narrow table for the gap between a sofa and a chair. Dimensions are about 2 by 1 feet. Front legs of seating should rest on the rug, with the table fully on it.",
+    "basePrice": 320,
+    "referenceWidthFt": 2,
+    "referenceLengthFt": 1,
+    "images": [],
+    "colors": [
+      {
+        "name": "Stone",
+        "hex": "#d9d3c7"
+      },
+      {
+        "name": "Walnut",
+        "hex": "#5c4030"
+      }
+    ],
+    "sizes": [
+      {
+        "label": "2x1",
+        "widthFt": 2,
+        "lengthFt": 1
+      }
+    ],
+    "material": "Blackened steel",
+    "origin": "United States",
+    "pile": "None",
+    "style": "Metal",
+    "room": [
+      "Living Room",
+      "Bedroom"
+    ],
+    "washable": false,
+    "warehouse": "California",
+    "stock": 5,
+    "deliveryDays": "3-5",
+    "rating": 4.9,
+    "reviewCount": 11,
+    "tags": [
+      "side-tables",
+      "blackened steel"
+    ],
+    "seoTitle": "Black Metal Side Table",
+    "seoDescription": "Black Metal Side Table in blackened steel, stocked at the Wool & Loom California warehouse."
+  }
+]

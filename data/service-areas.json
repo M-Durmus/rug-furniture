@@ -1,0 +1,266 @@
+[
+  {
+    "state": "New Jersey",
+    "stateSlug": "new-jersey",
+    "cities": [
+      {
+        "name": "Newark",
+        "slug": "newark",
+        "zipCodes": [
+          "07102",
+          "07103"
+        ]
+      },
+      {
+        "name": "Jersey City",
+        "slug": "jersey-city",
+        "zipCodes": [
+          "07302"
+        ]
+      },
+      {
+        "name": "Hoboken",
+        "slug": "hoboken",
+        "zipCodes": [
+          "07030"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "New York",
+    "stateSlug": "new-york",
+    "cities": [
+      {
+        "name": "New York",
+        "slug": "new-york",
+        "zipCodes": [
+          "10001",
+          "10011"
+        ]
+      },
+      {
+        "name": "Brooklyn",
+        "slug": "brooklyn",
+        "zipCodes": [
+          "11201"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Pennsylvania",
+    "stateSlug": "pennsylvania",
+    "cities": [
+      {
+        "name": "Philadelphia",
+        "slug": "philadelphia",
+        "zipCodes": [
+          "19103"
+        ]
+      },
+      {
+        "name": "Pittsburgh",
+        "slug": "pittsburgh",
+        "zipCodes": [
+          "15222"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Massachusetts",
+    "stateSlug": "massachusetts",
+    "cities": [
+      {
+        "name": "Boston",
+        "slug": "boston",
+        "zipCodes": [
+          "02108"
+        ]
+      },
+      {
+        "name": "Cambridge",
+        "slug": "cambridge",
+        "zipCodes": [
+          "02139"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Georgia",
+    "stateSlug": "georgia",
+    "cities": [
+      {
+        "name": "Atlanta",
+        "slug": "atlanta",
+        "zipCodes": [
+          "30303",
+          "30308"
+        ]
+      },
+      {
+        "name": "Savannah",
+        "slug": "savannah",
+        "zipCodes": [
+          "31401"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "North Carolina",
+    "stateSlug": "north-carolina",
+    "cities": [
+      {
+        "name": "Charlotte",
+        "slug": "charlotte",
+        "zipCodes": [
+          "28202"
+        ]
+      },
+      {
+        "name": "Raleigh",
+        "slug": "raleigh",
+        "zipCodes": [
+          "27601"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Florida",
+    "stateSlug": "florida",
+    "cities": [
+      {
+        "name": "Miami",
+        "slug": "miami",
+        "zipCodes": [
+          "33131"
+        ]
+      },
+      {
+        "name": "Tampa",
+        "slug": "tampa",
+        "zipCodes": [
+          "33602"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "South Carolina",
+    "stateSlug": "south-carolina",
+    "cities": [
+      {
+        "name": "Charleston",
+        "slug": "charleston",
+        "zipCodes": [
+          "29401"
+        ]
+      },
+      {
+        "name": "Columbia",
+        "slug": "columbia",
+        "zipCodes": [
+          "29201"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Texas",
+    "stateSlug": "texas",
+    "cities": [
+      {
+        "name": "Dallas",
+        "slug": "dallas",
+        "zipCodes": [
+          "75201"
+        ]
+      },
+      {
+        "name": "Austin",
+        "slug": "austin",
+        "zipCodes": [
+          "78701"
+        ]
+      },
+      {
+        "name": "Houston",
+        "slug": "houston",
+        "zipCodes": [
+          "77002"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Oklahoma",
+    "stateSlug": "oklahoma",
+    "cities": [
+      {
+        "name": "Oklahoma City",
+        "slug": "oklahoma-city",
+        "zipCodes": [
+          "73102"
+        ]
+      },
+      {
+        "name": "Tulsa",
+        "slug": "tulsa",
+        "zipCodes": [
+          "74103"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "California",
+    "stateSlug": "california",
+    "cities": [
+      {
+        "name": "Los Angeles",
+        "slug": "los-angeles",
+        "zipCodes": [
+          "90012"
+        ]
+      },
+      {
+        "name": "San Diego",
+        "slug": "san-diego",
+        "zipCodes": [
+          "92101"
+        ]
+      },
+      {
+        "name": "San Francisco",
+        "slug": "san-francisco",
+        "zipCodes": [
+          "94102"
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Arizona",
+    "stateSlug": "arizona",
+    "cities": [
+      {
+        "name": "Phoenix",
+        "slug": "phoenix",
+        "zipCodes": [
+          "85004"
+        ]
+      },
+      {
+        "name": "Tucson",
+        "slug": "tucson",
+        "zipCodes": [
+          "85701"
+        ]
+      }
+    ]
+  }
+]
