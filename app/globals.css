@@ -108,6 +108,22 @@ body {
   line-height: 1.6;
 }
 
+body:has([data-cookie-banner]) {
+  padding-bottom: 8rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo-on-theme {
+    filter: brightness(0) invert(0.95);
+  }
+}
+
+[data-theme="dark"] .logo-on-theme {
+  filter: brightness(0) invert(0.95);
+}
+
+/* Keeps the brown wordmark readable on the dark header. */
+
 h1,
 h2,
 h3 {

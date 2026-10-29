@@ -4,20 +4,42 @@ import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildMetadata({
   title: "Privacy",
-  description: "How Wool & Loom handles the details you type into a quote form. No payment data is collected yet.",
+  description: "What Wool & Loom stores in this browser. Card numbers are not collected.",
   path: "/privacy",
 });
 
 export default function PrivacyPage() {
   return (
-    <Container className="py-10">
-      <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Privacy", path: "/privacy" }]} />
-      <h1 className="font-serif text-5xl">Privacy</h1>
+    <Container className="py-10 pb-16">
+      <Breadcrumbs
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Privacy", path: "/privacy" },
+        ]}
+      />
+      <h1 className="text-h1">Privacy</h1>
       <div className="mt-6 max-w-3xl space-y-4 leading-7">
-        <p>Quote and account forms on this site stay in your browser. They are not sent to a server and they are not sold.</p>
-        <p>The cart is stored in local storage on your device under the key wool-loom-cart. Clearing the browser data removes it.</p>
-        <p>A theme choice is stored the same way, so the next visit can open in light or dark. We do not use it to identify you.</p>
-        <p>When checkout is connected, the privacy notice will name the payment company and the fields they receive. We do not collect card numbers today.</p>
+        <p>
+          Quote, trade, contact, and waitlist forms on this site are handled in this browser or
+          logged as a local request. They are not sold. A card number is not collected. The payment
+          line on checkout says card payments will be connected to Stripe, and that connection is
+          not live.
+        </p>
+        <p>
+          The catalog cart is stored under wool-loom-catalog-cart. An older cart key,
+          wool-loom-cart, may still be on the device. Favorites use wool-loom-favorites. A coupon, a
+          signed-in email, and the last order receipt use session storage and clear when the session
+          ends. A theme choice and a dismissed announcement stay in local storage so the next visit
+          can match them.
+        </p>
+        <p>
+          Clearing site data for this browser removes those keys. We do not use them to build a
+          profile.
+        </p>
+        <p>
+          When Stripe is connected, this notice will name the fields that company receives. Until
+          then, checkout records a request and does not charge a card.
+        </p>
       </div>
     </Container>
   );

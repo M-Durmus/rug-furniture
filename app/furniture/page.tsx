@@ -1,12 +1,18 @@
-import { ListingRoute, listingMetadata } from "@/components/listing/ListingRoute";
-import type { RawSearchParams } from "@/lib/seo/listing";
+import { Suspense } from "react";
+import { CatalogListing, listingMetadata } from "@/components/listing/CatalogListing";
+import { ListingSkeleton } from "@/components/listing/ListingSkeleton";
+import type { RawSearchParams } from "@/lib/catalog/listing";
 
 type Props = { searchParams: Promise<RawSearchParams> };
 
-export function generateMetadata({ searchParams }: Props) {
-  return listingMetadata({ kind: "furniture", basePath: "/furniture", searchParams });
+export async function generateMetadata({ searchParams }: Props) {
+  return listingMetadata({ section: "furniture", kind: "index", searchParams: await searchParams });
 }
 
 export default function FurniturePage({ searchParams }: Props) {
-  return <ListingRoute kind="furniture" basePath="/furniture" searchParams={searchParams} />;
+  return (
+    <Suspense fallback={<ListingSkeleton />}>
+      <CatalogListing section="furniture" kind="index" searchParams={searchParams} />
+    </Suspense>
+  );
 }

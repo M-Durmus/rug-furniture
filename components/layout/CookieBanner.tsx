@@ -24,7 +24,7 @@ function choiceNow(): Choice {
 }
 
 export function CookieBanner() {
-  const choice = useSyncExternalStore(subscribe, choiceNow, () => "accepted" as Choice);
+  const choice = useSyncExternalStore(subscribe, choiceNow, () => "unset" as Choice);
 
   function choose(next: "accepted" | "declined") {
     try {
@@ -38,7 +38,7 @@ export function CookieBanner() {
   if (choice !== "unset") return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-card text-ink">
+    <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-card text-ink" data-cookie-banner>
       <div className="mx-auto flex w-full max-w-[1180px] flex-col gap-3 px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-sm">
           We store your cart, theme, and this choice on this device. Read the{" "}

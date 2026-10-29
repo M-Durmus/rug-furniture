@@ -7,8 +7,8 @@ import { Container } from "@/components/ui/Container";
 const storageKey = "wool-loom-announcement-dismissed";
 
 const messages = [
-  { href: "/shipping", text: "Free shipping across the USA" },
-  { href: "/shipping", text: "100-day returns" },
+  { href: "/help/shipping", text: "Free shipping across the USA" },
+  { href: "/help/returns", text: "100-day returns" },
   { href: "/about", text: "Shipped from our own U.S. warehouses" },
 ];
 

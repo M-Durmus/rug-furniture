@@ -1,8 +1,7 @@
-"use client";
-
-import { useState } from "react";
 import { FurnitureArt, type FurnitureKind } from "@/components/media/FurnitureArt";
+import { Photo } from "@/components/media/Photo";
 import { RugArt } from "@/components/media/RugArt";
+import { imageSizes } from "@/lib/site";
 
 type ProductImageProps = {
   src?: string;
@@ -12,6 +11,7 @@ type ProductImageProps = {
   furniture?: FurnitureKind;
   style?: string;
   className?: string;
+  sizes?: string;
 };
 
 export function Image({
@@ -22,11 +22,9 @@ export function Image({
   furniture = "sofa",
   style,
   className,
+  sizes = imageSizes.card,
 }: ProductImageProps) {
-  const [failed, setFailed] = useState(false);
-  const showArt = !src || failed;
-
-  if (showArt) {
+  if (!src) {
     return subject === "furniture" ? (
       <FurnitureArt colors={colors} kind={furniture} label={alt} className={className} />
     ) : (
@@ -35,8 +33,15 @@ export function Image({
   }
 
   return (
-    // A real photo replaces the pattern. A failed load returns to the art.
-    // eslint-disable-next-line @next/next/no-img-element
-    <img src={src} alt={alt} className={className} onError={() => setFailed(true)} />
+    <Photo
+      src={src}
+      alt={alt}
+      colors={colors}
+      subject={subject}
+      furniture={furniture}
+      style={style}
+      className={className}
+      sizes={sizes}
+    />
   );
 }

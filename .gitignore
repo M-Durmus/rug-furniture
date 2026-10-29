@@ -42,3 +42,9 @@ next-env.d.ts
 
 # lighthouse
 .lighthouseci
+
+# playwright
+/playwright-report
+/test-results
+/blob-report
+/tmp-previews

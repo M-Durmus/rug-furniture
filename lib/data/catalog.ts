@@ -106,6 +106,24 @@ export async function getUnitPrice(
   return unitPriceFor(seed, sizeLabel);
 }
 
+/** List price and the selling price for one size. Selling price includes a sale. */
+export async function getSizePrices(
+  productId: string,
+  sizeLabel: string,
+): Promise<{ list: number; pay: number } | undefined> {
+  const seed = seeds.find((item) => item.id === productId);
+  const size = seed?.sizes.find((item) => item.label === sizeLabel);
+  if (!seed || !size) return undefined;
+  const list = priceForSize(
+    seed.basePrice,
+    size.widthFt,
+    size.lengthFt,
+    seed.referenceWidthFt,
+    seed.referenceLengthFt,
+  );
+  return { list, pay: seed.saleOff ? Math.round(list * (1 - seed.saleOff)) : list };
+}
+
 function matches(product: Product, filters: ProductFilters): boolean {
   const pay = sellingPrice(product.price, product.salePrice);
   if (filters.type && product.type !== filters.type) return false;
@@ -143,6 +161,11 @@ function matches(product: Product, filters: ProductFilters): boolean {
   return true;
 }
 
+function serial(id: string): number {
+  const match = /(\d+)$/.exec(id);
+  return match ? Number(match[1]) : 0;
+}
+
 function compare(sort: ProductSort) {
   return (a: Product, b: Product) => {
     if (sort === "price-asc")
@@ -150,6 +173,7 @@ function compare(sort: ProductSort) {
     if (sort === "price-desc")
       return sellingPrice(b.price, b.salePrice) - sellingPrice(a.price, a.salePrice);
     if (sort === "rating") return b.rating - a.rating || b.reviewCount - a.reviewCount;
+    if (sort === "newest") return serial(b.id) - serial(a.id);
     if (sort === "title") return a.title.localeCompare(b.title);
     return b.rating * b.reviewCount - a.rating * a.reviewCount;
   };
@@ -264,7 +288,11 @@ export async function submitTradeApplication(
   return application;
 }
 
-export async function createOrder(input: { email: string; items: CartItem[] }): Promise<Order> {
+export async function createOrder(input: {
+  email: string;
+  items: CartItem[];
+  coupon?: string;
+}): Promise<Order> {
   let subtotal = 0;
   for (const item of input.items) {
     const unit = await getUnitPrice(item.productId, item.sizeLabel);
@@ -272,16 +300,20 @@ export async function createOrder(input: { email: string; items: CartItem[] }): 
     subtotal += unit * item.qty;
   }
   subtotal = Math.round(subtotal * 100) / 100;
+  const rate = input.coupon?.trim().toUpperCase() === "WELCOME10" ? 0.1 : 0;
+  const discount = Math.round(subtotal * rate * 100) / 100;
+  const taxable = Math.round((subtotal - discount) * 100) / 100;
   const shipping = 0;
-  const tax = Math.round(subtotal * 0.08 * 100) / 100;
+  const tax = Math.round(taxable * 0.08 * 100) / 100;
   const order: Order = {
     id: crypto.randomUUID(),
     email: input.email,
     items: input.items,
     subtotal,
+    discount,
     shipping,
     tax,
-    total: Math.round((subtotal + shipping + tax) * 100) / 100,
+    total: Math.round((taxable + shipping + tax) * 100) / 100,
     createdAt: new Date().toISOString(),
   };
   console.info("[wool-loom] order", order.id, order.total);

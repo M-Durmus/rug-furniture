@@ -27,15 +27,17 @@ const columns = [
   {
     title: "Trade",
     links: [
-      { href: "/trade", label: "Trade program" },
+      { href: "/trade-program", label: "Trade program" },
       { href: "/contact", label: "Talk to the desk" },
     ],
   },
   {
     title: "Help",
     links: [
+      { href: "/help", label: "Help" },
+      { href: "/help/shipping", label: "Shipping" },
+      { href: "/help/returns", label: "Returns" },
       { href: "/faq", label: "Questions" },
-      { href: "/shipping", label: "Shipping and returns" },
       { href: "/contact", label: "Contact" },
       { href: "/guides/measure-for-a-rug", label: "Measure for a rug" },
     ],
@@ -45,8 +47,11 @@ const columns = [
     links: [
       { href: "/about", label: "About" },
       { href: "/blog", label: "Journal" },
+      { href: "/inspiration", label: "Inspiration" },
+      { href: "/reviews", label: "Reviews" },
       { href: "/privacy", label: "Privacy" },
       { href: "/terms", label: "Terms" },
+      { href: "/accessibility", label: "Accessibility" },
     ],
   },
 ];

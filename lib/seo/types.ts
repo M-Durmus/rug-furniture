@@ -4,7 +4,12 @@ export type BrandSchema = { "@type": "Brand"; name: "Wool & Loom" };
 
 export type OrganizationRef = { "@type": "Organization"; name: "Wool & Loom"; url?: string };
 
-export type ImageObjectSchema = { "@type": "ImageObject"; url: string; width?: number; height?: number };
+export type ImageObjectSchema = {
+  "@type": "ImageObject";
+  url: string;
+  width?: number;
+  height?: number;
+};
 
 export type PostalAddressSchema = {
   "@type": "PostalAddress";
@@ -195,7 +200,7 @@ export type ArticleSchema = {
   inLanguage: "en-US";
   image: string[];
   mainEntityOfPage: string;
-  author: { "@type": "Organization"; name: "Wool & Loom"; url: string };
+  author: { "@type": "Organization"; name: string; url: string };
   publisher: { "@type": "Organization"; name: "Wool & Loom"; url: string; logo: ImageObjectSchema };
 };
 

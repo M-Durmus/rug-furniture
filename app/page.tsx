@@ -1,6 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
-import { FurnitureArt, type FurnitureKind } from "@/components/media/FurnitureArt";
-import { RugArt } from "@/components/media/RugArt";
+import type { FurnitureKind } from "@/components/media/FurnitureArt";
 import { Inspiration } from "@/components/home/Inspiration";
 import { ProductCard } from "@/components/home/ProductCard";
 import { RoomNotify } from "@/components/home/RoomNotify";
@@ -20,7 +20,6 @@ import {
   getUnitPrice,
   getWarehouses,
 } from "@/lib/data/catalog";
-import { getPost } from "@/lib/data/content";
 import { buildMetadata } from "@/lib/seo/metadata";
 import type { Product, ProductSize } from "@/types";
 
@@ -36,6 +35,7 @@ const categories: {
   name: string;
   href: string;
   text: string;
+  image: string;
   kind: "rug" | "furniture";
   furniture?: FurnitureKind;
   colors: string[];
@@ -43,40 +43,45 @@ const categories: {
 }[] = [
   {
     name: "Oushak",
-    href: "/rugs/style/oushak",
+    href: "/rugs/oushak",
     text: "Ivory and apricot fields for a sofa and two chairs.",
+    image: "/images/photos/rug-oushak.webp",
     kind: "rug",
     colors: ["#e7dccb", "#c4896a", "#6f675b"],
     style: "oushak",
   },
   {
     name: "Vintage",
-    href: "/rugs/style/vintage",
+    href: "/rugs/vintage",
     text: "Softened medallions, already in a U.S. warehouse.",
+    image: "/images/photos/rug-field.webp",
     kind: "rug",
     colors: ["#c4a574", "#7a3b32", "#1d1a16"],
     style: "medallion",
   },
   {
     name: "Runner",
-    href: "/rugs/size/2x8",
+    href: "/rugs/runner",
     text: "Hall runners about 2 feet wide, measured in inches.",
+    image: "/images/photos/rug-border.webp",
     kind: "rug",
     colors: ["#3e4c66", "#e7dccb", "#1d1a16"],
     style: "stripe",
   },
   {
     name: "Washable",
-    href: "/search?q=washable",
+    href: "/rugs/washable",
     text: "Flatweaves that can take a wash after a busy week.",
+    image: "/images/photos/rug-flat.webp",
     kind: "rug",
     colors: ["#d9d3c7", "#8a9178", "#2a2724"],
     style: "grid",
   },
   {
     name: "Sofas",
-    href: "/search?q=sofa",
+    href: "/furniture/sofas",
     text: "Linen and boucle sofas scaled to an 8 by 10 rug.",
+    image: "/images/photos/sofa.webp",
     kind: "furniture",
     furniture: "sofa",
     colors: ["#f3efe6", "#c4a574"],
@@ -84,8 +89,9 @@ const categories: {
   },
   {
     name: "Coffee Tables",
-    href: "/search?q=coffee",
+    href: "/furniture/coffee-tables",
     text: "Low tables that sit fully on the pile.",
+    image: "/images/photos/table.webp",
     kind: "furniture",
     furniture: "table",
     colors: ["#e6dfd2", "#8a7355"],
@@ -142,7 +148,9 @@ export default async function HomePage() {
   const [allCards, rugCards, furnitureCards] = await Promise.all([
     Promise.all(all.items.map(async (product) => ({ product, size: await pricedSize(product) }))),
     Promise.all(rugs.items.map(async (product) => ({ product, size: await pricedSize(product) }))),
-    Promise.all(furniture.items.map(async (product) => ({ product, size: await pricedSize(product) }))),
+    Promise.all(
+      furniture.items.map(async (product) => ({ product, size: await pricedSize(product) })),
+    ),
   ]);
 
   const quotes = reviews.filter((review) => review.rating === 5).slice(0, 3);
@@ -154,10 +162,11 @@ export default async function HomePage() {
         <Container className="grid items-center gap-10 py-12 lg:grid-cols-2 lg:py-16">
           <div>
             <h1 id="hero-title" className="text-h1">
-              Timeless Turkish rugs. Cared for by us.
+              Timeless Turkish Rugs. Expert Care, Always.
             </h1>
             <p className="mt-4 max-w-xl text-lg leading-8">
-              Handpicked in Turkey and shipped from our own warehouses in New Jersey, Georgia, Texas, and California. Cleaning, repair, and custom sizing stay with our service team.
+              Handpicked in Turkey and shipped from our own warehouses in New Jersey, Georgia,
+              Texas, and California. Cleaning, repair, and custom sizing stay with our service team.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button href="/rugs">Shop all rugs</Button>
@@ -180,13 +189,18 @@ export default async function HomePage() {
           <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {categories.map((category) => (
               <li key={category.name}>
-                <Link href={category.href} className="flex h-full gap-4 border border-line bg-card p-4">
-                  <div aria-hidden="true" className="h-28 w-20 shrink-0 bg-sand">
-                    {category.kind === "furniture" ? (
-                      <FurnitureArt colors={category.colors} kind={category.furniture} label="" className="h-full w-full" />
-                    ) : (
-                      <RugArt colors={category.colors} style={category.style} label="" className="h-full w-full" />
-                    )}
+                <Link
+                  href={category.href}
+                  className="flex h-full gap-4 border border-line bg-card p-4"
+                >
+                  <div className="relative h-28 w-20 shrink-0 overflow-hidden bg-sand">
+                    <Image
+                      src={category.image}
+                      alt=""
+                      fill
+                      sizes="80px"
+                      className="object-cover"
+                    />
                   </div>
                   <span>
                     <span className="block font-serif text-h3">{category.name}</span>
@@ -204,11 +218,16 @@ export default async function HomePage() {
           <h2 id="size-title" className="text-h2">
             Shop by size
           </h2>
-          <p className="mt-3 max-w-2xl text-mute">Sizes are in feet. Custom size is cut and bound to the measurement you send.</p>
+          <p className="mt-3 max-w-2xl text-mute">
+            Sizes are in feet. Custom size is cut and bound to the measurement you send.
+          </p>
           <ul className="mt-6 flex flex-wrap gap-2">
             {sizes.map((size) => (
               <li key={size.href}>
-                <Link href={size.href} className="inline-flex min-h-10 items-center rounded-[2px] border border-line bg-card px-3 text-sm">
+                <Link
+                  href={size.href}
+                  className="inline-flex min-h-10 items-center rounded-[2px] border border-line bg-card px-3 text-sm"
+                >
                   {size.label}
                 </Link>
               </li>
@@ -228,7 +247,11 @@ export default async function HomePage() {
               tabs={[
                 { id: "all", label: "All", content: <ProductGrid items={allCards} /> },
                 { id: "rugs", label: "Rugs", content: <ProductGrid items={rugCards} /> },
-                { id: "furniture", label: "Furniture", content: <ProductGrid items={furnitureCards} /> },
+                {
+                  id: "furniture",
+                  label: "Furniture",
+                  content: <ProductGrid items={furnitureCards} />,
+                },
               ]}
             />
           </div>
@@ -262,7 +285,9 @@ export default async function HomePage() {
           <h2 id="preview-title" className="text-h2">
             Room preview
           </h2>
-          <p className="mt-3 max-w-2xl text-mute">See a stock rug in a photo of your room. The tool is not open yet.</p>
+          <p className="mt-3 max-w-2xl text-mute">
+            See a stock rug in a photo of your room. The tool is not open yet.
+          </p>
           <div className="mt-6">
             <RoomNotify />
           </div>
@@ -274,7 +299,9 @@ export default async function HomePage() {
           <h2 id="warehouse-title" className="text-h2">
             Warehouse inventory
           </h2>
-          <p className="mt-3 max-w-2xl text-mute">Every rug ships from the warehouse that holds it. Delivery days are from that dock.</p>
+          <p className="mt-3 max-w-2xl text-mute">
+            Every rug ships from the warehouse that holds it. Delivery days are from that dock.
+          </p>
           <div className="mt-6">
             <WarehouseMap warehouses={warehouses} />
           </div>
@@ -288,7 +315,8 @@ export default async function HomePage() {
               Rug size calculator
             </h2>
             <p className="mt-3 max-w-2xl">
-              Measure the furniture footprint in feet and inches, then match it to a stock size that leaves a border of bare floor.
+              Measure the furniture footprint in feet and inches, then match it to a stock size that
+              leaves a border of bare floor.
             </p>
           </div>
           <Button href="/tools/rug-size-calculator">Open the calculator</Button>
@@ -300,7 +328,9 @@ export default async function HomePage() {
           <h2 id="inspiration-title" className="text-h2">
             Inspiration
           </h2>
-          <p className="mt-3 max-w-2xl text-mute">Rooms styled with stock rugs. Photographs will replace these studies.</p>
+          <p className="mt-3 max-w-2xl text-mute">
+            Rooms styled with stock rugs. Photographs will replace these studies.
+          </p>
           <div className="mt-6">
             <Inspiration />
           </div>
@@ -314,7 +344,8 @@ export default async function HomePage() {
               Trade program
             </h2>
             <p className="mt-3 max-w-xl">
-              Designers and retailers order from the same four warehouses. No separate trade stock, no extra freight desk.
+              Designers and retailers order from the same four warehouses. No separate trade stock,
+              no extra freight desk.
             </p>
           </div>
           <Link
@@ -363,7 +394,7 @@ export default async function HomePage() {
                   {post.category} · {post.readMinutes} min
                 </p>
                 <h3 className="mt-2 font-serif text-h3">
-                  <Link href={getPost(post.slug) ? `/blog/${post.slug}` : "/blog"} className="underline underline-offset-4">
+                  <Link href={`/blog/${post.slug}`} className="underline underline-offset-4">
                     {post.title}
                   </Link>
                 </h3>

@@ -53,7 +53,7 @@ const items: Item[] = [
   { id: "furniture", label: "Furniture", href: "/furniture", panel: "furniture" },
   { id: "services", label: "Services", href: "/services", panel: "services" },
   { id: "room", label: "Room preview", href: "/room-preview" },
-  { id: "trade", label: "Trade program", href: "/trade" },
+  { id: "trade", label: "Trade program", href: "/trade-program" },
   { id: "journal", label: "Journal", href: "/blog" },
 ];
 

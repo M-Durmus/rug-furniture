@@ -1,6 +1,6 @@
 import { HeaderChrome } from "@/components/layout/HeaderChrome";
 import type { CartProductInfo, SearchEntry, ServiceLink } from "@/components/layout/chrome";
-import { getPost } from "@/lib/data/content";
+import { productPath } from "@/lib/catalog/product-path";
 import { getBlogPosts, getCategories, getProducts, getServices } from "@/lib/data/catalog";
 import { getProduct } from "@/lib/data/products";
 
@@ -40,7 +40,7 @@ export async function SiteHeader() {
       id: product.id,
       kind: "Product" as const,
       title: product.title,
-      href: getProduct(product.slug)?.href ?? (product.type === "rug" ? "/rugs" : "/furniture"),
+      href: getProduct(product.slug)?.href ?? productPath(product),
       text: `${product.category} ${product.style} ${product.material}`,
     })),
     ...categories.map((category) => ({
@@ -61,7 +61,7 @@ export async function SiteHeader() {
       id: post.id,
       kind: "Journal" as const,
       title: post.title,
-      href: getPost(post.slug) ? `/blog/${post.slug}` : "/blog",
+      href: `/blog/${post.slug}`,
       text: post.excerpt,
     })),
   ];
@@ -69,7 +69,7 @@ export async function SiteHeader() {
   const products: CartProductInfo[] = page.items.map((product) => ({
     id: product.id,
     title: product.title,
-    href: getProduct(product.slug)?.href ?? (product.type === "rug" ? "/rugs" : "/furniture"),
+    href: getProduct(product.slug)?.href ?? productPath(product),
     subject: product.type,
     furniture: product.type === "furniture" ? furnitureKind(product.category) : undefined,
     colors: product.colors.map((color) => color.hex),

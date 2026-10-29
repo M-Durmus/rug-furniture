@@ -1,19 +1,34 @@
-import { ListingRoute, listingMetadata } from "@/components/listing/ListingRoute";
-import { sizes } from "@/lib/data/facets";
-import type { RawSearchParams } from "@/lib/seo/listing";
+import { Suspense } from "react";
+import { CatalogListing, listingMetadata } from "@/components/listing/CatalogListing";
+import { ListingSkeleton } from "@/components/listing/ListingSkeleton";
+import { listingParamSlugs, type RawSearchParams } from "@/lib/catalog/listing";
 
 type Props = { params: Promise<{ size: string }>; searchParams: Promise<RawSearchParams> };
 
-export function generateStaticParams() {
-  return sizes.map((size) => ({ size: size.slug }));
+export async function generateStaticParams() {
+  const slugs = await listingParamSlugs("size");
+  return slugs.map((size) => ({ size }));
 }
 
 export async function generateMetadata({ params, searchParams }: Props) {
   const { size } = await params;
-  return listingMetadata({ kind: "size", basePath: `/rugs/size/${size}`, locked: { key: "size", value: size }, searchParams });
+  return listingMetadata({
+    section: "rugs",
+    kind: "size",
+    slug: size,
+    searchParams: await searchParams,
+  });
 }
 
-export default async function SizePage({ params, searchParams }: Props) {
+async function SizeContent({ params, searchParams }: Props) {
   const { size } = await params;
-  return <ListingRoute kind="size" basePath={`/rugs/size/${size}`} locked={{ key: "size", value: size }} searchParams={searchParams} />;
+  return <CatalogListing section="rugs" kind="size" slug={size} searchParams={searchParams} />;
+}
+
+export default function SizePage(props: Props) {
+  return (
+    <Suspense fallback={<ListingSkeleton />}>
+      <SizeContent {...props} />
+    </Suspense>
+  );
 }

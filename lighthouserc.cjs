@@ -1,13 +1,15 @@
+/** Mobile Lighthouse budgets for the home, a listing, a product, and a service page. */
 module.exports = {
   ci: {
     collect: {
-      startServerCommand: "node scripts/serve-warm.mjs",
-      startServerReadyPattern: "Server warmed",
+      startServerCommand: "npx next start -p 3100",
+      startServerReadyPattern: "Ready",
+      startServerReadyTimeout: 60000,
       url: [
-        "http://127.0.0.1:4173/",
-        "http://127.0.0.1:4173/rugs",
-        "http://127.0.0.1:4173/rugs/sivas-medallion",
-        "http://127.0.0.1:4173/services/rug-cleaning",
+        "http://127.0.0.1:3100/",
+        "http://127.0.0.1:3100/rugs",
+        "http://127.0.0.1:3100/rugs/pale-oushak-field",
+        "http://127.0.0.1:3100/services/rug-cleaning",
       ],
       numberOfRuns: 1,
       settings: {
@@ -20,7 +22,6 @@ module.exports = {
           disabled: false,
         },
         throttlingMethod: "simulate",
-        onlyCategories: ["performance", "accessibility", "best-practices", "seo"],
       },
     },
     assert: {

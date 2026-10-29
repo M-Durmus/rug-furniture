@@ -23,7 +23,7 @@ export function NewsletterForm() {
     setError("");
     setDone(true);
     console.info("[wool-loom] newsletter", email.trim());
-    toast("You're on the list for 10% off your first order.");
+    toast("You’re on the list for 10% off your first order.");
   }
 
   if (done) {

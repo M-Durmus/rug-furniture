@@ -18,7 +18,11 @@ export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) notFound();
-  return buildMetadata({ title: guide.title, description: guide.description, path: `/guides/${guide.slug}` });
+  return buildMetadata({
+    title: guide.title,
+    description: guide.description,
+    path: `/guides/${guide.slug}`,
+  });
 }
 
 export default async function GuidePage({ params }: Props) {
@@ -28,7 +32,13 @@ export default async function GuidePage({ params }: Props) {
   return (
     <Container className="py-10">
       <JsonLd data={howToJsonLd(guide)} />
-      <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Guides", path: "/guides" }, { name: guide.title, path: `/guides/${guide.slug}` }]} />
+      <Breadcrumbs
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Guides", path: "/guides" },
+          { name: guide.title, path: `/guides/${guide.slug}` },
+        ]}
+      />
       <h1 className="max-w-3xl font-serif text-5xl leading-tight">{guide.title}</h1>
       {guide.intro.map((paragraph) => (
         <p key={paragraph} className="mt-4 max-w-3xl leading-7">
@@ -36,6 +46,18 @@ export default async function GuidePage({ params }: Props) {
         </p>
       ))}
       <p className="mt-4 text-sm">Tools: {guide.tools.join(", ")}.</p>
+      <nav aria-label="Table of contents" className="mt-6 max-w-3xl border border-line p-4">
+        <h2 className="text-sm font-medium">On this page</h2>
+        <ol className="mt-2 list-decimal space-y-1 pl-5">
+          {guide.steps.map((step, index) => (
+            <li key={step.name}>
+              <a href={`#step-${index + 1}`} className="underline underline-offset-4">
+                {step.name}
+              </a>
+            </li>
+          ))}
+        </ol>
+      </nav>
       <ol className="mt-8 max-w-3xl space-y-6">
         {guide.steps.map((step, index) => (
           <li key={step.name} id={`step-${index + 1}`}>
@@ -46,7 +68,10 @@ export default async function GuidePage({ params }: Props) {
           </li>
         ))}
       </ol>
-      <RelatedProducts products={getProductsBySlugs(guide.productSlugs)} title="Rugs that fit this guide" />
+      <RelatedProducts
+        products={getProductsBySlugs(guide.productSlugs)}
+        title="Rugs that fit this guide"
+      />
     </Container>
   );
 }

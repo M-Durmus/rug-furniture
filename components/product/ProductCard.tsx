@@ -1,12 +1,30 @@
 import Link from "next/link";
+import { FavoriteButton } from "@/components/favorites/FavoriteButton";
 import { FramedImage } from "@/components/media/FramedImage";
 import { formatUsd } from "@/lib/format";
 import type { Product } from "@/lib/data/types";
 import { imageSizes } from "@/lib/site";
 
-export function ProductCard({ product, priority = false }: { product: Product; priority?: boolean }) {
+export function ProductCard({
+  product,
+  priority = false,
+}: {
+  product: Product;
+  priority?: boolean;
+}) {
   return (
-    <article className="flex h-full flex-col">
+    <article className="relative flex h-full flex-col">
+      <FavoriteButton
+        className="absolute top-2 right-2 z-10"
+        item={{
+          id: product.id,
+          title: product.name,
+          href: product.href,
+          colors: [],
+          subject: product.kind,
+          style: product.style,
+        }}
+      />
       <Link href={product.href} className="block">
         <FramedImage
           src={product.image}

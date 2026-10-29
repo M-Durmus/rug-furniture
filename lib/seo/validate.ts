@@ -28,13 +28,21 @@ export function validateJsonLd(data: JsonLdSchema): JsonLdSchema {
       requireKeys(data.offers, ["@type", "price", "priceCurrency", "availability", "url"], "Offer");
       if (data.offers["@type"] !== "Offer") throw new Error("Product.offers must be an Offer");
       requireKeys(data.aggregateRating, ["ratingValue", "reviewCount"], "AggregateRating");
-      if (data.aggregateRating["@type"] !== "AggregateRating") throw new Error("AggregateRating @type");
-      if (data.review.length === 0 || data.review.some((review) => review["@type"] !== "Review")) {
+      if (data.aggregateRating["@type"] !== "AggregateRating")
+        throw new Error("AggregateRating @type");
+      if (
+        !Array.isArray(data.review) ||
+        data.review.some((review) => review["@type"] !== "Review")
+      ) {
         throw new Error("Product.review must contain Review nodes");
       }
       break;
     case "Service":
-      requireKeys(data, ["name", "serviceType", "description", "url", "provider", "offers"], "Service");
+      requireKeys(
+        data,
+        ["name", "serviceType", "description", "url", "provider", "offers"],
+        "Service",
+      );
       if (data.offers["@type"] !== "Offer") throw new Error("Service.offers must be an Offer");
       break;
     case "FAQPage":
@@ -47,7 +55,11 @@ export function validateJsonLd(data: JsonLdSchema): JsonLdSchema {
       }
       break;
     case "Article":
-      requireKeys(data, ["headline", "datePublished", "author", "image", "mainEntityOfPage"], "Article");
+      requireKeys(
+        data,
+        ["headline", "datePublished", "author", "image", "mainEntityOfPage"],
+        "Article",
+      );
       break;
     case "HowTo":
       requireKeys(data, ["name", "step"], "HowTo");

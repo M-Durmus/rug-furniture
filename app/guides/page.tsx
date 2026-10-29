@@ -6,14 +6,20 @@ import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildMetadata({
   title: "Guides",
-  description: "Step-by-step Wool & Loom guides for measuring a rug in feet and inches and caring for wool.",
+  description:
+    "Step-by-step Wool & Loom guides for measuring a rug in feet and inches and caring for wool.",
   path: "/guides",
 });
 
 export default function GuidesPage() {
   return (
     <Container className="py-10">
-      <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Guides", path: "/guides" }]} />
+      <Breadcrumbs
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Guides", path: "/guides" },
+        ]}
+      />
       <h1 className="font-serif text-5xl">Guides</h1>
       <ul className="mt-8 space-y-8">
         {getGuides().map((guide) => (

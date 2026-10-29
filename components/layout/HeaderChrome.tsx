@@ -1,16 +1,29 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Logo } from "@/components/layout/Logo";
 import { PrimaryNav } from "@/components/layout/PrimaryNav";
-import { MobileNav } from "@/components/layout/MobileNav";
-import { SearchBar } from "@/components/layout/SearchBar";
-import { CartDrawer } from "@/components/layout/CartDrawer";
 import { CartToasts } from "@/components/layout/CartToasts";
+
+const SearchBar = dynamic(() =>
+  import("@/components/layout/SearchBar").then((mod) => mod.SearchBar),
+);
+const CartDrawer = dynamic(() =>
+  import("@/components/layout/CartDrawer").then((mod) => mod.CartDrawer),
+);
+const MobileNav = dynamic(() =>
+  import("@/components/layout/MobileNav").then((mod) => mod.MobileNav),
+);
 import { Container } from "@/components/ui/Container";
-import { iconButtonClass, type CartProductInfo, type SearchEntry, type ServiceLink } from "@/components/layout/chrome";
+import {
+  iconButtonClass,
+  type CartProductInfo,
+  type SearchEntry,
+  type ServiceLink,
+} from "@/components/layout/chrome";
 import { hydrateCart, useCartStore } from "@/lib/cart/store";
 
 function SearchIcon() {
@@ -39,7 +52,12 @@ function AccountIcon() {
   return (
     <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
       <circle cx="9" cy="6" r="2.5" fill="none" stroke="currentColor" strokeWidth="1.5" />
-      <path d="M3.5 15.5 C4.2 12 6.3 10.5 9 10.5 C11.7 10.5 13.8 12 14.5 15.5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      <path
+        d="M3.5 15.5 C4.2 12 6.3 10.5 9 10.5 C11.7 10.5 13.8 12 14.5 15.5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
     </svg>
   );
 }
@@ -48,7 +66,12 @@ function BagIcon() {
   return (
     <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
       <path d="M4 6 H14 L13 16 H5 Z" fill="none" stroke="currentColor" strokeWidth="1.5" />
-      <path d="M7 6 V4.5 A2 2 0 0 1 11 4.5 V6" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      <path
+        d="M7 6 V4.5 A2 2 0 0 1 11 4.5 V6"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
     </svg>
   );
 }
@@ -75,11 +98,17 @@ export function HeaderChrome({
 
   useEffect(() => {
     hydrateCart();
+    const open = () => setOverlay("cart");
+    window.addEventListener("wool-loom-open-cart", open);
+    return () => window.removeEventListener("wool-loom-open-cart", open);
   }, []);
 
   return (
     <header className="sticky top-0 z-40 h-16 border-b border-line bg-bg" data-header>
-      <a href="#main" className="fixed top-0 left-5 z-50 -translate-y-full bg-ink px-4 py-3 text-bg focus:translate-y-4">
+      <a
+        href="#main"
+        className="fixed top-0 left-5 z-50 -translate-y-full bg-ink px-4 py-3 text-bg focus:translate-y-4"
+      >
         Skip to content
       </a>
       <Container className="flex h-16 items-center gap-2">
@@ -91,10 +120,16 @@ export function HeaderChrome({
         </span>
         <PrimaryNav services={services} />
         <div className="ml-auto flex items-center gap-1">
-          <button type="button" className={iconButtonClass} aria-label="Search" aria-expanded={overlay === "search"} onClick={() => setOverlay("search")}>
+          <button
+            type="button"
+            className={iconButtonClass}
+            aria-label="Search"
+            aria-expanded={overlay === "search"}
+            onClick={() => setOverlay("search")}
+          >
             <SearchIcon />
           </button>
-          <Link href="/account" className={iconButtonClass} aria-label="Favorites">
+          <Link href="/favorites" className={iconButtonClass} aria-label="Favorites">
             <HeartIcon />
           </Link>
           <Link href="/account" className={iconButtonClass} aria-label="Account">
@@ -127,10 +162,19 @@ export function HeaderChrome({
           </button>
         </div>
       </Container>
-      {overlay === "search" ? <SearchBar open entries={entries} onClose={() => setOverlay(null)} /> : null}
-      {overlay === "cart" ? <CartDrawer open products={products} onClose={() => setOverlay(null)} /> : null}
+      {overlay === "search" ? (
+        <SearchBar open entries={entries} onClose={() => setOverlay(null)} />
+      ) : null}
+      {overlay === "cart" ? (
+        <CartDrawer open products={products} onClose={() => setOverlay(null)} />
+      ) : null}
       {overlay === "menu" ? (
-        <MobileNav open services={services} onClose={() => setOverlay(null)} onSearch={() => setOverlay("search")} />
+        <MobileNav
+          open
+          services={services}
+          onClose={() => setOverlay(null)}
+          onSearch={() => setOverlay("search")}
+        />
       ) : null}
       <CartToasts />
     </header>

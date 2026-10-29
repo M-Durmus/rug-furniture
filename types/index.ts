@@ -114,12 +114,14 @@ export type Warehouse = {
 export type TradeApplication = {
   id: string;
   businessName: string;
-  contactName: string;
+  contactName?: string;
   email: string;
   phone: string;
-  city: string;
-  state: string;
+  city?: string;
+  state?: string;
   website?: string;
+  role?: string;
+  projectTypes?: string;
   resaleCertificate?: string;
   notes?: string;
   createdAt: string;
@@ -150,6 +152,7 @@ export type Order = {
   email: string;
   items: CartItem[];
   subtotal: number;
+  discount: number;
   shipping: number;
   tax: number;
   total: number;
@@ -169,7 +172,7 @@ export type ProductFilters = {
   query?: string;
 };
 
-export type ProductSort = "featured" | "price-asc" | "price-desc" | "rating" | "title";
+export type ProductSort = "featured" | "newest" | "price-asc" | "price-desc" | "rating" | "title";
 
 export type PageQuery = { page?: number; pageSize?: number };
 

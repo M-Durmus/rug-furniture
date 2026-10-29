@@ -14,6 +14,7 @@ type MetaInput = {
   type?: "website" | "article";
   publishedTime?: string;
   modifiedTime?: string;
+  pagination?: { previous?: string; next?: string };
 };
 
 export function formatTitle(title: string, absolute = false): string {
@@ -30,6 +31,7 @@ export function buildMetadata({
   type = "website",
   publishedTime,
   modifiedTime,
+  pagination,
 }: MetaInput): Metadata {
   const fullTitle = formatTitle(title, absolute);
   const canonical = absoluteUrl(path);
@@ -44,9 +46,8 @@ export function buildMetadata({
     title: absolute ? { absolute: fullTitle } : title,
     description,
     alternates: { canonical },
-    robots: index
-      ? { index: true, follow: true }
-      : { index: false, follow: true },
+    ...(pagination?.previous || pagination?.next ? { pagination } : {}),
+    robots: index ? { index: true, follow: true } : { index: false, follow: true },
     openGraph: {
       title: fullTitle,
       description,

@@ -10,7 +10,10 @@
     "basePrice": 2480,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-oushak.webp",
+      "/images/photos/rug-persian.webp"
+    ],
     "colors": [
       {
         "name": "Ivory",
@@ -75,7 +78,10 @@
     "basePrice": 3120,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-field.webp",
+      "/images/photos/rug-flat.webp"
+    ],
     "colors": [
       {
         "name": "Ivory",
@@ -140,7 +146,10 @@
     "basePrice": 2760,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-border.webp",
+      "/images/photos/rug-field.webp"
+    ],
     "colors": [
       {
         "name": "Ivory",
@@ -206,7 +215,10 @@
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
     "saleOff": 0.12,
-    "images": [],
+    "images": [
+      "/images/photos/rug-persian.webp",
+      "/images/photos/living.webp"
+    ],
     "colors": [
       {
         "name": "Ivory",
@@ -271,7 +283,9 @@
     "basePrice": 2890,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-runner.webp"
+    ],
     "colors": [
       {
         "name": "Ivory",
@@ -336,7 +350,10 @@
     "basePrice": 2210,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-flat.webp",
+      "/images/photos/rug-persian.webp"
+    ],
     "colors": [
       {
         "name": "Ivory",
@@ -401,7 +418,10 @@
     "basePrice": 3580,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/living.webp",
+      "/images/photos/rug-flat.webp"
+    ],
     "colors": [
       {
         "name": "Ivory",
@@ -466,7 +486,10 @@
     "basePrice": 2640,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-oushak.webp",
+      "/images/photos/rug-field.webp"
+    ],
     "colors": [
       {
         "name": "Ivory",
@@ -531,7 +554,10 @@
     "basePrice": 4120,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-field.webp",
+      "/images/photos/living.webp"
+    ],
     "colors": [
       {
         "name": "Clay",
@@ -596,7 +622,10 @@
     "basePrice": 4680,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-border.webp",
+      "/images/photos/rug-runner.webp"
+    ],
     "colors": [
       {
         "name": "Clay",
@@ -662,7 +691,9 @@
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
     "saleOff": 0.1,
-    "images": [],
+    "images": [
+      "/images/photos/rug-persian.webp"
+    ],
     "colors": [
       {
         "name": "Clay",
@@ -727,7 +758,10 @@
     "basePrice": 3560,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-runner.webp",
+      "/images/photos/rug-flat.webp"
+    ],
     "colors": [
       {
         "name": "Clay",
@@ -792,7 +826,10 @@
     "basePrice": 4290,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-flat.webp",
+      "/images/photos/rug-field.webp"
+    ],
     "colors": [
       {
         "name": "Clay",
@@ -857,7 +894,9 @@
     "basePrice": 3840,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/living.webp"
+    ],
     "colors": [
       {
         "name": "Clay",
@@ -922,7 +961,10 @@
     "basePrice": 4450,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-oushak.webp",
+      "/images/photos/rug-runner.webp"
+    ],
     "colors": [
       {
         "name": "Clay",
@@ -987,7 +1029,10 @@
     "basePrice": 3710,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-field.webp",
+      "/images/photos/rug-persian.webp"
+    ],
     "colors": [
       {
         "name": "Clay",
@@ -1052,7 +1097,10 @@
     "basePrice": 780,
     "referenceWidthFt": 2,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-border.webp",
+      "/images/photos/rug-flat.webp"
+    ],
     "colors": [
       {
         "name": "Navy",
@@ -1117,7 +1165,10 @@
     "basePrice": 860,
     "referenceWidthFt": 2,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-persian.webp",
+      "/images/photos/rug-field.webp"
+    ],
     "colors": [
       {
         "name": "Navy",
@@ -1182,7 +1233,10 @@
     "basePrice": 640,
     "referenceWidthFt": 2,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-runner.webp",
+      "/images/photos/living.webp"
+    ],
     "colors": [
       {
         "name": "Navy",
@@ -1247,7 +1301,10 @@
     "basePrice": 920,
     "referenceWidthFt": 2,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-flat.webp",
+      "/images/photos/rug-runner.webp"
+    ],
     "colors": [
       {
         "name": "Navy",
@@ -1312,7 +1369,10 @@
     "basePrice": 740,
     "referenceWidthFt": 2,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/living.webp",
+      "/images/photos/rug-persian.webp"
+    ],
     "colors": [
       {
         "name": "Navy",
@@ -1377,7 +1437,10 @@
     "basePrice": 810,
     "referenceWidthFt": 2,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-oushak.webp",
+      "/images/photos/rug-flat.webp"
+    ],
     "colors": [
       {
         "name": "Navy",
@@ -1443,7 +1506,9 @@
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
     "saleOff": 0.15,
-    "images": [],
+    "images": [
+      "/images/photos/rug-field.webp"
+    ],
     "colors": [
       {
         "name": "Stone",
@@ -1508,7 +1573,10 @@
     "basePrice": 740,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-border.webp",
+      "/images/photos/living.webp"
+    ],
     "colors": [
       {
         "name": "Stone",
@@ -1573,7 +1641,10 @@
     "basePrice": 620,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-persian.webp",
+      "/images/photos/rug-runner.webp"
+    ],
     "colors": [
       {
         "name": "Stone",
@@ -1638,7 +1709,10 @@
     "basePrice": 710,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-runner.webp",
+      "/images/photos/rug-persian.webp"
+    ],
     "colors": [
       {
         "name": "Stone",
@@ -1703,7 +1777,9 @@
     "basePrice": 680,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-flat.webp"
+    ],
     "colors": [
       {
         "name": "Stone",
@@ -1768,7 +1844,10 @@
     "basePrice": 760,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/living.webp",
+      "/images/photos/rug-field.webp"
+    ],
     "colors": [
       {
         "name": "Stone",
@@ -1833,7 +1912,10 @@
     "basePrice": 2980,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-oushak.webp",
+      "/images/photos/living.webp"
+    ],
     "colors": [
       {
         "name": "Brick",
@@ -1898,7 +1980,10 @@
     "basePrice": 3640,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-field.webp",
+      "/images/photos/rug-runner.webp"
+    ],
     "colors": [
       {
         "name": "Brick",
@@ -1963,7 +2048,10 @@
     "basePrice": 2140,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-border.webp",
+      "/images/photos/rug-persian.webp"
+    ],
     "colors": [
       {
         "name": "Brick",
@@ -2028,7 +2116,10 @@
     "basePrice": 2460,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-persian.webp",
+      "/images/photos/rug-flat.webp"
+    ],
     "colors": [
       {
         "name": "Brick",
@@ -2093,7 +2184,10 @@
     "basePrice": 2720,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-runner.webp",
+      "/images/photos/rug-field.webp"
+    ],
     "colors": [
       {
         "name": "Brick",
@@ -2158,7 +2252,10 @@
     "basePrice": 3180,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-flat.webp",
+      "/images/photos/living.webp"
+    ],
     "colors": [
       {
         "name": "Brick",
@@ -2224,7 +2321,10 @@
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
     "saleOff": 0.08,
-    "images": [],
+    "images": [
+      "/images/photos/living.webp",
+      "/images/photos/rug-runner.webp"
+    ],
     "colors": [
       {
         "name": "Indigo",
@@ -2289,7 +2389,10 @@
     "basePrice": 3890,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-oushak.webp",
+      "/images/photos/rug-persian.webp"
+    ],
     "colors": [
       {
         "name": "Indigo",
@@ -2354,7 +2457,10 @@
     "basePrice": 3360,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-field.webp",
+      "/images/photos/rug-flat.webp"
+    ],
     "colors": [
       {
         "name": "Indigo",
@@ -2419,7 +2525,10 @@
     "basePrice": 3010,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-border.webp",
+      "/images/photos/rug-field.webp"
+    ],
     "colors": [
       {
         "name": "Indigo",
@@ -2484,7 +2593,10 @@
     "basePrice": 4280,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-persian.webp",
+      "/images/photos/living.webp"
+    ],
     "colors": [
       {
         "name": "Indigo",
@@ -2549,7 +2661,9 @@
     "basePrice": 2940,
     "referenceWidthFt": 8,
     "referenceLengthFt": 10,
-    "images": [],
+    "images": [
+      "/images/photos/rug-runner.webp"
+    ],
     "colors": [
       {
         "name": "Indigo",
@@ -2614,7 +2728,10 @@
     "basePrice": 3480,
     "referenceWidthFt": 7,
     "referenceLengthFt": 3,
-    "images": [],
+    "images": [
+      "/images/photos/sofa.webp",
+      "/images/photos/sofa-linen.webp"
+    ],
     "colors": [
       {
         "name": "Ivory",
@@ -2663,7 +2780,10 @@
     "basePrice": 2890,
     "referenceWidthFt": 6,
     "referenceLengthFt": 3,
-    "images": [],
+    "images": [
+      "/images/photos/sofa.webp",
+      "/images/photos/sofa-linen.webp"
+    ],
     "colors": [
       {
         "name": "Ivory",
@@ -2713,7 +2833,10 @@
     "referenceWidthFt": 8,
     "referenceLengthFt": 3,
     "saleOff": 0.1,
-    "images": [],
+    "images": [
+      "/images/photos/sofa.webp",
+      "/images/photos/sofa-linen.webp"
+    ],
     "colors": [
       {
         "name": "Ivory",
@@ -2762,7 +2885,10 @@
     "basePrice": 3760,
     "referenceWidthFt": 7,
     "referenceLengthFt": 3,
-    "images": [],
+    "images": [
+      "/images/photos/sofa.webp",
+      "/images/photos/sofa-linen.webp"
+    ],
     "colors": [
       {
         "name": "Ivory",
@@ -2811,7 +2937,10 @@
     "basePrice": 2640,
     "referenceWidthFt": 7,
     "referenceLengthFt": 3,
-    "images": [],
+    "images": [
+      "/images/photos/sofa.webp",
+      "/images/photos/sofa-linen.webp"
+    ],
     "colors": [
       {
         "name": "Ivory",
@@ -2860,7 +2989,10 @@
     "basePrice": 2380,
     "referenceWidthFt": 6,
     "referenceLengthFt": 3,
-    "images": [],
+    "images": [
+      "/images/photos/sofa.webp",
+      "/images/photos/sofa-linen.webp"
+    ],
     "colors": [
       {
         "name": "Ivory",
@@ -2909,7 +3041,10 @@
     "basePrice": 980,
     "referenceWidthFt": 4,
     "referenceLengthFt": 2,
-    "images": [],
+    "images": [
+      "/images/photos/table.webp",
+      "/images/photos/rug-flat.webp"
+    ],
     "colors": [
       {
         "name": "Oak",
@@ -2958,7 +3093,10 @@
     "basePrice": 1480,
     "referenceWidthFt": 4,
     "referenceLengthFt": 2,
-    "images": [],
+    "images": [
+      "/images/photos/table.webp",
+      "/images/photos/rug-flat.webp"
+    ],
     "colors": [
       {
         "name": "Oak",
@@ -3008,7 +3146,10 @@
     "referenceWidthFt": 4,
     "referenceLengthFt": 2,
     "saleOff": 0.12,
-    "images": [],
+    "images": [
+      "/images/photos/table.webp",
+      "/images/photos/rug-flat.webp"
+    ],
     "colors": [
       {
         "name": "Oak",
@@ -3057,7 +3198,10 @@
     "basePrice": 860,
     "referenceWidthFt": 5,
     "referenceLengthFt": 2,
-    "images": [],
+    "images": [
+      "/images/photos/table.webp",
+      "/images/photos/rug-flat.webp"
+    ],
     "colors": [
       {
         "name": "Oak",
@@ -3106,7 +3250,10 @@
     "basePrice": 1120,
     "referenceWidthFt": 4,
     "referenceLengthFt": 2,
-    "images": [],
+    "images": [
+      "/images/photos/table.webp",
+      "/images/photos/rug-flat.webp"
+    ],
     "colors": [
       {
         "name": "Oak",
@@ -3155,7 +3302,10 @@
     "basePrice": 1280,
     "referenceWidthFt": 3,
     "referenceLengthFt": 3,
-    "images": [],
+    "images": [
+      "/images/photos/chair.webp",
+      "/images/photos/sofa-linen.webp"
+    ],
     "colors": [
       {
         "name": "Linen",
@@ -3205,7 +3355,10 @@
     "basePrice": 740,
     "referenceWidthFt": 2,
     "referenceLengthFt": 2,
-    "images": [],
+    "images": [
+      "/images/photos/chair.webp",
+      "/images/photos/sofa-linen.webp"
+    ],
     "colors": [
       {
         "name": "Linen",
@@ -3255,7 +3408,10 @@
     "basePrice": 890,
     "referenceWidthFt": 2,
     "referenceLengthFt": 2,
-    "images": [],
+    "images": [
+      "/images/photos/chair.webp",
+      "/images/photos/sofa-linen.webp"
+    ],
     "colors": [
       {
         "name": "Linen",
@@ -3305,7 +3461,10 @@
     "basePrice": 1540,
     "referenceWidthFt": 3,
     "referenceLengthFt": 3,
-    "images": [],
+    "images": [
+      "/images/photos/chair.webp",
+      "/images/photos/sofa-linen.webp"
+    ],
     "colors": [
       {
         "name": "Linen",
@@ -3355,7 +3514,10 @@
     "basePrice": 820,
     "referenceWidthFt": 2,
     "referenceLengthFt": 2,
-    "images": [],
+    "images": [
+      "/images/photos/chair.webp",
+      "/images/photos/sofa-linen.webp"
+    ],
     "colors": [
       {
         "name": "Linen",
@@ -3405,7 +3567,10 @@
     "basePrice": 540,
     "referenceWidthFt": 2,
     "referenceLengthFt": 2,
-    "images": [],
+    "images": [
+      "/images/photos/side.webp",
+      "/images/photos/rug-vintage.webp"
+    ],
     "colors": [
       {
         "name": "Stone",
@@ -3455,7 +3620,10 @@
     "basePrice": 620,
     "referenceWidthFt": 2,
     "referenceLengthFt": 2,
-    "images": [],
+    "images": [
+      "/images/photos/side.webp",
+      "/images/photos/rug-vintage.webp"
+    ],
     "colors": [
       {
         "name": "Stone",
@@ -3505,7 +3673,10 @@
     "basePrice": 380,
     "referenceWidthFt": 1,
     "referenceLengthFt": 1,
-    "images": [],
+    "images": [
+      "/images/photos/side.webp",
+      "/images/photos/rug-vintage.webp"
+    ],
     "colors": [
       {
         "name": "Stone",
@@ -3555,7 +3726,10 @@
     "basePrice": 320,
     "referenceWidthFt": 2,
     "referenceLengthFt": 1,
-    "images": [],
+    "images": [
+      "/images/photos/side.webp",
+      "/images/photos/rug-vintage.webp"
+    ],
     "colors": [
       {
         "name": "Stone",

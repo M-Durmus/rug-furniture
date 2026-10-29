@@ -1,102 +1,156 @@
+import { Suspense } from "react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
+import { BeforeAfterSlider } from "@/components/service/BeforeAfterSlider";
+import { CrossSell } from "@/components/service/CrossSell";
+import { ProcessSteps } from "@/components/service/ProcessSteps";
+import { ServiceHero } from "@/components/service/ServiceHero";
+import { ZipChecker } from "@/components/service/ZipChecker";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { FramedImage } from "@/components/media/FramedImage";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { Accordion } from "@/components/ui/Accordion";
 import { Container } from "@/components/ui/Container";
-import { QuoteButton } from "@/components/ui/QuoteButton";
-import { getCities, getService, getServices } from "@/lib/data/services";
-import { faqJsonLd, serviceJsonLd } from "@/lib/seo/jsonld";
+import { getServiceBySlug, getServices } from "@/lib/data/catalog";
+import {
+  localServicePath,
+  resolveServiceSlug,
+  serviceAreas,
+  serviceParamSlugs,
+} from "@/lib/catalog/service-area";
+import { catalogServiceJsonLd, faqJsonLd } from "@/lib/seo/jsonld";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { imageSize, imageSizes } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
-  return getServices().map((service) => ({ slug: service.slug }));
+  return serviceParamSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
-  const service = getService(slug);
+  const canonical = resolveServiceSlug(slug);
+  if (!canonical) notFound();
+  if (canonical !== slug) permanentRedirect(`/services/${canonical}`);
+  const service = await getServiceBySlug(canonical);
   if (!service) notFound();
-  return buildMetadata({ title: service.name, description: service.description, path: `/services/${service.slug}` });
+  return buildMetadata({
+    title: service.name,
+    description: `${service.shortDescription} Priced by quote.`,
+    path: `/services/${service.slug}`,
+  });
 }
 
-export default async function ServicePage({ params }: Props) {
+async function ServiceDetail({ params }: Props) {
   const { slug } = await params;
-  const service = getService(slug);
+  const canonical = resolveServiceSlug(slug);
+  if (!canonical) notFound();
+  if (canonical !== slug) permanentRedirect(`/services/${canonical}`);
+  const service = await getServiceBySlug(canonical);
   if (!service) notFound();
-  const others = getServices().filter((item) => item.slug !== service.slug);
+  const others = (await getServices()).filter((item) => item.slug !== service.slug);
 
   return (
     <Container className="py-10">
-      <JsonLd data={[serviceJsonLd(service), faqJsonLd(service.faqs)]} />
-      <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Rug care", path: "/services" }, { name: service.name, path: `/services/${service.slug}` }]} />
-      <div className="grid items-start gap-10 lg:grid-cols-2">
-        <FramedImage src={service.image} alt={service.imageAlt} width={imageSize.product.width} height={imageSize.product.height} sizes={imageSizes.gallery} priority />
-        <div>
-          <h1 className="font-serif text-5xl leading-tight">{service.name}</h1>
-          <p className="mt-4 text-lg leading-8">{service.description}</p>
-          <div className="mt-6">
-            <QuoteButton intent={service.slug} showDimensions={service.slug === "custom-sizing"} />
-          </div>
-        </div>
-      </div>
-      <section className="mt-12" aria-labelledby="steps-heading">
-        <h2 id="steps-heading" className="font-serif text-3xl">
-          How it works
+      <JsonLd
+        data={[
+          catalogServiceJsonLd({
+            name: service.name,
+            serviceType: service.name,
+            description: service.shortDescription,
+            path: `/services/${service.slug}`,
+          }),
+          faqJsonLd(service.faq),
+        ]}
+      />
+      <Breadcrumbs
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Rug care", path: "/services" },
+          { name: service.name, path: `/services/${service.slug}` },
+        ]}
+      />
+      <ServiceHero
+        eyebrow="Priced by quote"
+        title={service.name}
+        lede={service.shortDescription}
+        href={`/book-service?service=${service.slug}`}
+      />
+      <section className="mt-14" aria-labelledby="included-heading">
+        <h2 id="included-heading" className="font-serif text-h2">
+          What is included
         </h2>
-        <ol className="mt-4 list-decimal space-y-3 pl-5">
-          {service.steps.map((step) => (
-            <li key={step.name}>
-              <span className="font-medium">{step.name}. </span>
-              {step.text}
-            </li>
-          ))}
-        </ol>
-      </section>
-      <section className="mt-12" aria-labelledby="service-faq">
-        <h2 id="service-faq" className="font-serif text-3xl">
-          Questions
-        </h2>
-        <div className="mt-4 space-y-4">
-          {service.faqs.map((faq) => (
-            <details key={faq.question} className="border border-line p-4">
-              <summary className="cursor-pointer text-lg">{faq.question}</summary>
-              <p className="mt-3">{faq.answer}</p>
-            </details>
-          ))}
-        </div>
-      </section>
-      <section className="mt-12" aria-labelledby="cities-heading">
-        <h2 id="cities-heading" className="font-serif text-3xl">
-          Cities we serve
-        </h2>
-        <ul className="mt-4 flex flex-wrap gap-2">
-          {getCities().map((city) => (
-            <li key={city.slug}>
-              <Link href={`/services/${service.slug}/${city.slug}`} className="inline-flex min-h-12 items-center rounded-[2px] border border-line px-3">
-                {city.name}
-              </Link>
-            </li>
+        <ul className="mt-4 list-disc space-y-2 pl-5">
+          {service.includes.map((item) => (
+            <li key={item}>{item}</li>
           ))}
         </ul>
       </section>
-      <section className="mt-12" aria-labelledby="other-services">
-        <h2 id="other-services" className="font-serif text-3xl">
+      <ProcessSteps title="How this service runs" steps={service.process} />
+      <BeforeAfterSlider />
+      <section className="mt-14" aria-labelledby="cities-heading">
+        <h2 id="cities-heading" className="font-serif text-h2">
+          Where we serve
+        </h2>
+        <p className="mt-3 max-w-2xl">
+          Each city has its own page, with the pickup note and the turnaround for that route.
+        </p>
+        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {serviceAreas().map((area) => (
+            <div key={area.stateSlug}>
+              <h3 className="font-serif text-h3">{area.state}</h3>
+              <ul className="mt-2 space-y-1">
+                {area.cities.map((city) => (
+                  <li key={city.slug}>
+                    <Link
+                      href={localServicePath(service.slug, area.stateSlug, city.slug)}
+                      className="inline-flex min-h-10 items-center underline underline-offset-4"
+                    >
+                      {city.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <ZipChecker serviceSlug={service.slug} />
+      </section>
+      <section className="mt-14" aria-labelledby="service-faq">
+        <h2 id="service-faq" className="font-serif text-h2">
+          Questions
+        </h2>
+        <div className="mt-4">
+          <Accordion
+            items={service.faq.map((item) => ({ title: item.question, content: item.answer }))}
+          />
+        </div>
+      </section>
+      <section className="mt-14" aria-labelledby="other-services">
+        <h2 id="other-services" className="font-serif text-h2">
           Other services
         </h2>
-        <ul className="mt-4 space-y-2">
+        <ul className="mt-4 flex flex-wrap gap-2">
           {others.map((item) => (
             <li key={item.slug}>
-              <Link href={`/services/${item.slug}`} className="inline-flex min-h-12 items-center underline underline-offset-4">
+              <Link
+                href={`/services/${item.slug}`}
+                className="inline-flex min-h-10 items-center border border-line px-3"
+              >
                 {item.name}
               </Link>
             </li>
           ))}
         </ul>
       </section>
+      <CrossSell />
     </Container>
+  );
+}
+
+export default function ServicePage(props: Props) {
+  return (
+    <Suspense fallback={<Container className="py-10">Loading this service.</Container>}>
+      <ServiceDetail {...props} />
+    </Suspense>
   );
 }

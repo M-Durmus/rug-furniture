@@ -1,5 +1,6 @@
 import { getWarehouse, warehouses } from "@/lib/data/facets";
 import type { City, Faq, Guide, Post, Product, Service } from "@/lib/data/types";
+import type { Review as CatalogReview } from "@/types";
 import { absoluteUrl, imageSize, site } from "@/lib/site";
 import type {
   ArticleSchema,
@@ -15,7 +16,8 @@ import { validateJsonLd } from "@/lib/seo/validate";
 
 export type Crumb = { name: string; path: string };
 
-const quoteDescription = "Priced by quote after we see the rug, the size in feet and inches, and the city.";
+const quoteDescription =
+  "Priced by quote after we see the rug, the size in feet and inches, and the city.";
 
 export function organizationAndWebsiteJsonLd(): SiteGraphSchema {
   const headquarters = getWarehouse("nj");
@@ -30,7 +32,12 @@ export function organizationAndWebsiteJsonLd(): SiteGraphSchema {
         description: site.description,
         email: site.email,
         telephone: site.phone,
-        logo: { "@type": "ImageObject", url: absoluteUrl("/images/logo.png"), width: imageSize.logo.width, height: imageSize.logo.height },
+        logo: {
+          "@type": "ImageObject",
+          url: absoluteUrl("/images/logo.png"),
+          width: imageSize.logo.width,
+          height: imageSize.logo.height,
+        },
         address: {
           "@type": "PostalAddress",
           streetAddress: headquarters.street,
@@ -109,7 +116,9 @@ export function productJsonLd(product: Product): ProductSchema {
       url,
       priceCurrency: "USD",
       price: product.price.toFixed(2),
-      availability: product.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+      availability: product.inStock
+        ? "https://schema.org/InStock"
+        : "https://schema.org/OutOfStock",
       itemCondition: "https://schema.org/NewCondition",
       priceValidUntil: "2027-10-28",
       seller: { "@type": "Organization", name: "Wool & Loom" },
@@ -122,6 +131,64 @@ export function productJsonLd(product: Product): ProductSchema {
       worstRating: "1",
     },
     review: product.reviews.map((review) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: review.author },
+      datePublished: review.date,
+      name: review.title,
+      reviewBody: review.body,
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: String(review.rating),
+        bestRating: "5",
+        worstRating: "1",
+      },
+    })),
+  }) as ProductSchema;
+}
+
+export function catalogProductJsonLd(input: {
+  name: string;
+  description: string;
+  sku: string;
+  path: string;
+  image?: string;
+  price: number;
+  inStock: boolean;
+  category: string;
+  rating: number;
+  reviewCount: number;
+  reviews: CatalogReview[];
+}): ProductSchema {
+  const url = absoluteUrl(input.path);
+  const image = input.image ? absoluteUrl(input.image) : absoluteUrl("/images/og.png");
+  return validateJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: input.name,
+    description: input.description,
+    sku: input.sku,
+    image: [image],
+    brand: { "@type": "Brand", name: "Wool & Loom" },
+    category: input.category,
+    url,
+    offers: {
+      "@type": "Offer",
+      url,
+      priceCurrency: "USD",
+      price: input.price.toFixed(2),
+      availability: input.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+      itemCondition: "https://schema.org/NewCondition",
+      priceValidUntil: "2027-10-28",
+      seller: { "@type": "Organization", name: "Wool & Loom" },
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: input.rating.toFixed(1),
+      reviewCount: input.reviewCount,
+      bestRating: "5",
+      worstRating: "1",
+    },
+    review: input.reviews.map((review) => ({
       "@type": "Review",
       author: { "@type": "Person", name: review.author },
       datePublished: review.date,
@@ -208,6 +275,90 @@ export function localServiceJsonLd(service: Service, city: City): LocalServiceGr
   }) as LocalServiceGraphSchema;
 }
 
+export function catalogServiceJsonLd(input: {
+  name: string;
+  serviceType: string;
+  description: string;
+  path: string;
+}): ServicePageSchema {
+  const url = absoluteUrl(input.path);
+  return validateJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: input.name,
+    serviceType: input.serviceType,
+    description: input.description,
+    url,
+    image: absoluteUrl("/images/og.png"),
+    areaServed: { "@type": "Country", name: "United States" },
+    provider: { "@type": "Organization", name: "Wool & Loom", url: site.url },
+    offers: {
+      "@type": "Offer",
+      url,
+      priceCurrency: "USD",
+      availability: "https://schema.org/PreOrder",
+      description: quoteDescription,
+      seller: { "@type": "Organization", name: "Wool & Loom" },
+    },
+  }) as ServicePageSchema;
+}
+
+export function catalogLocalServiceJsonLd(input: {
+  name: string;
+  serviceType: string;
+  description: string;
+  path: string;
+  cityName: string;
+  stateName: string;
+  warehouseId: "nj" | "ga" | "tx" | "ca";
+}): LocalServiceGraphSchema {
+  const warehouse = getWarehouse(input.warehouseId);
+  const url = absoluteUrl(input.path);
+  return validateJsonLd({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": `${url}#service`,
+        name: input.name,
+        serviceType: input.serviceType,
+        description: input.description,
+        url,
+        image: absoluteUrl("/images/og.png"),
+        areaServed: { "@type": "City", name: `${input.cityName}, ${input.stateName}` },
+        provider: { "@type": "Organization", name: "Wool & Loom", url: site.url },
+        offers: {
+          "@type": "Offer",
+          url,
+          priceCurrency: "USD",
+          availability: "https://schema.org/PreOrder",
+          description: quoteDescription,
+          seller: { "@type": "Organization", name: "Wool & Loom" },
+        },
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": `${url}#business`,
+        name: `Wool & Loom ${input.name}`,
+        url,
+        image: absoluteUrl("/images/og.png"),
+        telephone: warehouse.phone,
+        priceRange: "$$",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: warehouse.street,
+          addressLocality: warehouse.city,
+          addressRegion: warehouse.region,
+          postalCode: warehouse.postalCode,
+          addressCountry: "US",
+        },
+        areaServed: { "@type": "City", name: input.cityName },
+        parentOrganization: { "@type": "Organization", name: "Wool & Loom", url: site.url },
+      },
+    ],
+  }) as LocalServiceGraphSchema;
+}
+
 export function faqJsonLd(items: Faq[]): FaqPageSchema {
   return validateJsonLd({
     "@context": "https://schema.org",
@@ -218,6 +369,34 @@ export function faqJsonLd(items: Faq[]): FaqPageSchema {
       acceptedAnswer: { "@type": "Answer", text: item.answer },
     })),
   }) as FaqPageSchema;
+}
+
+export function catalogArticleJsonLd(post: {
+  slug: string;
+  title: string;
+  excerpt: string;
+  author: string;
+  publishedAt: string;
+}): ArticleSchema {
+  const url = absoluteUrl(`/blog/${post.slug}`);
+  return validateJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.publishedAt,
+    dateModified: post.publishedAt,
+    inLanguage: "en-US",
+    image: [absoluteUrl("/images/og.png")],
+    mainEntityOfPage: url,
+    author: { "@type": "Organization", name: post.author, url: site.url },
+    publisher: {
+      "@type": "Organization",
+      name: "Wool & Loom",
+      url: site.url,
+      logo: { "@type": "ImageObject", url: absoluteUrl("/images/logo.png") },
+    },
+  }) as ArticleSchema;
 }
 
 export function articleJsonLd(post: Post): ArticleSchema {

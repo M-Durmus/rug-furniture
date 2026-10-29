@@ -1,0 +1,272 @@
+[
+  {
+    "slug": "newark",
+    "intro": "Newark pickup leaves the Elizabeth warehouse on weekday mornings. Essex County is close enough that a rug is often on a truck the same week the quote is approved.",
+    "pickupNote": "Most stops are street-level or a short lobby carry. Tell us if the building needs a loading dock appointment.",
+    "turnaround": "Same-week pickup is common. A wool wash is still two to three weeks, because the rug has to dry before it comes back.",
+    "faq": {
+      "question": "Do Newark routes start in the city?",
+      "answer": "They start at the Elizabeth warehouse and run through Newark on weekday mornings."
+    }
+  },
+  {
+    "slug": "jersey-city",
+    "intro": "Jersey City waterfront towers along the Hudson usually need a freight elevator booked before the crew leaves Elizabeth. We will not guess the elevator from the street address.",
+    "pickupNote": "Send the freight elevator hours with the quote. A residential elevator that stops at 4 p.m. changes the window.",
+    "turnaround": "Once the elevator is reserved, pickup is a North Jersey weekday. Cleaning still waits on drying time at the warehouse.",
+    "faq": {
+      "question": "Can you meet a freight elevator in Jersey City?",
+      "answer": "Yes, if the reservation is in the quote. We do not arrive and hope the elevator is free."
+    }
+  },
+  {
+    "slug": "hoboken",
+    "intro": "Hoboken brownstones are the usual carry: a parlor-floor turn and a stair that is steeper than it looks from the sidewalk. The quote asks about that turn before we price the pickup.",
+    "pickupNote": "Street parking turns over quickly. A morning window is easier than a late afternoon stop.",
+    "turnaround": "Pickup is on the North Jersey route. Plan on the same wash time as Newark once the rug is in Elizabeth.",
+    "faq": {
+      "question": "Do Hoboken stairs change the quote?",
+      "answer": "Yes. A walk-up is a different job from a curb handoff, and the quote names which one you are booking."
+    }
+  },
+  {
+    "slug": "new-york",
+    "intro": "Manhattan deliveries are scheduled from Elizabeth with a two-hour window. Elevator buildings can ask for a certificate of insurance, and we send it when the quote is approved.",
+    "pickupNote": "Tell us the cross street and whether the service entrance is on a different block from the lobby.",
+    "turnaround": "The truck is a scheduled Manhattan run, not a same-day van. A cleaned rug returns on a later window after it is dry.",
+    "faq": {
+      "question": "Do you carry a certificate of insurance for Manhattan buildings?",
+      "answer": "Yes. Ask for it in the quote and we send it before the delivery day."
+    }
+  },
+  {
+    "slug": "brooklyn",
+    "intro": "Brooklyn brownstones and walk-ups mean a stoop carry. We price the stairs in the quote, not after the truck is at the curb.",
+    "pickupNote": "Name the stoop, the parlor floor, and any gate. A garden entrance is a different path from the front door.",
+    "turnaround": "Brooklyn rides the same Elizabeth route as Manhattan, on its own stops. Wash time is still set by drying, not by the bridge.",
+    "faq": {
+      "question": "Is a Brooklyn stoop included in pickup?",
+      "answer": "The quote includes the carry you describe. A last-minute walk-up that was not in the notes is a new quote."
+    }
+  },
+  {
+    "slug": "philadelphia",
+    "intro": "Philadelphia is a longer run from Elizabeth than North Jersey. Center City loading docks need a morning slot, and we book that slot before the rug leaves the warehouse.",
+    "pickupNote": "Rittenhouse walk-ups and dock buildings are different jobs. Say which one the address is.",
+    "turnaround": "Add a transit day beyond a Newark stop. The wash itself is still done in Elizabeth and does not start until the rug arrives.",
+    "faq": {
+      "question": "Why is Philadelphia slower than Newark?",
+      "answer": "The rug travels from Elizabeth. The extra day is the road, not a different cleaning process."
+    }
+  },
+  {
+    "slug": "pittsburgh",
+    "intro": "Pittsburgh is farther from Elizabeth than Philadelphia, so we batch western Pennsylvania. A single rug does not ride as its own overnight.",
+    "pickupNote": "Hill streets and tight row-house stairs belong in the notes. We ask before we put the stop on a batch.",
+    "turnaround": "Expect a longer wait for the truck than in Philadelphia. Once the rug is in Elizabeth, drying sets the return date.",
+    "faq": {
+      "question": "Do you run to Pittsburgh every day?",
+      "answer": "No. Western Pennsylvania is a batched route from the New Jersey warehouse."
+    }
+  },
+  {
+    "slug": "boston",
+    "intro": "Boston is a scheduled run from the New Jersey warehouse, not a same-day van. Beacon Hill stairs and streets that need a permit belong in the quote.",
+    "pickupNote": "Tell us if the building requires a permit or a specific loading street. We do not discover that at the curb.",
+    "turnaround": "The Boston truck is weekly, not daily. A wash still takes two to three weeks after the rug reaches Elizabeth.",
+    "faq": {
+      "question": "Is Boston served from a local shop?",
+      "answer": "No. Pickup and the work both run through the Elizabeth warehouse."
+    }
+  },
+  {
+    "slug": "cambridge",
+    "intro": "Cambridge rides the Boston run, with narrower streets around the university squares. We ask which entrance faces the street before we quote the carry.",
+    "pickupNote": "A side door on a one-way street needs a note. The driver does not circle the block looking for it.",
+    "turnaround": "Same weekly truck as Boston. Cambridge is not a separate, faster route.",
+    "faq": {
+      "question": "Can you stop in Cambridge without a Boston address?",
+      "answer": "Yes. Cambridge is its own stop on the Boston run from Elizabeth."
+    }
+  },
+  {
+    "slug": "atlanta",
+    "intro": "Atlanta stops leave the Fairburn warehouse. Inside the perimeter, placement is often two business days after the quote is approved, when the route has room.",
+    "pickupNote": "Midtown towers need a loading dock time. Intown houses are usually a short carry from the drive.",
+    "turnaround": "Fairburn is close, so the truck is the fast part. A wool wash still waits until the rug is dry.",
+    "faq": {
+      "question": "Where do Atlanta rugs get washed?",
+      "answer": "At the Fairburn warehouse, not in a storefront in the city."
+    }
+  },
+  {
+    "slug": "savannah",
+    "intro": "Savannah’s coastal air is hard on a damp wool rug. Washed pieces stay in Fairburn until they are dry, then ride the coastal route.",
+    "pickupNote": "Historic-district squares can mean a longer carry from the nearest place a truck can stop. Say how far the door is from the curb.",
+    "turnaround": "Add the coastal transit day to the drying time. We do not send a rug south while it is still damp.",
+    "faq": {
+      "question": "Will a cleaned rug leave Fairburn damp for Savannah?",
+      "answer": "No. It stays at the warehouse until it is dry, then it joins the coastal route."
+    }
+  },
+  {
+    "slug": "charlotte",
+    "intro": "Charlotte is served from the Georgia warehouse, with an extra transit day compared with Atlanta. Uptown loading is a morning window.",
+    "pickupNote": "South End walk-ups and uptown docks are different quotes. Name the floor and the elevator.",
+    "turnaround": "The extra day is the drive from Fairburn. The wash clock starts when the rug arrives, not when we pick it up.",
+    "faq": {
+      "question": "Is Charlotte on the Atlanta truck?",
+      "answer": "It is a separate day from the inside-the-perimeter Atlanta stops."
+    }
+  },
+  {
+    "slug": "raleigh",
+    "intro": "The Triangle is its own day from Fairburn, not a stop tacked onto Charlotte. We do not promise the Atlanta turnaround on a Raleigh ticket.",
+    "pickupNote": "Downtown decks and suburban drives need different notes. A low deck clearance should be in the quote.",
+    "turnaround": "Plan on the Georgia warehouse plus the Triangle transit day, then drying time before the return.",
+    "faq": {
+      "question": "Can a Raleigh rug share a Charlotte pickup day?",
+      "answer": "Not as a rule. Raleigh is scheduled as its own run from Fairburn."
+    }
+  },
+  {
+    "slug": "miami",
+    "intro": "Miami is the longest Southeast run from Fairburn. Salt air and humidity mean a cleaned rug does not leave the warehouse damp.",
+    "pickupNote": "Condo freight elevators and a lobby handoff are different jobs. Reserve the elevator before the truck is assigned.",
+    "turnaround": "Transit is longer than Atlanta, and the rug waits in Fairburn until it is dry. The quote names both.",
+    "faq": {
+      "question": "Do you wash rugs in Miami?",
+      "answer": "No. The wash is in Fairburn. Miami is pickup and the return route."
+    }
+  },
+  {
+    "slug": "tampa",
+    "intro": "Tampa is a Gulf route from Fairburn, not the Miami truck. We ask about gated entries and elevator codes before the day is set.",
+    "pickupNote": "A gate code that changes on the delivery morning delays the stop. Put the current code in the quote and update us if it changes.",
+    "turnaround": "Gulf transit is its own day. Drying still happens in Georgia before the rug heads west across the state.",
+    "faq": {
+      "question": "Does Tampa share the Miami schedule?",
+      "answer": "No. The Gulf route is scheduled apart from the Miami run."
+    }
+  },
+  {
+    "slug": "charleston",
+    "intro": "Charleston historic-district houses often have a narrow stair and no freight elevator. The quote names that carry before we leave Fairburn.",
+    "pickupNote": "A single house on a peninsula street may need the truck to stop a short walk away. Tell us where it can actually stand.",
+    "turnaround": "The coastal day plus drying time. We do not shorten the wash to make a Charleston window.",
+    "faq": {
+      "question": "Can you carry a rug up a Charleston stair with a tight turn?",
+      "answer": "Only if the turn is described in the quote. If the rug will not make the turn, we say so before pickup."
+    }
+  },
+  {
+    "slug": "columbia",
+    "intro": "Columbia is inland from Charleston, on a different weekday from the same Georgia warehouse. The area around the state house is usually a short carry from the curb.",
+    "pickupNote": "Campus and downtown stops are easier in the morning. Say if a deck or a service alley is the real entrance.",
+    "turnaround": "Shorter on the road than Charleston, same drying rule in Fairburn.",
+    "faq": {
+      "question": "Is Columbia faster than Charleston?",
+      "answer": "The drive is shorter. The wash still finishes only when the rug is dry."
+    }
+  },
+  {
+    "slug": "dallas",
+    "intro": "Dallas and the surrounding stops run from Grand Prairie, close enough for a same-week route. High-rise freight elevators should be reserved before we roll.",
+    "pickupNote": "A downtown dock and a Park Cities drive are different notes. Include the dock number or the gate.",
+    "turnaround": "The truck can be the same week. A wash still takes the drying time at the Texas warehouse.",
+    "faq": {
+      "question": "Which warehouse washes a Dallas rug?",
+      "answer": "The Grand Prairie warehouse. It does not go to New Jersey for a wash."
+    }
+  },
+  {
+    "slug": "austin",
+    "intro": "Austin deliveries leave Grand Prairie overnight. We ask about steep drives and tight stair turns before we quote, because those streets are the job.",
+    "pickupNote": "A hill with a switchback driveway needs a photo or a clear note. We do not discover the grade at the curb.",
+    "turnaround": "Add the overnight transit to the warehouse time. The return is another overnight after the rug is dry.",
+    "faq": {
+      "question": "Is Austin a same-day trip from Dallas?",
+      "answer": "No. It is an overnight run from Grand Prairie, out and back."
+    }
+  },
+  {
+    "slug": "houston",
+    "intro": "Houston routes cover the Loop and nearby suburbs. Humidity is hard on a damp rug, so washed pieces stay in Grand Prairie until they are fully dry.",
+    "pickupNote": "High-rises inside the Loop need a freight elevator. Suburban houses are usually a garage or a front door.",
+    "turnaround": "Transit is longer than Dallas. The rug does not leave the warehouse damp just to make a Houston window.",
+    "faq": {
+      "question": "Will humidity in Houston change a fresh wash?",
+      "answer": "We keep the rug in Grand Prairie until it is dry, then we schedule the Houston return."
+    }
+  },
+  {
+    "slug": "oklahoma-city",
+    "intro": "Oklahoma City is a plains route from the Texas warehouse. We group Oklahoma stops so one rug is not the only piece on the truck.",
+    "pickupNote": "Downtown garages and open suburban drives need the height clearance in the notes if the entrance is covered.",
+    "turnaround": "The route is batched, so pickup waits for the Oklahoma day. Wash time starts in Grand Prairie after that.",
+    "faq": {
+      "question": "Do you keep a workshop in Oklahoma City?",
+      "answer": "No. The work is at the Texas warehouse. Oklahoma City is a pickup and return route."
+    }
+  },
+  {
+    "slug": "tulsa",
+    "intro": "Tulsa uses the same Texas warehouse as Oklahoma City, on a different day. Downtown garages need a height clearance in the notes.",
+    "pickupNote": "A covered entrance under 12 feet should be called out. The truck will not try a garage it cannot clear.",
+    "turnaround": "Tulsa is not the Oklahoma City truck. Expect the batched day, then drying in Grand Prairie.",
+    "faq": {
+      "question": "Can a Tulsa rug ride with Oklahoma City?",
+      "answer": "They are different days from Grand Prairie, even though the warehouse is the same."
+    }
+  },
+  {
+    "slug": "los-angeles",
+    "intro": "Los Angeles routes start in Ontario. Hillside streets and long carries up steps are quoted separately from a curb drop.",
+    "pickupNote": "A canyon road or a long exterior stair needs to be in the quote. The curb price does not include it.",
+    "turnaround": "The Ontario warehouse sets the wash time. The city truck is the delivery, not the place the rug is washed.",
+    "faq": {
+      "question": "Are hillside steps part of a Los Angeles pickup?",
+      "answer": "Only when they are in the quote. A curb drop and a stair carry are different prices, both by quote."
+    }
+  },
+  {
+    "slug": "san-diego",
+    "intro": "San Diego is a scheduled run from the California warehouse, typically once or twice a week, not a daily van from Ontario.",
+    "pickupNote": "Coastal condos often have a garage elevator. Reserve it, and tell us the floor, before the run is locked.",
+    "turnaround": "Wait for the San Diego day, then the usual drying time in Ontario before the rug comes back.",
+    "faq": {
+      "question": "How often is the San Diego route?",
+      "answer": "Usually once or twice a week, depending on how full the Ontario schedule is."
+    }
+  },
+  {
+    "slug": "san-francisco",
+    "intro": "San Francisco hills and tight turns are the carry. A garage with a steep apron is a different quote from a lobby handoff.",
+    "pickupNote": "Name the apron, the curb cut, and any stair from the garage to the door. We price the path you describe.",
+    "turnaround": "The northern California run is less frequent than Los Angeles. Drying still happens in Ontario.",
+    "faq": {
+      "question": "Do you wash rugs in San Francisco?",
+      "answer": "No. Pickup is local to the route. The wash and the repair happen at the Ontario warehouse."
+    }
+  },
+  {
+    "slug": "phoenix",
+    "intro": "Phoenix heat changes the day. We do not leave a wool rug in a closed truck through the afternoon, so the window is earlier than on the coast.",
+    "pickupNote": "Tile roofs and long drives are not the issue. The issue is a rug sitting in a hot truck. Morning stops are the rule.",
+    "turnaround": "The western route from Ontario, with a morning window. A wash still finishes only when the rug is dry.",
+    "faq": {
+      "question": "Why are Phoenix windows earlier?",
+      "answer": "A wool rug should not sit in a closed truck in the afternoon heat. We schedule the stop earlier."
+    }
+  },
+  {
+    "slug": "tucson",
+    "intro": "Tucson is farther than Phoenix on the same western route. Plan on a later arrival than a Phoenix stop booked on the same ticket.",
+    "pickupNote": "Desert lots and gated communities need the gate instructions in the quote. The driver does not wait out a call box.",
+    "turnaround": "Longer on the road than Phoenix, same Ontario warehouse for the wash, same rule about a hot truck.",
+    "faq": {
+      "question": "Does Tucson share Phoenix’s morning window?",
+      "answer": "The truck still avoids the hottest hours. Tucson is later on the route than Phoenix, so the window is the one we name in the quote."
+    }
+  }
+]

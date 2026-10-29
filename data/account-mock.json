@@ -1,0 +1,29 @@
+{
+  "orders": [
+    {
+      "id": "WL-1048",
+      "placed": "March 2, 2026",
+      "status": "Delivered",
+      "summary": "Ivory Oushak, 5×7, Apricot",
+      "total": 1286
+    }
+  ],
+  "quotes": [
+    {
+      "id": "Q-204",
+      "service": "Rug cleaning",
+      "city": "Newark, New Jersey",
+      "status": "Waiting on size confirmation"
+    }
+  ],
+  "addresses": [
+    {
+      "id": "addr-home",
+      "label": "Home",
+      "line": "18 Mercer Street",
+      "city": "Newark",
+      "state": "NJ",
+      "zip": "07102"
+    }
+  ]
+}

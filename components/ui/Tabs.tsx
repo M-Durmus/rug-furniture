@@ -41,7 +41,12 @@ export function Tabs({
 
   return (
     <div>
-      <div role="tablist" aria-label={label} onKeyDown={onKeyDown} className="flex gap-1 border-b border-line">
+      <div
+        role="tablist"
+        aria-label={label}
+        onKeyDown={onKeyDown}
+        className="flex gap-1 overflow-x-auto border-b border-line"
+      >
         {tabs.map((tab, index) => {
           const selected = tab.id === active;
           return (
@@ -58,7 +63,7 @@ export function Tabs({
               tabIndex={selected ? 0 : -1}
               onClick={() => setActive(tab.id)}
               className={cn(
-                "min-h-10 px-3 text-sm",
+                "min-h-10 shrink-0 px-3 text-sm",
                 selected ? "border-b-2 border-ink text-ink" : "text-mute",
               )}
             >
