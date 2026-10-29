@@ -20,7 +20,7 @@ export function FurnitureArt({ colors, kind = "sofa", className, label }: Furnit
       className={className}
       preserveAspectRatio="xMidYMid slice"
     >
-      <rect width="200" height="260" fill="#ebe3d3" />
+      <rect width="200" height="260" fill="var(--sand)" />
       {kind === "sofa" ? (
         <>
           <rect

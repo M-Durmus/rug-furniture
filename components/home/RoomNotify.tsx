@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useToast } from "@/components/ui/Toast";
 
 const steps = [
@@ -15,15 +16,24 @@ export function RoomNotify() {
     <div>
       <ol className="grid gap-4 md:grid-cols-3">
         {steps.map((step, index) => (
-          <li key={step.title} className="border border-line bg-card p-4">
-            <p className="text-sm text-mute">Step {index + 1}</p>
-            <h3 className="mt-1 font-serif text-h3">{step.title}</h3>
-            <p className="mt-2 text-sm">{step.text}</p>
+          <li key={step.title} className="border border-line bg-card p-5">
+            <p className="font-serif text-3xl leading-none text-accent">0{index + 1}</p>
+            <h3 className="mt-4 font-serif text-h3">{step.title}</h3>
+            <p className="mt-2 text-sm text-mute">{step.text}</p>
           </li>
         ))}
       </ol>
-      <div className="mt-6 flex min-h-40 items-center justify-center rounded-[2px] border border-dashed border-line bg-sand px-6 py-10 text-center">
-        <p>Room preview is coming soon</p>
+      <div className="relative mt-6 min-h-72 overflow-hidden bg-sand">
+        <Image
+          src="/images/photos/rug-persian.webp"
+          alt=""
+          fill
+          sizes="(min-width: 1024px) 1100px, 100vw"
+          className="object-cover"
+        />
+        <p className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#14110e]/80 to-transparent px-6 pt-16 pb-6 font-serif text-3xl text-[#f6f1e8]">
+          Room preview is coming soon
+        </p>
       </div>
       <button
         type="button"

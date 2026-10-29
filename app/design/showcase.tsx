@@ -18,12 +18,12 @@ import { Tabs } from "@/components/ui/Tabs";
 import { ToastProvider, useToast } from "@/components/ui/Toast";
 
 const lightTokens = [
-  ["bg", "#f6f1e8"],
-  ["ink", "#1d1a16"],
-  ["mute", "#6f675b"],
-  ["card", "#fffdf8"],
-  ["line", "#ddd3c1"],
-  ["sand", "#ebe3d3"],
+  ["bg", "#fafaf8"],
+  ["ink", "#171614"],
+  ["mute", "#6d6963"],
+  ["card", "#ffffff"],
+  ["line", "#e5e2dc"],
+  ["sand", "#f3f1ed"],
   ["dark", "#1b1814"],
   ["on-dark", "#f1ebe0"],
   ["accent", "#7a2f24"],

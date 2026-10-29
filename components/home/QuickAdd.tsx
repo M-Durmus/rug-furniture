@@ -24,7 +24,7 @@ export function QuickAdd({
   return (
     <button
       type="button"
-      className="mt-3 inline-flex min-h-10 items-center justify-center rounded-[2px] border border-ink px-4 text-sm disabled:opacity-50"
+      className="mt-4 inline-flex min-h-10 items-center justify-center rounded-[2px] border border-ink px-4 text-sm transition-colors hover:bg-ink hover:text-bg disabled:opacity-50"
       disabled={stock < 1}
       onClick={() => {
         add({ productId, sizeLabel, colorName, qty: 1 }, unitPrice);

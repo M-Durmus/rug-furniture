@@ -169,12 +169,22 @@ export function ProductStage({
             </a>
           </p>
           {quote ? (
-            <p className="mt-4 font-serif text-h3">
-              {usd.format(quote.pay)}
+            <div className="mt-4">
+              <p className="font-serif text-h3">
+                <span className={quote.list !== quote.pay ? "text-accent" : undefined}>
+                  {usd.format(quote.pay)}
+                </span>
+                {quote.list !== quote.pay ? (
+                  <s className="ml-3 text-base font-sans text-mute">{usd.format(quote.list)}</s>
+                ) : null}
+              </p>
               {quote.list !== quote.pay ? (
-                <s className="ml-3 text-base font-sans text-mute">{usd.format(quote.list)}</s>
+                <p className="mt-2 inline-flex bg-accent px-2.5 py-1.5 text-sm font-medium text-[#f6f1e8]">
+                  {Math.round((1 - quote.pay / quote.list) * 100)}% off · You save{" "}
+                  {usd.format(quote.list - quote.pay)} on this size
+                </p>
               ) : null}
-            </p>
+            </div>
           ) : null}
           <p className={inStock ? "mt-2 text-success" : "mt-2 text-mute"}>
             {inStock

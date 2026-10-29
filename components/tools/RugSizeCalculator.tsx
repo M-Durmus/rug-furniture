@@ -164,7 +164,7 @@ function RoomDiagram({
           y={pad}
           width={rw}
           height={rl}
-          fill="var(--color-bg, #f6f1e8)"
+          fill="var(--color-bg, #fafaf8)"
           stroke="currentColor"
         />
         {rug ? (

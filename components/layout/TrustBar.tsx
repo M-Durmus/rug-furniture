@@ -10,11 +10,14 @@ const points = [
 
 export function TrustBar() {
   return (
-    <div className="border-b border-line bg-sand">
-      <Container>
-        <ul className="flex h-12 items-center gap-8 overflow-x-auto text-sm whitespace-nowrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+    <div className="border-b border-line bg-card">
+      <Container className="px-0 sm:px-5">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
           {points.map((point) => (
-            <li key={point} className="shrink-0">
+            <li
+              key={point}
+              className="flex min-h-14 items-center justify-center border border-line bg-card px-3 py-3 text-center text-[13px] leading-5"
+            >
               {point}
             </li>
           ))}

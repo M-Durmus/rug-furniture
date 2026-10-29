@@ -33,6 +33,8 @@ export function ProductCard({
 }) {
   const price = unitPrice ?? product.salePrice ?? product.price;
   const compareAt = product.salePrice && price === product.salePrice ? product.price : undefined;
+  const saved = compareAt ? compareAt - price : 0;
+  const off = compareAt ? Math.round((1 - price / compareAt) * 100) : 0;
   const color = product.colors[0];
   const colors = product.colors.map((item) => item.hex);
   const photo = product.images[0];
@@ -52,9 +54,9 @@ export function ProductCard({
   const path = href ?? productPath(product);
 
   return (
-    <article className="relative flex h-full flex-col border border-line bg-card">
+    <article className="group relative flex h-full flex-col bg-card">
       <FavoriteButton
-        className="absolute top-2 right-2 z-10"
+        className="absolute top-3 right-3 z-10"
         item={{
           id: product.id,
           title: product.title,
@@ -65,30 +67,32 @@ export function ProductCard({
           furniture: product.type === "furniture" ? furnitureKind(product.category) : undefined,
         }}
       />
-      {href ? (
-        <Link href={href} className="relative block aspect-[4/5] bg-sand">
+      <Link href={path} className="relative block aspect-[4/5] overflow-hidden bg-sand">
+        <span className="relative block h-full transition-transform duration-700 ease-out group-hover:scale-[1.04]">
           {media}
-        </Link>
-      ) : (
-        <div className="relative aspect-[4/5] bg-sand">{media}</div>
-      )}
-      <div className="flex flex-1 flex-col p-4">
+        </span>
+        {compareAt ? (
+          <span className="absolute top-3 left-3 bg-accent px-2.5 py-1.5 text-sm font-medium text-[#f6f1e8]">
+            {off}% off
+          </span>
+        ) : null}
+      </Link>
+      <div className="flex flex-1 flex-col px-1 pt-4 pb-2">
         <h3 className="font-serif text-h3">
-          {href ? (
-            <Link href={href} className="hover:underline">
-              {product.title}
-            </Link>
-          ) : (
-            product.title
-          )}
+          <Link href={path} className="hover:underline">
+            {product.title}
+          </Link>
         </h3>
         <p className="mt-1 text-sm text-mute">{feetLabel(size)}</p>
         <p className="mt-2">
-          <span>{usd.format(price)}</span>
+          <span className={compareAt ? "font-medium text-accent" : undefined}>{usd.format(price)}</span>
           {compareAt ? (
             <span className="ml-2 text-sm text-mute line-through">{usd.format(compareAt)}</span>
           ) : null}
         </p>
+        {compareAt ? (
+          <p className="mt-1 text-sm text-accent">You save {usd.format(saved)} on this size.</p>
+        ) : null}
         <p className="mt-1 text-sm text-mute">
           {product.stock} in stock · {product.warehouse} · {product.deliveryDays} days
         </p>

@@ -40,20 +40,27 @@ const colors = [
 ];
 
 const furniture = [
-  { href: "/search?q=sofa", label: "Sofas", text: "Six to eight feet wide, scaled for an 8 by 10 rug." },
-  { href: "/search?q=coffee", label: "Coffee tables", text: "Sized to sit fully on the rug in front of a sofa." },
-  { href: "/search?q=chair", label: "Accent chairs", text: "Front legs meant to share the rug with the sofa." },
-  { href: "/search?q=side+table", label: "Side tables", text: "Small enough to sit on the rug beside a chair." },
+  { href: "/furniture/sofas", label: "Sofas", text: "Six to eight feet wide, scaled for an 8 by 10 rug." },
+  { href: "/furniture/coffee-tables", label: "Coffee tables", text: "Sized to sit fully on the rug in front of a sofa." },
+  { href: "/furniture/accent-chairs", label: "Accent chairs", text: "Front legs meant to share the rug with the sofa." },
+  { href: "/furniture/side-tables", label: "Side tables", text: "Small enough to sit on the rug beside a chair." },
 ];
 
-type Item = { id: string; label: string; href: string; panel?: "rugs" | "furniture" | "services" };
+type Panel = "rugs" | "size" | "room" | "style" | "color" | "furniture" | "services";
+type Item = { id: string; label: string; href: string; panel?: Panel };
 
 const items: Item[] = [
-  { id: "rugs", label: "Rugs", href: "/rugs", panel: "rugs" },
+  { id: "rugs", label: "All rugs", href: "/rugs", panel: "rugs" },
+  { id: "size", label: "Size", href: "/rugs/size/8x10", panel: "size" },
+  { id: "room", label: "Room", href: "/rugs/size/8x10", panel: "room" },
+  { id: "style", label: "Style", href: "/rugs/style/oushak", panel: "style" },
+  { id: "color", label: "Color", href: "/rugs/color/ivory", panel: "color" },
+  { id: "washable", label: "Washable", href: "/rugs/washable" },
+  { id: "runners", label: "Runners", href: "/rugs/runner" },
   { id: "furniture", label: "Furniture", href: "/furniture", panel: "furniture" },
-  { id: "services", label: "Services", href: "/services", panel: "services" },
-  { id: "room", label: "Room preview", href: "/room-preview" },
-  { id: "trade", label: "Trade program", href: "/trade-program" },
+  { id: "services", label: "Rug care", href: "/services", panel: "services" },
+  { id: "room-preview", label: "Room preview", href: "/room-preview" },
+  { id: "trade", label: "Trade", href: "/trade-program" },
   { id: "journal", label: "Journal", href: "/blog" },
 ];
 
@@ -73,6 +80,14 @@ function ItemLink({ href, children }: { href: string; children: ReactNode }) {
         {children}
       </Link>
     </li>
+  );
+}
+
+function Menu({ id, children }: { id: string; children: ReactNode }) {
+  return (
+    <div id={`mega-${id}`} className="absolute top-full right-0 left-0 z-40 border-b border-line bg-card">
+      <div className="mx-auto w-full max-w-[1180px] px-5 py-5">{children}</div>
+    </div>
   );
 }
 
@@ -164,16 +179,16 @@ export function PrimaryNav({ services }: { services: ServiceLink[] }) {
     <nav
       ref={navRef}
       aria-label="Primary"
-      className="hidden h-16 items-center xl:flex"
+      className="relative flex h-11 min-w-0 border-t border-line"
       onKeyDown={onKeyDown}
       onMouseLeave={() => setOpen(null)}
       onBlur={(event) => {
         if (!event.currentTarget.contains(event.relatedTarget)) setOpen(null);
       }}
     >
-      <ul className="flex items-center gap-1">
+      <ul className="mx-auto flex w-full max-w-[1180px] items-center gap-0.5 overflow-x-auto px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {items.map((item, index) => (
-          <li key={item.id} onMouseEnter={() => setOpen(item.panel ? item.id : null)}>
+          <li key={item.id} className="shrink-0" onMouseEnter={() => setOpen(item.panel ? item.id : null)}>
             <Link
               ref={(node) => {
                 triggers.current[index] = node;
@@ -182,9 +197,14 @@ export function PrimaryNav({ services }: { services: ServiceLink[] }) {
               aria-expanded={item.panel ? open === item.id : undefined}
               aria-controls={item.panel ? `mega-${item.id}` : undefined}
               aria-haspopup={item.panel ? "true" : undefined}
-              className="inline-flex h-10 items-center rounded-[2px] px-2 text-[15px]"
+              className="inline-flex h-9 items-center gap-1 rounded-[2px] px-2.5 text-sm whitespace-nowrap"
             >
               {item.label}
+              {item.panel ? (
+                <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                  <path d="M2 3.5 L5 6.5 L8 3.5" fill="none" stroke="currentColor" strokeWidth="1.4" />
+                </svg>
+              ) : null}
             </Link>
           </li>
         ))}
@@ -192,7 +212,7 @@ export function PrimaryNav({ services }: { services: ServiceLink[] }) {
       {open === "rugs" ? (
         <div id="mega-rugs" className="absolute top-full right-0 left-0 z-40 pt-1">
           <div className="border-b border-line bg-card text-ink">
-          <div className="mx-auto grid w-full max-w-[1180px] grid-cols-5 gap-6 px-5 py-6">
+          <div className="mx-auto grid w-full max-w-[1180px] grid-cols-2 gap-6 px-5 py-6 md:grid-cols-3 lg:grid-cols-5">
             <Column title="Shop by Room">
               {rooms.map((link) => (
                 <ItemLink key={link.href} href={link.href}>
@@ -232,10 +252,74 @@ export function PrimaryNav({ services }: { services: ServiceLink[] }) {
           </div>
         </div>
       ) : null}
+      {open === "size" ? (
+        <Menu id="size">
+          <ul className="flex flex-wrap gap-2">
+            {sizes.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  data-menuitem="true"
+                  className="inline-flex min-h-10 items-center border border-line px-3 text-sm"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Menu>
+      ) : null}
+      {open === "room" ? (
+        <Menu id="room">
+          <ul className="grid gap-1 sm:grid-cols-2 lg:grid-cols-3">
+            {rooms.map((link) => (
+              <ItemLink key={link.href} href={link.href}>
+                {link.label}
+                <span className="text-mute">{link.note}</span>
+              </ItemLink>
+            ))}
+          </ul>
+        </Menu>
+      ) : null}
+      {open === "style" ? (
+        <Menu id="style">
+          <ul className="flex flex-wrap gap-2">
+            {styles.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  data-menuitem="true"
+                  className="inline-flex min-h-10 items-center border border-line px-3 text-sm"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Menu>
+      ) : null}
+      {open === "color" ? (
+        <Menu id="color">
+          <ul className="flex flex-wrap gap-2">
+            {colors.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  data-menuitem="true"
+                  className="inline-flex min-h-10 items-center gap-2 border border-line px-3 text-sm"
+                >
+                  <span className="h-3 w-3 border border-line" style={{ background: link.hex }} aria-hidden="true" />
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Menu>
+      ) : null}
       {open === "furniture" ? (
         <div id="mega-furniture" className="absolute top-full right-0 left-0 z-40 pt-1">
           <div className="border-b border-line bg-card">
-          <ul className="mx-auto grid w-full max-w-[1180px] grid-cols-4 gap-4 px-5 py-6">
+          <ul className="mx-auto grid w-full max-w-[1180px] grid-cols-2 gap-4 px-5 py-6 lg:grid-cols-4">
             {furniture.map((link) => (
               <li key={link.href}>
                 <Link href={link.href} data-menuitem="true" className="block min-h-10">

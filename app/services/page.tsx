@@ -89,9 +89,11 @@ export default async function ServicesPage() {
         ]}
       />
       <ServiceHero
+        eyebrow="After the sale"
         title="Rug care, priced by quote"
         lede="Cleaning, repair, custom sizing, and pickup are quoted after we know the size in feet and inches, the fiber, and the city. There is no flat rate on this page."
         href="/book-service"
+        image="/images/photos/rug-oushak.webp"
       />
       <ul className="mt-12 grid gap-4 md:grid-cols-2">
         {services.map((service) => (

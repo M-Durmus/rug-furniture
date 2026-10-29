@@ -74,6 +74,7 @@ async function ServiceDetail({ params }: Props) {
         title={service.name}
         lede={service.shortDescription}
         href={`/book-service?service=${service.slug}`}
+        image={service.image || undefined}
       />
       <section className="mt-14" aria-labelledby="included-heading">
         <h2 id="included-heading" className="font-serif text-h2">
@@ -86,7 +87,7 @@ async function ServiceDetail({ params }: Props) {
         </ul>
       </section>
       <ProcessSteps title="How this service runs" steps={service.process} />
-      <BeforeAfterSlider />
+      <BeforeAfterSlider service={service.slug} />
       <section className="mt-14" aria-labelledby="cities-heading">
         <h2 id="cities-heading" className="font-serif text-h2">
           Where we serve

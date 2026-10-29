@@ -64,18 +64,21 @@ const social = [
 
 export function SiteFooter() {
   return (
-    <footer className="mt-16 bg-dark text-on-dark [&_:focus-visible]:outline-[#d08b78]">
+    <footer className="mt-16 border-t-[3px] border-accent bg-[color-mix(in_srgb,var(--accent)_10%,var(--card))] text-ink">
       <Container className="py-12">
-        <Logo variant="light-on-dark" />
-        <p className="mt-4 max-w-md text-sm text-[#a79d8c]">Handpicked in Turkey. Delivered from America.</p>
+        <Logo />
+        <p className="mt-4 max-w-md text-sm text-mute">Handpicked in Turkey. Delivered from America.</p>
         <div className="mt-10 grid gap-10 sm:grid-cols-2 xl:grid-cols-5">
           {columns.map((column) => (
             <nav key={column.title} aria-label={column.title}>
-              <h2 className="font-serif text-h3 text-on-dark">{column.title}</h2>
+              <h2 className="font-serif text-h3 text-accent">{column.title}</h2>
               <ul className="mt-4 space-y-1">
                 {column.links.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="inline-flex min-h-10 items-center underline underline-offset-4">
+                    <Link
+                      href={link.href}
+                      className="inline-flex min-h-10 items-center underline decoration-accent/40 underline-offset-4 hover:text-accent"
+                    >
                       {link.label}
                     </Link>
                   </li>
@@ -84,16 +87,19 @@ export function SiteFooter() {
             </nav>
           ))}
         </div>
-        <div className="mt-12 max-w-md">
-          <h2 className="font-serif text-h3 text-on-dark">10% off your first order</h2>
-          <p className="mt-2 text-sm text-[#a79d8c]">Join the list. One note, no weekly blast.</p>
+        <div className="mt-12 max-w-md border border-line bg-card p-5">
+          <h2 className="font-serif text-h3 text-accent">10% off your first order</h2>
+          <p className="mt-2 text-sm text-mute">Join the list. One note, no weekly blast.</p>
           <div className="mt-4">
             <NewsletterForm />
           </div>
         </div>
         <ul className="mt-10 flex flex-wrap gap-2" aria-label="Payment methods">
           {["Visa", "Mastercard", "Amex", "PayPal"].map((name) => (
-            <li key={name} className="inline-flex h-8 items-center rounded-[2px] border border-[#352f27] px-2 text-xs tracking-wide">
+            <li
+              key={name}
+              className="inline-flex h-8 items-center rounded-[2px] border border-accent/30 bg-card px-2 text-xs tracking-wide text-ink"
+            >
               {name}
             </li>
           ))}
@@ -101,13 +107,17 @@ export function SiteFooter() {
         <ul className="mt-6 flex flex-wrap gap-4">
           {social.map((link) => (
             <li key={link.label}>
-              <a href={link.href} className="inline-flex min-h-10 items-center underline underline-offset-4" rel="noreferrer">
+              <a
+                href={link.href}
+                className="inline-flex min-h-10 items-center underline decoration-accent/40 underline-offset-4 hover:text-accent"
+                rel="noreferrer"
+              >
                 {link.label}
               </a>
             </li>
           ))}
         </ul>
-        <p className="mt-8 text-sm text-[#a79d8c]">
+        <p className="mt-8 text-sm text-mute">
           <Link href="/privacy" className="underline underline-offset-4">
             Privacy
           </Link>
@@ -120,7 +130,7 @@ export function SiteFooter() {
             {site.phoneDisplay}
           </a>
         </p>
-        <p className="mt-2 text-sm text-[#a79d8c]">© 2026 Wool & Loom. Prices in USD. Sizes in feet and inches.</p>
+        <p className="mt-2 text-sm text-mute">© 2026 Wool & Loom. Prices in USD. Sizes in feet and inches.</p>
       </Container>
     </footer>
   );

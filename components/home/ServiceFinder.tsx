@@ -13,7 +13,7 @@ export function ServiceFinder({ areas }: { areas: ServiceArea[] }) {
   const city = cities.find((item) => item.slug === citySlug) ?? cities[0];
 
   return (
-    <div className="mt-8 border border-line bg-card p-5">
+    <div className="flex h-full flex-col justify-center bg-card p-6 sm:p-8">
       <h3 className="font-serif text-h3">Where we serve</h3>
       <p className="mt-2 text-sm text-mute">Pickup and delivery follow the warehouse closest to the city.</p>
       <div className="mt-4 grid gap-3 sm:grid-cols-2">

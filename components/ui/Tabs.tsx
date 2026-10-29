@@ -64,7 +64,7 @@ export function Tabs({
               onClick={() => setActive(tab.id)}
               className={cn(
                 "min-h-10 shrink-0 px-3 text-sm",
-                selected ? "border-b-2 border-ink text-ink" : "text-mute",
+                selected ? "border-b-2 border-accent font-medium text-ink" : "text-mute hover:text-ink",
               )}
             >
               {tab.label}

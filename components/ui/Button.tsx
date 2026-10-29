@@ -2,12 +2,14 @@ import Link from "next/link";
 import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
 import { cn } from "@/lib/utils/cn";
 
-type Variant = "primary" | "outline" | "link";
+type Variant = "primary" | "outline" | "link" | "onDark" | "onDarkOutline";
 
 const variants: Record<Variant, string> = {
   primary: "border-ink bg-ink text-bg hover:opacity-90",
   outline: "border-ink bg-transparent text-ink hover:bg-sand",
   link: "border-transparent bg-transparent px-0 text-ink underline underline-offset-4 hover:text-accent",
+  onDark: "border-[#f6f1e8] bg-[#f6f1e8] text-[#1d1a16] hover:opacity-90",
+  onDarkOutline: "border-[#f6f1e8] bg-transparent text-[#f6f1e8] hover:bg-[#f6f1e8]/15",
 };
 
 const base =

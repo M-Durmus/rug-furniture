@@ -104,25 +104,33 @@ export function HeaderChrome({
   }, []);
 
   return (
-    <header className="sticky top-0 z-40 h-16 border-b border-line bg-bg" data-header>
+    <header className="sticky top-0 z-40 border-b border-line bg-bg" data-header>
       <a
         href="#main"
         className="fixed top-0 left-5 z-50 -translate-y-full bg-ink px-4 py-3 text-bg focus:translate-y-4"
       >
         Skip to content
       </a>
-      <Container className="flex h-16 items-center gap-2">
+      <Container className="flex h-16 items-center gap-2 sm:gap-3">
         <span className="sm:hidden">
           <Logo variant="mark" />
         </span>
         <span className="hidden sm:contents">
           <Logo />
         </span>
-        <PrimaryNav services={services} />
+        <button
+          type="button"
+          className="hidden h-10 min-w-0 flex-1 items-center gap-3 rounded-[2px] border border-line bg-card px-4 text-left text-sm text-mute sm:flex"
+          aria-expanded={overlay === "search"}
+          onClick={() => setOverlay("search")}
+        >
+          <SearchIcon />
+          <span className="truncate">Find a rug or a piece of furniture</span>
+        </button>
         <div className="ml-auto flex items-center gap-1">
           <button
             type="button"
-            className={iconButtonClass}
+            className={`${iconButtonClass} sm:hidden`}
             aria-label="Search"
             aria-expanded={overlay === "search"}
             onClick={() => setOverlay("search")}
@@ -151,7 +159,7 @@ export function HeaderChrome({
           </button>
           <button
             type="button"
-            className={`${iconButtonClass} xl:hidden`}
+            className={`${iconButtonClass} lg:hidden`}
             aria-label="Open menu"
             aria-expanded={overlay === "menu"}
             onClick={() => setOverlay("menu")}
@@ -162,6 +170,7 @@ export function HeaderChrome({
           </button>
         </div>
       </Container>
+      <PrimaryNav services={services} />
       {overlay === "search" ? (
         <SearchBar open entries={entries} onClose={() => setOverlay(null)} />
       ) : null}

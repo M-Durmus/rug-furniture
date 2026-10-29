@@ -28,7 +28,7 @@ export function NewsletterForm() {
 
   if (done) {
     return (
-      <p role="status" className="text-sm text-[#f1ebe0]">
+      <p role="status" className="text-sm text-ink">
         You are on the list. Use {email.trim()} at checkout for 10% off your first order.
       </p>
     );
@@ -36,7 +36,7 @@ export function NewsletterForm() {
 
   return (
     <form onSubmit={submit} noValidate>
-      <label htmlFor={inputId} className="text-sm text-[#f1ebe0]">
+      <label htmlFor={inputId} className="text-sm text-ink">
         Email address
       </label>
       <div className="mt-2 flex flex-col gap-2 sm:flex-row">
@@ -49,14 +49,17 @@ export function NewsletterForm() {
           aria-invalid={error ? true : undefined}
           aria-describedby={error ? errorId : undefined}
           onChange={(event) => setEmail(event.target.value)}
-          className="h-10 w-full rounded-[2px] border border-[#352f27] bg-[#14110e] px-3 text-[#f1ebe0]"
+          className="h-10 w-full rounded-[2px] border border-line bg-bg px-3 text-ink"
         />
-        <button type="submit" className="inline-flex h-10 shrink-0 items-center justify-center rounded-[2px] bg-[#f1ebe0] px-4 text-[#1d1a16]">
+        <button
+          type="submit"
+          className="inline-flex h-10 shrink-0 items-center justify-center rounded-[2px] bg-accent px-4 text-bg"
+        >
           Sign up
         </button>
       </div>
       {error ? (
-        <p id={errorId} className="mt-2 text-sm text-[#d08b78]">
+        <p id={errorId} className="mt-2 text-sm text-accent">
           {error}
         </p>
       ) : null}

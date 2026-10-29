@@ -134,22 +134,28 @@ function ProductGrid({ items }: { items: { product: Product; size: ProductSize }
 }
 
 export default async function HomePage() {
-  const [all, rugs, furniture, services, areas, warehouses, reviews, posts] = await Promise.all([
-    getProducts({}, "featured", { pageSize: 8 }),
-    getProducts({ type: "rug" }, "featured", { pageSize: 8 }),
-    getProducts({ type: "furniture" }, "featured", { pageSize: 8 }),
-    getServices(),
-    getServiceAreas(),
-    getWarehouses(),
-    getReviews(),
-    getBlogPosts(),
-  ]);
+  const [all, rugs, furniture, services, areas, warehouses, reviews, posts, stock] =
+    await Promise.all([
+      getProducts({}, "featured", { pageSize: 8 }),
+      getProducts({ type: "rug" }, "featured", { pageSize: 8 }),
+      getProducts({ type: "furniture" }, "featured", { pageSize: 8 }),
+      getServices(),
+      getServiceAreas(),
+      getWarehouses(),
+      getReviews(),
+      getBlogPosts(),
+      getProducts({}, "title", { pageSize: 80 }),
+    ]);
 
-  const [allCards, rugCards, furnitureCards] = await Promise.all([
+  const markdowns = stock.items.filter((product) => product.salePrice !== undefined);
+  const [allCards, rugCards, furnitureCards, saleCards] = await Promise.all([
     Promise.all(all.items.map(async (product) => ({ product, size: await pricedSize(product) }))),
     Promise.all(rugs.items.map(async (product) => ({ product, size: await pricedSize(product) }))),
     Promise.all(
       furniture.items.map(async (product) => ({ product, size: await pricedSize(product) })),
+    ),
+    Promise.all(
+      markdowns.map(async (product) => ({ product, size: await pricedSize(product) })),
     ),
   ]);
 
@@ -158,53 +164,91 @@ export default async function HomePage() {
 
   return (
     <>
-      <section aria-labelledby="hero-title">
-        <Container className="grid items-center gap-10 py-12 lg:grid-cols-2 lg:py-16">
-          <div>
-            <h1 id="hero-title" className="text-h1">
-              Timeless Turkish Rugs. Expert Care, Always.
-            </h1>
-            <p className="mt-4 max-w-xl text-lg leading-8">
-              Handpicked in Turkey and shipped from our own warehouses in New Jersey, Georgia,
-              Texas, and California. Cleaning, repair, and custom sizing stay with our service team.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Button href="/rugs">Shop all rugs</Button>
-              <Button href="/contact" variant="outline">
-                Request a service quote
-              </Button>
-            </div>
+      <section
+        aria-labelledby="hero-title"
+        className="relative min-h-[34rem] overflow-hidden bg-dark text-[#f6f1e8] sm:min-h-[40rem] lg:min-h-[46rem]"
+      >
+        <RoomScene />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-t from-[#14110e]/85 via-[#14110e]/40 to-[#14110e]/25 lg:bg-gradient-to-r lg:from-[#14110e]/80 lg:via-[#14110e]/40 lg:to-transparent"
+        />
+        <Container className="relative flex min-h-[34rem] flex-col justify-end py-10 sm:min-h-[40rem] lg:min-h-[46rem] lg:justify-center lg:py-20">
+          <p className="text-[11px] font-medium tracking-[0.24em] text-[#f1ebe0] uppercase">
+            Handmade in Turkey
+          </p>
+          <h1 id="hero-title" className="mt-4 max-w-xl text-[#f6f1e8]">
+            Timeless Turkish Rugs. Expert Care, Always.
+          </h1>
+          <p className="mt-5 max-w-xl text-lg leading-8 text-[#f1ebe0]">
+            Handpicked in Turkey and shipped from our own warehouses in New Jersey, Georgia, Texas,
+            and California. Cleaning, repair, and custom sizing stay with our service team.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Button href="/rugs" variant="onDark">
+              Shop all rugs
+            </Button>
+            <Button href="/contact" variant="onDarkOutline">
+              Request a service quote
+            </Button>
           </div>
-          <RoomScene />
+          <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-[#f1ebe0]">
+            <li>Four U.S. warehouses</li>
+            <li>Free shipping</li>
+            <li>100-day returns</li>
+          </ul>
         </Container>
       </section>
 
       <TrustBar />
 
-      <section aria-labelledby="category-title" className="py-14">
+      <section aria-labelledby="category-title" className="py-16 lg:py-20">
         <Container>
-          <h2 id="category-title" className="text-h2">
-            Shop by category
-          </h2>
-          <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {categories.map((category) => (
-              <li key={category.name}>
+          <p className="text-[11px] font-medium tracking-[0.22em] text-accent uppercase">
+            The collection
+          </p>
+          <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+            <h2 id="category-title" className="text-h2">
+              Shop by category
+            </h2>
+            <Link href="/rugs" className="text-sm underline underline-offset-4">
+              Shop all rugs
+            </Link>
+          </div>
+          <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
+            {categories.map((category, index) => (
+              <li
+                key={category.name}
+                className={
+                  index === 0
+                    ? "sm:col-span-2 lg:col-span-3 lg:row-span-2"
+                    : index < 3
+                      ? "lg:col-span-3"
+                      : index === categories.length - 1
+                        ? "sm:col-span-2 lg:col-span-2"
+                        : "lg:col-span-2"
+                }
+              >
                 <Link
                   href={category.href}
-                  className="flex h-full gap-4 border border-line bg-card p-4"
+                  className={`group relative block overflow-hidden bg-sand ${
+                    index === 0
+                      ? "aspect-[4/5] sm:aspect-[16/10] lg:aspect-auto lg:h-full lg:min-h-[32rem]"
+                      : index < 3
+                        ? "aspect-[4/5] lg:aspect-[5/4]"
+                        : "aspect-[4/5] sm:aspect-[16/10] lg:aspect-[4/5]"
+                  }`}
                 >
-                  <div className="relative h-28 w-20 shrink-0 overflow-hidden bg-sand">
-                    <Image
-                      src={category.image}
-                      alt=""
-                      fill
-                      sizes="80px"
-                      className="object-cover"
-                    />
-                  </div>
-                  <span>
-                    <span className="block font-serif text-h3">{category.name}</span>
-                    <span className="mt-2 block text-sm text-mute">{category.text}</span>
+                  <Image
+                    src={category.image}
+                    alt=""
+                    fill
+                    sizes={index === 0 ? "(min-width: 1024px) 50vw, 100vw" : "(min-width: 1024px) 25vw, 50vw"}
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                  />
+                  <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#14110e]/80 via-[#14110e]/35 to-transparent p-5 text-[#f6f1e8]">
+                    <span className="block font-serif text-2xl sm:text-3xl">{category.name}</span>
+                    <span className="mt-1 block max-w-sm text-sm text-[#f1ebe0]">{category.text}</span>
                   </span>
                 </Link>
               </li>
@@ -213,20 +257,23 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      <section aria-labelledby="size-title" className="border-t border-line py-14">
+      <section aria-labelledby="size-title" className="bg-sand py-16 lg:py-20">
         <Container>
-          <h2 id="size-title" className="text-h2">
+          <p className="text-[11px] font-medium tracking-[0.22em] text-accent uppercase">
+            Measured in feet
+          </p>
+          <h2 id="size-title" className="mt-3 text-h2">
             Shop by size
           </h2>
           <p className="mt-3 max-w-2xl text-mute">
             Sizes are in feet. Custom size is cut and bound to the measurement you send.
           </p>
-          <ul className="mt-6 flex flex-wrap gap-2">
+          <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
             {sizes.map((size) => (
               <li key={size.href}>
                 <Link
                   href={size.href}
-                  className="inline-flex min-h-10 items-center rounded-[2px] border border-line bg-card px-3 text-sm"
+                  className="flex h-24 items-center justify-center border border-line bg-card px-2 text-center font-serif text-2xl transition-colors hover:border-ink hover:bg-bg"
                 >
                   {size.label}
                 </Link>
@@ -236,11 +283,51 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      <section aria-labelledby="featured-title" className="border-t border-line py-14">
+      {saleCards.length > 0 ? (
+        <section aria-labelledby="sale-title" className="border-t border-line bg-card py-16 lg:py-20">
+          <Container>
+            <div className="grid gap-10 lg:grid-cols-[17rem_minmax(0,1fr)] lg:items-start">
+              <div>
+                <p className="text-[11px] font-medium tracking-[0.22em] text-accent uppercase">
+                  Warehouse markdowns
+                </p>
+                <h2 id="sale-title" className="mt-3 text-h2">
+                  Priced below the list
+                </h2>
+                <p className="mt-4 text-mute">
+                  The accent price is what you pay. The crossed-out price is the regular list for
+                  that size.
+                </p>
+                <p className="mt-4 text-sm">
+                  {saleCards.length} {saleCards.length === 1 ? "piece" : "pieces"}, already in a
+                  U.S. warehouse.
+                </p>
+              </div>
+              <ul className="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
+                {saleCards.map(({ product, size }) => (
+                  <li key={product.id}>
+                    <ProductCard product={product} size={size} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Container>
+        </section>
+      ) : null}
+
+      <section aria-labelledby="featured-title" className="py-16 lg:py-20">
         <Container>
-          <h2 id="featured-title" className="text-h2">
-            Featured products
-          </h2>
+          <p className="text-[11px] font-medium tracking-[0.22em] text-accent uppercase">
+            In the warehouses
+          </p>
+          <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+            <h2 id="featured-title" className="text-h2">
+              Featured products
+            </h2>
+            <Link href="/rugs" className="text-sm underline underline-offset-4">
+              View the rugs
+            </Link>
+          </div>
           <div className="mt-6">
             <Tabs
               label="Featured products"
@@ -258,31 +345,65 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      <section aria-labelledby="care-title" className="border-t border-line py-14">
+      <section aria-labelledby="care-title" className="border-t border-line py-16 lg:py-20">
         <Container>
-          <h2 id="care-title" className="text-h2">
+          <p className="text-[11px] font-medium tracking-[0.22em] text-accent uppercase">
+            After the sale
+          </p>
+          <h2 id="care-title" className="mt-3 text-h2">
             Rug care services
           </h2>
-          <ul className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {services.map((service) => (
-              <li key={service.id} className="border border-line bg-card p-5">
-                <h3 className="font-serif text-h3">
-                  <Link href={`/services/${service.slug}`} className="underline underline-offset-4">
-                    {service.name}
-                  </Link>
-                </h3>
-                <p className="mt-2 text-sm">{service.shortDescription}</p>
-                <p className="mt-3 text-sm text-mute">Priced by quote</p>
+          <p className="mt-3 max-w-2xl text-mute">
+            Cleaning, repair, a cut that fits the floor, and the truck that brings it back.
+          </p>
+          <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {services.map((service, index) => (
+              <li key={service.id}>
+                <Link href={`/services/${service.slug}`} className="group flex h-full flex-col">
+                  <span className="relative block aspect-[3/4] overflow-hidden bg-sand">
+                    {service.image ? (
+                      <Image
+                        src={service.image}
+                        alt=""
+                        fill
+                        sizes="(min-width: 1024px) 25vw, 50vw"
+                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                      />
+                    ) : null}
+                    <span className="absolute top-3 left-3 bg-card px-2 py-1 font-serif text-lg leading-none text-accent">
+                      0{index + 1}
+                    </span>
+                  </span>
+                  <span className="flex flex-1 flex-col pt-4">
+                    <h3 className="font-serif text-h3">{service.name}</h3>
+                    <span className="mt-2 flex-1 text-sm text-mute">{service.shortDescription}</span>
+                    <span className="mt-4 text-sm">Priced by quote</span>
+                  </span>
+                </Link>
               </li>
             ))}
           </ul>
-          <ServiceFinder areas={areas} />
+          <div className="mt-8 grid overflow-hidden border border-line bg-card lg:grid-cols-2">
+            <div className="relative min-h-72">
+              <Image
+                src="/images/photos/rug-runner.webp"
+                alt=""
+                fill
+                sizes="(min-width: 1024px) 560px, 100vw"
+                className="object-cover"
+              />
+            </div>
+            <ServiceFinder areas={areas} />
+          </div>
         </Container>
       </section>
 
-      <section aria-labelledby="preview-title" className="border-t border-line py-14">
+      <section aria-labelledby="preview-title" className="border-t border-line py-16 lg:py-20">
         <Container>
-          <h2 id="preview-title" className="text-h2">
+          <p className="text-[11px] font-medium tracking-[0.22em] text-accent uppercase">
+            See it at home
+          </p>
+          <h2 id="preview-title" className="mt-3 text-h2">
             Room preview
           </h2>
           <p className="mt-3 max-w-2xl text-mute">
@@ -294,9 +415,12 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      <section aria-labelledby="warehouse-title" className="border-t border-line py-14">
+      <section aria-labelledby="warehouse-title" className="border-t border-line bg-card py-16 lg:py-20">
         <Container>
-          <h2 id="warehouse-title" className="text-h2">
+          <p className="text-[11px] font-medium tracking-[0.22em] text-accent uppercase">
+            New Jersey, Georgia, Texas, California
+          </p>
+          <h2 id="warehouse-title" className="mt-3 text-h2">
             Warehouse inventory
           </h2>
           <p className="mt-3 max-w-2xl text-mute">
@@ -308,28 +432,47 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      <section aria-labelledby="calculator-title" className="border-t border-line py-14">
-        <Container className="grid gap-6 border border-line bg-card p-6 md:grid-cols-[minmax(0,1fr)_auto] md:items-center">
-          <div>
-            <h2 id="calculator-title" className="text-h2">
-              Rug size calculator
-            </h2>
-            <p className="mt-3 max-w-2xl">
-              Measure the furniture footprint in feet and inches, then match it to a stock size that
-              leaves a border of bare floor.
-            </p>
+      <section aria-labelledby="calculator-title" className="py-16 lg:py-20">
+        <Container>
+          <div className="grid overflow-hidden border border-line bg-card lg:grid-cols-2">
+            <div className="relative min-h-72">
+              <Image
+                src="/images/photos/rug-field.webp"
+                alt=""
+                fill
+                sizes="(min-width: 1024px) 560px, 100vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="flex flex-col justify-center p-8 lg:p-12">
+              <p className="text-[11px] font-medium tracking-[0.22em] text-accent uppercase">
+                Measure first
+              </p>
+              <h2 id="calculator-title" className="mt-3 text-h2">
+                Rug size calculator
+              </h2>
+              <p className="mt-4 max-w-md">
+                Measure the furniture footprint in feet and inches, then match it to a stock size
+                that leaves a border of bare floor.
+              </p>
+              <div className="mt-8">
+                <Button href="/tools/rug-size-calculator">Open the calculator</Button>
+              </div>
+            </div>
           </div>
-          <Button href="/tools/rug-size-calculator">Open the calculator</Button>
         </Container>
       </section>
 
-      <section aria-labelledby="inspiration-title" className="border-t border-line py-14">
+      <section aria-labelledby="inspiration-title" className="border-t border-line py-16 lg:py-20">
         <Container>
-          <h2 id="inspiration-title" className="text-h2">
+          <p className="text-[11px] font-medium tracking-[0.22em] text-accent uppercase">
+            Rooms we return to
+          </p>
+          <h2 id="inspiration-title" className="mt-3 text-h2">
             Inspiration
           </h2>
           <p className="mt-3 max-w-2xl text-mute">
-            Rooms styled with stock rugs. Photographs will replace these studies.
+            Rooms photographed with pieces we stock. Open one to shop that size.
           </p>
           <div className="mt-6">
             <Inspiration />
@@ -337,68 +480,83 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      <section aria-labelledby="trade-title" className="bg-dark py-14 text-[#f1ebe0]">
-        <Container className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+      <section aria-labelledby="trade-title" className="bg-dark py-16 text-[#f1ebe0] lg:py-20">
+        <Container className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <div>
-            <h2 id="trade-title" className="text-h2">
+            <p className="text-[11px] font-medium tracking-[0.22em] text-[#d08b78] uppercase">
+              For studios and retailers
+            </p>
+            <h2 id="trade-title" className="mt-3 text-h2">
               Trade program
             </h2>
-            <p className="mt-3 max-w-xl">
+            <p className="mt-4 max-w-xl text-[#f1ebe0]">
               Designers and retailers order from the same four warehouses. No separate trade stock,
               no extra freight desk.
             </p>
           </div>
-          <Link
-            href="/trade"
-            className="inline-flex min-h-10 items-center justify-center rounded-[2px] border border-[#f1ebe0] px-4"
-          >
+          <Button href="/trade" variant="onDark">
             Apply now
-          </Link>
+          </Button>
         </Container>
       </section>
 
-      <section aria-labelledby="reviews-title" className="py-14">
+      <section aria-labelledby="reviews-title" className="py-16 lg:py-20">
         <Container>
-          <h2 id="reviews-title" className="text-h2">
+          <p className="text-[11px] font-medium tracking-[0.22em] text-accent uppercase">
+            From the cities we deliver to
+          </p>
+          <h2 id="reviews-title" className="mt-3 text-h2">
             4.9 out of 5
           </h2>
-          <p className="mt-3 text-mute">From customers in the cities we deliver to.</p>
-          <ul className="mt-6 grid gap-4 md:grid-cols-3">
+          <ul className="mt-8 grid gap-4 md:grid-cols-3">
             {quotes.map((review) => (
-              <li key={review.id} className="border border-line bg-card p-5">
-                <p className="text-sm text-mute">
+              <li key={review.id} className="flex h-full flex-col border border-line bg-card p-6">
+                <p className="font-serif text-5xl leading-none text-accent" aria-hidden="true">
+                  “
+                </p>
+                <h3 className="mt-3 font-serif text-h3">{review.title}</h3>
+                <p className="mt-3 flex-1 text-sm leading-6">{review.body}</p>
+                <p className="mt-6 text-sm text-mute">
                   {review.author} · {review.city}
                 </p>
-                <h3 className="mt-2 font-serif text-h3">{review.title}</h3>
-                <p className="mt-2 text-sm">{review.body}</p>
+                <p className="sr-only">{review.rating} out of 5</p>
               </li>
             ))}
           </ul>
         </Container>
       </section>
 
-      <section aria-labelledby="journal-title" className="border-t border-line py-14">
+      <section aria-labelledby="journal-title" className="border-t border-line bg-sand py-16 lg:py-20">
         <Container>
-          <div className="flex items-end justify-between gap-4">
-            <h2 id="journal-title" className="text-h2">
-              Journal
-            </h2>
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="text-[11px] font-medium tracking-[0.22em] text-accent uppercase">
+                Notes from the studio
+              </p>
+              <h2 id="journal-title" className="mt-3 text-h2">
+                Journal
+              </h2>
+            </div>
             <Link href="/blog" className="text-sm underline underline-offset-4">
               All articles
             </Link>
           </div>
-          <ul className="mt-6 grid gap-6 md:grid-cols-3">
-            {journal.map((post) => (
-              <li key={post.id} className="border border-line bg-card p-5">
-                <p className="text-sm text-mute">
-                  {post.category} · {post.readMinutes} min
+          <ul className="mt-8 grid gap-4 md:grid-cols-3">
+            {journal.map((post, index) => (
+              <li
+                key={post.id}
+                className={`flex h-full flex-col border border-line p-6 ${index === 0 ? "bg-card md:min-h-80" : "bg-bg"}`}
+              >
+                <p className="text-[11px] font-medium tracking-[0.18em] text-mute uppercase">
+                  {post.category}
                 </p>
-                <h3 className="mt-2 font-serif text-h3">
-                  <Link href={`/blog/${post.slug}`} className="underline underline-offset-4">
+                <h3 className={`mt-4 font-serif ${index === 0 ? "text-3xl leading-tight" : "text-h3"}`}>
+                  <Link href={`/blog/${post.slug}`} className="underline-offset-4 hover:underline">
                     {post.title}
                   </Link>
                 </h3>
-                <p className="mt-2 text-sm">{post.excerpt}</p>
+                <p className="mt-4 flex-1 text-sm leading-6">{post.excerpt}</p>
+                <p className="mt-6 text-sm text-mute">{post.readMinutes} min read</p>
               </li>
             ))}
           </ul>

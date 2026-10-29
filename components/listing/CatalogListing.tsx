@@ -24,7 +24,7 @@ import { absoluteUrl } from "@/lib/site";
 function chipClass(current: boolean): string {
   return current
     ? "inline-flex min-h-10 items-center rounded-[2px] border border-ink bg-ink px-3 text-sm text-bg"
-    : "inline-flex min-h-10 items-center rounded-[2px] border border-line bg-card px-3 text-sm";
+    : "inline-flex min-h-10 items-center rounded-[2px] border border-line bg-card px-3 text-sm transition-colors hover:border-ink";
 }
 
 function ListingBody({ model, showHeading }: { model: ListingModel; showHeading: boolean }) {
