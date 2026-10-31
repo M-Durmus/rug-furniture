@@ -17,6 +17,7 @@ export type ShelfItem = {
   furniture?: FurnitureKind;
   style?: string;
   sizeLabel: string;
+  image?: string;
 };
 
 export function ProductShelf({ title, items }: { title: string; items: ShelfItem[] }) {
@@ -43,14 +44,15 @@ export function ProductShelf({ title, items }: { title: string; items: ShelfItem
               />
             ) : null}
             <Link href={item.href} className="group">
-              <div className="aspect-[4/5] bg-sand" aria-hidden="true">
+              <div className="relative aspect-[4/5] overflow-hidden bg-sand" aria-hidden="true">
                 <Image
+                  src={item.image}
                   alt=""
                   colors={item.colors}
                   subject={item.subject}
                   furniture={item.furniture}
                   style={item.style}
-                  className="h-full w-full"
+                  className="h-full w-full object-cover"
                   sizes="(max-width: 1024px) 50vw, 280px"
                 />
               </div>

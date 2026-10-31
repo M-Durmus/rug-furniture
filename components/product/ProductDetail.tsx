@@ -65,6 +65,7 @@ function toShelf(product: Product, size: ProductSize, list: number, pay: number)
     furniture: product.type === "furniture" ? furnitureKind(product.category) : undefined,
     style: product.style,
     sizeLabel: feetLabel(size),
+    image: product.images[0],
   };
 }
 

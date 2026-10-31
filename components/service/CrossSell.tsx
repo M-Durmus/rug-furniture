@@ -19,6 +19,7 @@ export async function CrossSell() {
       subject: "rug",
       style: product.style,
       sizeLabel: size.label,
+      image: product.images[0],
     });
   }
   return <ProductShelf title="Rugs from the warehouse" items={items} />;

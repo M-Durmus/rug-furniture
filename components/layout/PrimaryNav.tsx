@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState, type KeyboardEvent, type ReactNode } from "react";
 import { RugArt } from "@/components/media/RugArt";
@@ -24,11 +25,12 @@ const sizes = [
 ];
 
 const styles = [
-  { href: "/rugs/style/oushak", label: "Oushak" },
-  { href: "/rugs/style/vintage", label: "Vintage" },
-  { href: "/rugs/style/persian", label: "Persian-style" },
-  { href: "/rugs/style/kilim", label: "Kilim" },
-  { href: "/rugs/style/modern", label: "Modern" },
+  { href: "/rugs/style/oushak", label: "Oushak", image: "/images/photos/rug-oushak.webp" },
+  { href: "/rugs/style/vintage", label: "Vintage", image: "/images/photos/rug-field.webp" },
+  { href: "/rugs/style/persian", label: "Persian-style", image: "/images/photos/rug-persian.webp" },
+  { href: "/rugs/style/kilim", label: "Kilim", image: "/images/photos/rug-border.webp" },
+  { href: "/rugs/style/modern", label: "Modern", image: "/images/photos/rug-flat.webp" },
+  { href: "/rugs/runner", label: "Runners", image: "/images/photos/rug-runner.webp" },
 ];
 
 const colors = [
@@ -47,21 +49,18 @@ const furniture = [
 ];
 
 type Panel = "rugs" | "size" | "room" | "style" | "color" | "furniture" | "services";
-type Item = { id: string; label: string; href: string; panel?: Panel };
+type Item = { id: string; label: string; href: string; panel?: Panel; accent?: boolean };
 
 const items: Item[] = [
-  { id: "rugs", label: "All rugs", href: "/rugs", panel: "rugs" },
-  { id: "size", label: "Size", href: "/rugs/size/8x10", panel: "size" },
+  { id: "rugs", label: "New & trending", href: "/rugs", panel: "rugs" },
   { id: "room", label: "Room", href: "/rugs/size/8x10", panel: "room" },
+  { id: "size", label: "Size", href: "/rugs/size/8x10", panel: "size" },
   { id: "style", label: "Style", href: "/rugs/style/oushak", panel: "style" },
   { id: "color", label: "Color", href: "/rugs/color/ivory", panel: "color" },
   { id: "washable", label: "Washable", href: "/rugs/washable" },
-  { id: "runners", label: "Runners", href: "/rugs/runner" },
   { id: "furniture", label: "Furniture", href: "/furniture", panel: "furniture" },
   { id: "services", label: "Rug care", href: "/services", panel: "services" },
-  { id: "room-preview", label: "Room preview", href: "/room-preview" },
-  { id: "trade", label: "Trade", href: "/trade-program" },
-  { id: "journal", label: "Journal", href: "/blog" },
+  { id: "sale", label: "Sale", href: "/#sale", accent: true },
 ];
 
 function Column({ title, children }: { title: string; children: ReactNode }) {
@@ -179,14 +178,14 @@ export function PrimaryNav({ services }: { services: ServiceLink[] }) {
     <nav
       ref={navRef}
       aria-label="Primary"
-      className="relative flex h-11 min-w-0 border-t border-line"
+      className="relative flex h-12 min-w-0 border-t border-line"
       onKeyDown={onKeyDown}
       onMouseLeave={() => setOpen(null)}
       onBlur={(event) => {
         if (!event.currentTarget.contains(event.relatedTarget)) setOpen(null);
       }}
     >
-      <ul className="mx-auto flex w-full max-w-[1180px] items-center gap-0.5 overflow-x-auto px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <ul className="mx-auto flex w-max min-w-full items-center justify-center gap-0.5 overflow-x-auto px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {items.map((item, index) => (
           <li key={item.id} className="shrink-0" onMouseEnter={() => setOpen(item.panel ? item.id : null)}>
             <Link
@@ -197,14 +196,11 @@ export function PrimaryNav({ services }: { services: ServiceLink[] }) {
               aria-expanded={item.panel ? open === item.id : undefined}
               aria-controls={item.panel ? `mega-${item.id}` : undefined}
               aria-haspopup={item.panel ? "true" : undefined}
-              className="inline-flex h-9 items-center gap-1 rounded-[2px] px-2.5 text-sm whitespace-nowrap"
+              className={`inline-flex h-12 items-center px-3 text-[11px] font-medium tracking-[0.16em] whitespace-nowrap uppercase hover:text-accent ${
+                item.accent ? "text-accent" : ""
+              }`}
             >
               {item.label}
-              {item.panel ? (
-                <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
-                  <path d="M2 3.5 L5 6.5 L8 3.5" fill="none" stroke="currentColor" strokeWidth="1.4" />
-                </svg>
-              ) : null}
             </Link>
           </li>
         ))}
@@ -254,13 +250,16 @@ export function PrimaryNav({ services }: { services: ServiceLink[] }) {
       ) : null}
       {open === "size" ? (
         <Menu id="size">
-          <ul className="flex flex-wrap gap-2">
+          <p className="mb-4 text-[11px] font-medium tracking-[0.18em] text-mute uppercase">
+            Measured in feet
+          </p>
+          <ul className="flex flex-wrap gap-3">
             {sizes.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
                   data-menuitem="true"
-                  className="inline-flex min-h-10 items-center border border-line px-3 text-sm"
+                  className="flex min-h-16 min-w-[4.75rem] items-center justify-center bg-sand px-4 font-serif text-2xl leading-none transition-colors hover:bg-accent hover:text-bg"
                 >
                   {link.label}
                 </Link>
@@ -283,15 +282,25 @@ export function PrimaryNav({ services }: { services: ServiceLink[] }) {
       ) : null}
       {open === "style" ? (
         <Menu id="style">
-          <ul className="flex flex-wrap gap-2">
+          <p className="mb-4 text-[11px] font-medium tracking-[0.18em] text-mute uppercase">
+            Shop by style
+          </p>
+          <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
             {styles.map((link) => (
               <li key={link.href}>
-                <Link
-                  href={link.href}
-                  data-menuitem="true"
-                  className="inline-flex min-h-10 items-center border border-line px-3 text-sm"
-                >
-                  {link.label}
+                <Link href={link.href} data-menuitem="true" className="group block">
+                  <span className="relative block aspect-[4/5] overflow-hidden bg-sand">
+                    <Image
+                      src={link.image}
+                      alt=""
+                      fill
+                      sizes="180px"
+                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                    />
+                  </span>
+                  <span className="mt-2 block text-center text-[11px] font-medium tracking-[0.16em] uppercase group-hover:text-accent">
+                    {link.label}
+                  </span>
                 </Link>
               </li>
             ))}
@@ -300,16 +309,25 @@ export function PrimaryNav({ services }: { services: ServiceLink[] }) {
       ) : null}
       {open === "color" ? (
         <Menu id="color">
-          <ul className="flex flex-wrap gap-2">
+          <p className="mb-4 text-[11px] font-medium tracking-[0.18em] text-mute uppercase">
+            Shop by color
+          </p>
+          <ul className="flex flex-wrap gap-x-6 gap-y-4">
             {colors.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
                   data-menuitem="true"
-                  className="inline-flex min-h-10 items-center gap-2 border border-line px-3 text-sm"
+                  className="group flex w-[4.75rem] flex-col items-center gap-2.5"
                 >
-                  <span className="h-3 w-3 border border-line" style={{ background: link.hex }} aria-hidden="true" />
-                  {link.label}
+                  <span
+                    className="h-14 w-14 border border-line transition-transform duration-300 group-hover:-translate-y-0.5"
+                    style={{ background: link.hex }}
+                    aria-hidden="true"
+                  />
+                  <span className="text-center text-[11px] font-medium tracking-[0.14em] uppercase group-hover:text-accent">
+                    {link.label}
+                  </span>
                 </Link>
               </li>
             ))}

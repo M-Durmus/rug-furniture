@@ -10,9 +10,11 @@ const mark = { src: "/images/logo-mark.png", width: 302, height: 151 };
 export function Logo({
   variant = "full",
   className,
+  imageClassName,
 }: {
   variant?: LogoVariant;
   className?: string;
+  imageClassName?: string;
 }) {
   const asset = variant === "mark" ? mark : variant === "light-on-dark" ? light : full;
 
@@ -27,7 +29,7 @@ export function Logo({
         priority={variant !== "light-on-dark"}
         className={cn(
           "w-auto",
-          variant === "mark" ? "h-9" : "h-8 sm:h-10",
+          imageClassName ?? (variant === "mark" ? "h-9" : "h-8 sm:h-10"),
           variant !== "light-on-dark" && "logo-on-theme",
         )}
       />

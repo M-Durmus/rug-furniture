@@ -12,7 +12,7 @@ export function RoomScene() {
       decoding="sync"
       loading="eager"
       sizes="100vw"
-      className="object-cover object-[center_72%]"
+      className="object-cover object-center"
     />
   );
 }

@@ -166,37 +166,40 @@ export default async function HomePage() {
     <>
       <section
         aria-labelledby="hero-title"
-        className="relative min-h-[34rem] overflow-hidden bg-dark text-[#f6f1e8] sm:min-h-[40rem] lg:min-h-[46rem]"
+        className="relative flex min-h-[70vh] items-center overflow-hidden bg-dark text-[#f6f1e8] lg:min-h-[calc(100svh-7.5rem)]"
       >
         <RoomScene />
+        <div aria-hidden="true" className="absolute inset-0 bg-[#14110e]/30" />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-t from-[#14110e]/85 via-[#14110e]/40 to-[#14110e]/25 lg:bg-gradient-to-r lg:from-[#14110e]/80 lg:via-[#14110e]/40 lg:to-transparent"
+          className="absolute inset-0 bg-gradient-to-t from-[#14110e]/75 via-[#14110e]/20 to-[#14110e]/35"
         />
-        <Container className="relative flex min-h-[34rem] flex-col justify-end py-10 sm:min-h-[40rem] lg:min-h-[46rem] lg:justify-center lg:py-20">
-          <p className="text-[11px] font-medium tracking-[0.24em] text-[#f1ebe0] uppercase">
+        <Container className="relative flex flex-col items-center px-5 py-16 text-center sm:py-24">
+          <p className="text-[11px] font-medium tracking-[0.28em] text-[#f7f5f0] uppercase">
             Handmade in Turkey
           </p>
-          <h1 id="hero-title" className="mt-4 max-w-xl text-[#f6f1e8]">
+          <h1 id="hero-title" className="mt-5 max-w-4xl text-[#f7f5f0]">
             Timeless Turkish Rugs. Expert Care, Always.
           </h1>
-          <p className="mt-5 max-w-xl text-lg leading-8 text-[#f1ebe0]">
+          <p className="mt-5 max-w-2xl text-base leading-7 text-[#f7f5f0] sm:text-lg">
             Handpicked in Turkey and shipped from our own warehouses in New Jersey, Georgia, Texas,
-            and California. Cleaning, repair, and custom sizing stay with our service team.
+            and California.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Button href="/rugs" variant="onDark">
-              Shop all rugs
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <Button
+              href="/rugs"
+              className="min-h-12 border-accent bg-accent px-7 text-[12px] tracking-[0.16em] text-[#f7f5f0] uppercase"
+            >
+              Shop the collection
             </Button>
-            <Button href="/contact" variant="onDarkOutline">
-              Request a service quote
+            <Button
+              href="/furniture"
+              variant="onDark"
+              className="min-h-12 px-7 text-[12px] tracking-[0.16em] uppercase"
+            >
+              Shop furniture
             </Button>
           </div>
-          <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-[#f1ebe0]">
-            <li>Four U.S. warehouses</li>
-            <li>Free shipping</li>
-            <li>100-day returns</li>
-          </ul>
         </Container>
       </section>
 
@@ -215,40 +218,24 @@ export default async function HomePage() {
               Shop all rugs
             </Link>
           </div>
-          <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
-            {categories.map((category, index) => (
-              <li
-                key={category.name}
-                className={
-                  index === 0
-                    ? "sm:col-span-2 lg:col-span-3 lg:row-span-2"
-                    : index < 3
-                      ? "lg:col-span-3"
-                      : index === categories.length - 1
-                        ? "sm:col-span-2 lg:col-span-2"
-                        : "lg:col-span-2"
-                }
-              >
-                <Link
-                  href={category.href}
-                  className={`group relative block overflow-hidden bg-sand ${
-                    index === 0
-                      ? "aspect-[4/5] sm:aspect-[16/10] lg:aspect-auto lg:h-full lg:min-h-[32rem]"
-                      : index < 3
-                        ? "aspect-[4/5] lg:aspect-[5/4]"
-                        : "aspect-[4/5] sm:aspect-[16/10] lg:aspect-[4/5]"
-                  }`}
-                >
-                  <Image
-                    src={category.image}
-                    alt=""
-                    fill
-                    sizes={index === 0 ? "(min-width: 1024px) 50vw, 100vw" : "(min-width: 1024px) 25vw, 50vw"}
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-                  />
-                  <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#14110e]/80 via-[#14110e]/35 to-transparent p-5 text-[#f6f1e8]">
-                    <span className="block font-serif text-2xl sm:text-3xl">{category.name}</span>
-                    <span className="mt-1 block max-w-sm text-sm text-[#f1ebe0]">{category.text}</span>
+          <ul className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-6">
+            {categories.map((category) => (
+              <li key={category.name}>
+                <Link href={category.href} className="group block">
+                  <span className="relative block aspect-[4/5] overflow-hidden bg-sand">
+                    <Image
+                      src={category.image}
+                      alt=""
+                      fill
+                      sizes="(min-width: 1024px) 16vw, (min-width: 640px) 33vw, 50vw"
+                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                    />
+                  </span>
+                  <span className="mt-3 block text-center text-[12px] font-medium tracking-[0.16em] uppercase">
+                    {category.name}
+                  </span>
+                  <span className="mt-1 line-clamp-2 block text-center text-sm text-mute">
+                    {category.text}
                   </span>
                 </Link>
               </li>
@@ -284,7 +271,7 @@ export default async function HomePage() {
       </section>
 
       {saleCards.length > 0 ? (
-        <section aria-labelledby="sale-title" className="border-t border-line bg-card py-16 lg:py-20">
+        <section id="sale" aria-labelledby="sale-title" className="border-t border-line bg-card py-16 lg:py-20">
           <Container>
             <div className="grid gap-10 lg:grid-cols-[17rem_minmax(0,1fr)] lg:items-start">
               <div>

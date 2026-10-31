@@ -56,8 +56,8 @@
   --surface: var(--card);
   --inverse: var(--ink);
   --inverse-foreground: var(--bg);
-  --bar: var(--dark);
-  --bar-foreground: var(--on-dark);
+  --bar: #748173;
+  --bar-foreground: #f7f5f0;
   --focus: var(--accent);
 }
 
@@ -176,6 +176,66 @@ dialog[data-placement="start"] {
 
 dialog::backdrop {
   background: color-mix(in srgb, var(--dark) 62%, transparent);
+}
+
+@property --offer-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.offer-frame {
+  position: relative;
+  padding: 10px;
+  background-color: #6e2e28;
+  background-image:
+    repeating-linear-gradient(90deg, #6e2e28 0 5px, #f6efe4 5px 8px, #d7a07a 8px 13px, #241e1b 13px 15px, #6e2e28 15px 22px),
+    repeating-linear-gradient(90deg, #6e2e28 0 5px, #f6efe4 5px 8px, #d7a07a 8px 13px, #241e1b 13px 15px, #6e2e28 15px 22px),
+    repeating-linear-gradient(0deg, #6e2e28 0 5px, #f6efe4 5px 8px, #d7a07a 8px 13px, #241e1b 13px 15px, #6e2e28 15px 22px),
+    repeating-linear-gradient(0deg, #6e2e28 0 5px, #f6efe4 5px 8px, #d7a07a 8px 13px, #241e1b 13px 15px, #6e2e28 15px 22px);
+  background-repeat: no-repeat;
+  background-size:
+    100% 10px,
+    100% 10px,
+    10px 100%,
+    10px 100%;
+  background-position:
+    top,
+    bottom,
+    left,
+    right;
+}
+
+.offer-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 10px;
+  background: conic-gradient(
+    from var(--offer-angle),
+    transparent 0deg,
+    transparent 260deg,
+    rgba(255, 244, 214, 0.2) 300deg,
+    #fff8e6 332deg,
+    rgba(255, 214, 150, 0.95) 348deg,
+    transparent 360deg
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  animation: offer-sweep 4.8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes offer-sweep {
+  to {
+    --offer-angle: 360deg;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

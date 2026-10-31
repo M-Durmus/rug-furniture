@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import Script from "next/script";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
+import { EmmiChat } from "@/components/emmi/EmmiChat";
 import { CookieBanner } from "@/components/layout/CookieBanner";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
@@ -69,6 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </main>
           <SiteFooter />
           <CookieBanner />
+          <EmmiChat />
         </ToastProvider>
       </body>
     </html>

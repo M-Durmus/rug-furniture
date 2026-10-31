@@ -23,4 +23,4 @@ export type ServiceLink = {
 };
 
 export const iconButtonClass =
-  "relative inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-[2px] border border-line bg-bg text-ink";
+  "relative inline-flex h-11 w-11 shrink-0 items-center justify-center text-ink";

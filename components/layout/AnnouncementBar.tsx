@@ -4,33 +4,15 @@ import Link from "next/link";
 import { useSyncExternalStore } from "react";
 import { Container } from "@/components/ui/Container";
 
-const storageKey = "wool-loom-announcement-dismissed";
-
 const messages = [
   { href: "/help/shipping", text: "Free shipping across the USA" },
   { href: "/help/returns", text: "100-day returns" },
   { href: "/about", text: "Shipped from our own U.S. warehouses" },
 ];
 
-let dismissed = false;
-const dismissListeners = new Set<() => void>();
 let messageIndex = 0;
 const indexListeners = new Set<() => void>();
 let timer: number | undefined;
-
-function subscribeDismiss(onStoreChange: () => void) {
-  dismissListeners.add(onStoreChange);
-  return () => dismissListeners.delete(onStoreChange);
-}
-
-function readDismissed() {
-  if (dismissed) return true;
-  try {
-    return sessionStorage.getItem(storageKey) === "1";
-  } catch {
-    return false;
-  }
-}
 
 function subscribeIndex(onStoreChange: () => void) {
   indexListeners.add(onStoreChange);
@@ -50,38 +32,58 @@ function subscribeIndex(onStoreChange: () => void) {
   };
 }
 
+function step(direction: number) {
+  messageIndex = (messageIndex + direction + messages.length) % messages.length;
+  indexListeners.forEach((listener) => listener());
+}
+
+function Chevron({ direction }: { direction: "left" | "right" }) {
+  return (
+    <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+      <path
+        d={direction === "left" ? "M8.5 3 L4.5 7 L8.5 11" : "M5.5 3 L9.5 7 L5.5 11"}
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.2"
+      />
+    </svg>
+  );
+}
+
 export function AnnouncementBar() {
-  const hidden = useSyncExternalStore(subscribeDismiss, readDismissed, () => false);
   const index = useSyncExternalStore(subscribeIndex, () => messageIndex, () => 0);
-
-  if (hidden) return null;
-
   const message = messages[index] ?? messages[0];
 
-  function dismiss() {
-    dismissed = true;
-    try {
-      sessionStorage.setItem(storageKey, "1");
-    } catch {
-      /* The in-memory flag still hides the bar. */
-    }
-    dismissListeners.forEach((listener) => listener());
-  }
-
   return (
-    <div className="h-12 bg-dark text-on-dark [&_:focus-visible]:outline-[#d08b78]">
-      <Container className="relative flex h-12 items-center justify-center">
-        <Link href={message.href} className="truncate px-10 text-sm underline-offset-4 hover:underline">
-          {message.text}
-        </Link>
-        <button
-          type="button"
-          className="absolute right-5 inline-flex h-10 w-10 items-center justify-center rounded-[2px]"
-          aria-label="Dismiss announcement"
-          onClick={dismiss}
+    <div className="h-10 bg-bar text-bar-foreground [&_:focus-visible]:outline-bar-foreground">
+      <Container className="relative flex h-10 items-center justify-center">
+        <div className="flex min-w-0 items-center gap-1 sm:gap-2 sm:px-24">
+          <button
+            type="button"
+            className="inline-flex h-8 w-8 shrink-0 items-center justify-center"
+            aria-label="Previous announcement"
+            onClick={() => step(-1)}
+          >
+            <Chevron direction="left" />
+          </button>
+          <Link href={message.href} className="truncate text-[13px] tracking-wide hover:underline">
+            {message.text}
+          </Link>
+          <button
+            type="button"
+            className="inline-flex h-8 w-8 shrink-0 items-center justify-center"
+            aria-label="Next announcement"
+            onClick={() => step(1)}
+          >
+            <Chevron direction="right" />
+          </button>
+        </div>
+        <Link
+          href="/trade-program"
+          className="absolute right-5 hidden text-[13px] tracking-wide hover:underline sm:inline"
         >
-          <span aria-hidden="true">×</span>
-        </button>
+          Trade
+        </Link>
       </Container>
     </div>
   );

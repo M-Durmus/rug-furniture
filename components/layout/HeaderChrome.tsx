@@ -111,7 +111,7 @@ export function HeaderChrome({
       >
         Skip to content
       </a>
-      <Container className="flex h-16 items-center gap-2 sm:gap-3">
+      <Container className="flex h-20 items-center gap-3 sm:gap-5">
         <span className="sm:hidden">
           <Logo variant="mark" />
         </span>
@@ -120,12 +120,12 @@ export function HeaderChrome({
         </span>
         <button
           type="button"
-          className="hidden h-10 min-w-0 flex-1 items-center gap-3 rounded-[2px] border border-line bg-card px-4 text-left text-sm text-mute sm:flex"
+          className="hidden h-11 min-w-0 flex-1 items-center gap-3 rounded-[2px] border border-line bg-card px-4 text-left text-sm text-mute sm:flex"
           aria-expanded={overlay === "search"}
           onClick={() => setOverlay("search")}
         >
           <SearchIcon />
-          <span className="truncate">Find a rug or a piece of furniture</span>
+          <span className="truncate">Oushak, runners, sofas, washable rugs</span>
         </button>
         <div className="ml-auto flex items-center gap-1">
           <button
@@ -137,11 +137,11 @@ export function HeaderChrome({
           >
             <SearchIcon />
           </button>
-          <Link href="/favorites" className={iconButtonClass} aria-label="Favorites">
-            <HeartIcon />
-          </Link>
           <Link href="/account" className={iconButtonClass} aria-label="Account">
             <AccountIcon />
+          </Link>
+          <Link href="/favorites" className={iconButtonClass} aria-label="Favorites">
+            <HeartIcon />
           </Link>
           <button
             type="button"
