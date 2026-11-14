@@ -58,25 +58,22 @@ const columns = [
 
 function InstagramIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
-      <rect x="2.25" y="2.25" width="13.5" height="13.5" rx="3.5" fill="none" stroke="currentColor" strokeWidth="1.3" />
-      <circle cx="9" cy="9" r="3.1" fill="none" stroke="currentColor" strokeWidth="1.3" />
-      <circle cx="12.7" cy="5.3" r="0.7" fill="currentColor" />
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M7.5 2.5h9a5 5 0 0 1 5 5v9a5 5 0 0 1-5 5h-9a5 5 0 0 1-5-5v-9a5 5 0 0 1 5-5zm9 1.8h-9a3.2 3.2 0 0 0-3.2 3.2v9a3.2 3.2 0 0 0 3.2 3.2h9a3.2 3.2 0 0 0 3.2-3.2v-9a3.2 3.2 0 0 0-3.2-3.2zM12 8.1a3.9 3.9 0 1 1 0 7.8 3.9 3.9 0 0 1 0-7.8zm0 1.8a2.1 2.1 0 1 0 0 4.2 2.1 2.1 0 0 0 0-4.2zm5.05-2.55a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1z"
+      />
     </svg>
   );
 }
 
 function PinterestIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
-      <circle cx="9" cy="9" r="6.6" fill="none" stroke="currentColor" strokeWidth="1.3" />
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
       <path
-        d="M7.7 13.6 V6.2 H10.1 A1.9 1.9 0 0 1 10.1 10 H7.7"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.3"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        fill="currentColor"
+        d="M12 2.2C6.7 2.2 2.4 6.4 2.4 11.6c0 4 2.2 7.4 5.4 8.9-.1-.7-.1-1.8.1-2.6.2-.8 1.4-5.6 1.4-5.6s-.3-.7-.3-1.7c0-1.6.9-2.8 2.1-2.8 1 0 1.5.7 1.5 1.6 0 1-.6 2.5-1 3.9-.3 1.1.6 2.1 1.7 2.1 2 0 3.4-2.6 3.4-5.6 0-2.3-1.6-4-4.4-4-3.2 0-5.2 2.4-5.2 5 0 .9.3 1.9.7 2.4a.3.3 0 0 1 .1.3l-.3 1.1c0 .2-.1.2-.3.1-1.1-.5-1.6-1.8-1.6-3.2 0-2.6 2.2-5.8 6.6-5.8 3.5 0 5.8 2.5 5.8 5.3 0 3.6-2 6.3-5 6.3-1 0-1.9-.5-2.3-1.2l-.6 2.4a10 10 0 0 1-1.2 2.5c1 .3 2.1.5 3.2.5 5.3 0 9.6-4.2 9.6-9.4S17.3 2.2 12 2.2z"
       />
     </svg>
   );
@@ -84,11 +81,35 @@ function PinterestIcon() {
 
 function FacebookIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
       <path
-        d="M10.4 15.2 V9.7 H12.2 L12.5 7.6 H10.4 V6.3 C10.4 5.7 10.6 5.3 11.5 5.3 H12.6 V3.4 C12.4 3.4 11.7 3.3 10.9 3.3 C9.1 3.3 7.9 4.4 7.9 6.1 V7.6 H6.2 V9.7 H7.9 V15.2 Z"
         fill="currentColor"
+        d="M14.4 21v-7.1h2.4l.4-2.8h-2.8V9.3c0-.8.2-1.4 1.4-1.4H17V5.2c-.3-.1-1.2-.2-2.2-.2-2.2 0-3.7 1.3-3.7 3.8v2.2H8.5v2.8h2.6V21h3.3z"
       />
+    </svg>
+  );
+}
+
+function YouTubeIcon() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M22.5 12.2s0-3-.4-4.4c-.2-.9-.9-1.6-1.8-1.8C18.8 5.6 12 5.6 12 5.6s-6.8 0-8.3.4c-.9.2-1.6.9-1.8 1.8C1.5 9.2 1.5 12.2 1.5 12.2s0 3 .4 4.4c.2.9.9 1.6 1.8 1.8 1.5.4 8.3.4 8.3.4s6.8 0 8.3-.4c.9-.2 1.6-.9 1.8-1.8.4-1.4.4-4.4.4-4.4zM9.9 15.4V9l5.8 3.2-5.8 3.2z"
+      />
+    </svg>
+  );
+}
+
+function TikTokIcon() {
+  const note =
+    "M14.6 3.2c.5 2.5 2.1 4.3 4.5 4.8v2.4a7.2 7.2 0 0 1-4.3-1.4v6.4a5.6 5.6 0 1 1-5.6-5.6c.3 0 .5 0 .8.1v2.6a3 3 0 1 0 2.1 2.9V3.2h2.5z";
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="#25F4EE" d={note} transform="translate(-0.8 0.45)" />
+      <path fill="#FE2C55" d={note} transform="translate(0.8 -0.35)" />
+      <path fill="#fff" d={note} />
     </svg>
   );
 }
@@ -98,10 +119,12 @@ const social = [
     href: "https://www.instagram.com/",
     label: "Instagram",
     icon: InstagramIcon,
-    className: "bg-[linear-gradient(135deg,#fccc63,#f77737_28%,#e1306c_58%,#833ab4)]",
+    className: "bg-[linear-gradient(145deg,#f9ce34,#ee2a7b_55%,#6228d7)]",
   },
   { href: "https://www.pinterest.com/", label: "Pinterest", icon: PinterestIcon, className: "bg-[#e60023]" },
   { href: "https://www.facebook.com/", label: "Facebook", icon: FacebookIcon, className: "bg-[#1877f2]" },
+  { href: "https://www.youtube.com/", label: "YouTube", icon: YouTubeIcon, className: "bg-[#ff0033]" },
+  { href: "https://www.tiktok.com/", label: "TikTok", icon: TikTokIcon, className: "bg-[#111111]" },
 ];
 
 function VisaMark() {
@@ -169,7 +192,7 @@ export function SiteFooter() {
                   <a
                     href={link.href}
                     aria-label={link.label}
-                    className={`inline-flex h-11 w-11 items-center justify-center text-white transition-transform hover:-translate-y-0.5 ${link.className}`}
+                    className={`inline-flex h-12 w-12 items-center justify-center rounded-[2px] text-white shadow-[0_8px_18px_rgba(23,22,20,0.16)] transition-transform hover:-translate-y-0.5 ${link.className}`}
                     rel="noreferrer"
                   >
                     <link.icon />
